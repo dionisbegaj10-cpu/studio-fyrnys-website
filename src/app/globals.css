@@ -1,26 +1,269 @@
 @import "tailwindcss";
 
+/* ─── Fonts ─────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Velour';
+  src: url('/fonts/Velour-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Design Tokens ──────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --mahogany-brown: #383126;
+  --marble-white: #d9d4c8;
+  --blackwood-plum: #362a33;
+  --linen-beige: #ddcab0;
+  --pebble-grey: #8d8479;
+  --white: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Reset / Base ───────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Only the splash homepage locks scroll */
+body.splash-body {
+  overflow: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'TT Norms Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Splash homepage only */
+.splash-body {
+  background-color: var(--mahogany-brown);
+  color: var(--mahogany-brown);
+}
+
+/* ─── Responsive nav ─────────────────────────────────────────────── */
+.nav-mobile-default  { display: flex !important; }
+.nav-desktop-default { display: none !important; }
+.nav-desktop-grid    { display: none !important; }
+.nav-desktop-only    { display: none !important; }
+
+@media (min-width: 768px) {
+  .nav-mobile-default  { display: none !important; }
+  .nav-desktop-default { display: flex !important; }
+  .nav-desktop-grid    { display: grid !important; }
+  .nav-desktop-only    { display: block !important; }
+}
+
+/* ─── Bernd Gruber 1:1 layout system ────────────────────────────── */
+.bg-egg { background-color: #eaeae2; }
+
+/* container: 90% max-width centered on lg+ */
+.lg-container { }
+@media (min-width: 1024px) { .lg-container { max-width: 90%; margin-left: auto; margin-right: auto; } }
+
+/* text padding: 16px mobile, 0 desktop */
+.text-pad { padding-left: 16px; padding-right: 16px; }
+@media (min-width: 1024px) { .text-pad { padding-left: 0; padding-right: 0; } }
+
+/* richtext styles matching bernd-gruber */
+.richtext-block h1 { font-weight: 500; font-size: clamp(24px, 4vw, 42px); line-height: 1.15; margin-bottom: 0; }
+.richtext-block h2 { font-weight: 500; font-size: clamp(18px, 2.5vw, 28px); line-height: 1.2; margin-bottom: 0.75rem; }
+.richtext-block h3 { font-weight: 500; font-size: 16px; margin-bottom: 0; }
+.richtext-block p { font-size: 15px; line-height: 1.7; color: #333; margin: 0; }
+.richtext-block p + p { margin-top: 1em; }
+.richtext-block a { color: #333; text-decoration: underline; }
+
+/* spacers */
+.spacer-sm { height: 40px; }
+.spacer-md { height: 80px; }
+@media (min-width: 1024px) { .spacer-sm { height: 80px; } .spacer-md { height: 160px; } }
+
+/* image grids: 2-col mobile, 4-col desktop */
+.img-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+@media (min-width: 768px) { .img-grid { gap: 32px; } }
+@media (min-width: 1024px) { .img-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* column spans inside img-grid */
+.col-full    { grid-column: 1 / -1; margin-bottom: 40px; }
+.col-half    { grid-column: span 1; }
+@media (min-width: 1024px) {
+  .col-full        { grid-column: auto; margin-bottom: 0; }
+  .col-half        { grid-column: auto; }
+  .lg-col-1        { grid-column: span 1; }
+  .lg-col-2        { grid-column: span 2; }
+}
+
+/* portrait images 2:3, landscape auto */
+.img-portrait { width: 100%; object-fit: cover; aspect-ratio: 2/3; display: block; }
+.img-landscape { width: 100%; object-fit: cover; display: block; }
+@media (min-width: 1024px) { .img-portrait { aspect-ratio: 2/3; } }
+
+/* möblierung: 1-col mobile (full-width stacked), 4-col desktop */
+.moeblierung-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
+@media (min-width: 768px) { .moeblierung-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; } }
+
+/* ─── Leistungen page responsive ────────────────────────────────── */
+.leistungen-hero    { padding: 60px 20px 40px !important; }
+.leistungen-caption { padding: 10px 20px 40px !important; }
+.leistungen-section { padding: 40px 20px !important; }
+.leistungen-grid    { display: block !important; }
+.leistungen-grid > div { width: 100% !important; order: unset !important; }
+.leistungen-img     { height: 240px !important; margin-bottom: 24px; }
+.leistungen-cta-bar { flex-direction: column !important; align-items: flex-start !important; }
+.leistungen-footer  { padding: 32px 20px !important; flex-direction: column !important; gap: 24px !important; }
+
+@media (min-width: 768px) {
+  .leistungen-hero    { padding: 80px 60px 60px !important; }
+  .leistungen-caption { padding: 12px 60px 60px !important; }
+  .leistungen-section { padding: 64px 60px !important; }
+  .leistungen-grid    { display: grid !important; grid-template-columns: 1fr 1fr; gap: 64px; }
+  .leistungen-img     { height: 420px !important; margin-bottom: 0; }
+  .leistungen-cta-bar { flex-direction: row !important; align-items: center !important; }
+  .leistungen-footer  { padding: 48px 60px !important; flex-direction: row !important; }
+}
+
+/* ─── Project thumb hover & responsive grid ────────────────────── */
+.project-thumb { transition: transform 0.4s ease; }
+.project-thumb:hover { transform: scale(1.04); }
+
+.projekte-grid { display: grid !important; grid-template-columns: repeat(1, 1fr) !important; }
+
+@media (min-width: 768px) {
+  .projekte-grid { grid-template-columns: repeat(4, 1fr) !important; }
+}
+
+/* ─── Projekte horizontal scroll carousel (Nate Berkus style) ───── */
+.il-viewport { overflow: hidden; }
+.il-track { overflow: visible; height: 100%; }
+.il-item {
+  flex: 0 0 calc((100% - 16px) / 3); /* 3 cards visible, 2 gaps of 8px */
+  height: 100%;
+}
+
+.il-card:hover .il-overlay,
+.il-card:focus-visible .il-overlay {
+  background: rgba(0,0,0,0.55) !important;
+}
+
+/* Tablet: 2 cards visible */
+@media (max-width: 1050px) {
+  .il-item {
+    flex: 0 0 calc((100% - 8px) / 2);
+  }
+}
+
+/* Mobile landscape: full-width cards */
+@media (max-width: 700px) {
+  .il-item { flex: 0 0 100%; }
+}
+
+/* ── is-mobile: native horizontal swipe (touch devices) ── */
+.il-projekte-root.is-mobile .il-scrollspace { height: var(--il-section-height, 100vh); }
+.il-projekte-root.is-mobile .il-viewport {
+  position: relative !important;
+  top: auto !important;
+  overflow: hidden;
+  height: auto;
+}
+.il-projekte-root.is-mobile .il-track {
+  transform: none !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: auto;
+}
+
+/* ── ≤700px: native horizontal swipe (Nate Berkus style — one card per screen) ── */
+@media (max-width: 700px) {
+  .il-projekte-root { padding: 0 !important; }
+  .il-scrollspace { height: auto !important; min-height: 0 !important; }
+  .il-viewport {
+    position: static !important;
+    top: auto !important;
+    height: calc(100vh - 56px) !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+  }
+  .il-track {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    height: 100% !important;
+    gap: 5px !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+  .il-item {
+    flex: 0 0 calc(100vw - 5px) !important;
+    height: 100% !important;
+    scroll-snap-align: start !important;
+  }
+}
+
+/* ─── Projekte split layout (kept for reference) ─────────────────── */
+/* Mobile: list full width, image hidden */
+.projekte-layout   { width: 100%; flex-direction: column; min-height: calc(100vh - 54px); }
+.projekte-list-col { width: 100%; }
+.projekte-img-col  { display: none; }
+
+/* Desktop: 50/50 split */
+@media (min-width: 1024px) {
+  .projekte-layout   { flex-direction: row; align-items: stretch; }
+  .projekte-list-col { width: 50%; flex-shrink: 0; border-right: 1px solid #e2e2e2; }
+  .projekte-img-col  { display: block; flex: 1; position: relative; min-height: calc(100vh - 54px); }
+}
+
+/* ─── Animations ─────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideNext {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
 }
