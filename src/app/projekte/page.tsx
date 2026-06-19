@@ -28,11 +28,11 @@ export default function ProjektePage() {
   const stateRef      = useRef({ travelX: 0, lastProgress: -1, ticking: false });
 
   useEffect(() => {
-    const root        = rootRef.current;
-    const scrollspace = scrollspaceRef.current;
-    const viewport    = viewportRef.current;
-    const track       = trackRef.current;
-    if (!root || !scrollspace || !viewport || !track) return;
+    if (!rootRef.current || !scrollspaceRef.current || !viewportRef.current || !trackRef.current) return;
+    const root        = rootRef.current!;
+    const scrollspace = scrollspaceRef.current!;
+    const viewport    = viewportRef.current!;
+    const track       = trackRef.current!;
 
     const isTouch = 'ontouchstart' in window || window.matchMedia('(pointer: coarse)').matches;
 
@@ -42,7 +42,7 @@ export default function ProjektePage() {
     }
 
     function cardWidth() {
-      return (viewport?.clientWidth ?? 0) - GAP;
+      return viewport.clientWidth - GAP;
     }
 
     function setupDesktop() {
