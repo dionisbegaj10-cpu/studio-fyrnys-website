@@ -42,8 +42,7 @@ export default function ProjektePage() {
     }
 
     function cardWidth() {
-      // One card = viewport width minus gap (same as Nate Berkus: 370px in 375px viewport)
-      return viewport.clientWidth - GAP;
+      return (viewport?.clientWidth ?? 0) - GAP;
     }
 
     function setupDesktop() {
