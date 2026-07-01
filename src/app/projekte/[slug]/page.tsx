@@ -18,73 +18,73 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
     <div style={{ backgroundColor: '#ffffff', minHeight: '100vh' }}>
       <LeistungenNav />
 
-      {/* Title + description block */}
-      <div style={{ padding: '40px 24px 24px' }}>
-        <h1 style={{
-          fontFamily: 'var(--font-cormorant), Georgia, serif',
-          fontSize: 'clamp(36px, 10vw, 64px)',
-          fontWeight: 400,
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          color: '#2d2926',
-          margin: '0 0 24px 0',
-          lineHeight: 1.1,
-        }}>
-          {project.name}
-        </h1>
+      {/* Title + description block — cream colored frame like nateberkus.com */}
+      <div style={{ backgroundColor: '#f7f6f0' }}>
+        <div style={{ padding: '48px 24px 24px' }}>
+          <h1 style={{
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontSize: 'clamp(36px, 10vw, 64px)',
+            fontWeight: 400,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#2d2926',
+            margin: '0 0 24px 0',
+            lineHeight: 1.1,
+          }}>
+            {project.name}
+          </h1>
 
-        <p style={{
-          fontFamily: "'TT Norms Pro', sans-serif",
-          fontSize: '15px',
-          lineHeight: 1.75,
-          color: '#666',
-          margin: '0 0 24px 0',
-          maxWidth: '560px',
-        }}>
-          {project.description}
-        </p>
+          <p style={{
+            fontFamily: "'TT Norms Pro', sans-serif",
+            fontSize: '15px',
+            lineHeight: 1.75,
+            color: '#666',
+            margin: '0 0 24px 0',
+            maxWidth: '560px',
+          }}>
+            {project.description}
+          </p>
 
-        <div style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#999', lineHeight: 2 }}>
-          <p style={{ margin: 0 }}>Ort: Frankfurt am Main</p>
-          <p style={{ margin: 0 }}>Studio: Studio Fyrnys</p>
+          <div style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#999', lineHeight: 2 }}>
+            <p style={{ margin: 0 }}>Ort: Frankfurt am Main</p>
+            <p style={{ margin: 0 }}>Studio: Studio Fyrnys</p>
+          </div>
         </div>
-      </div>
 
-      {/* PREVIOUS / NEXT */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '20px 24px',
-        borderTop: '1px solid #e8e8e8',
-        borderBottom: '1px solid #e8e8e8',
-        marginBottom: '4px',
-      }}>
-        {prev ? (
-          <Link href={`/projekte/${prev.slug}`} style={{
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            color: '#2d2926',
-            textDecoration: 'none',
-          }}>
-            ← Previous
-          </Link>
-        ) : <span />}
-        {next ? (
-          <Link href={`/projekte/${next.slug}`} style={{
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            color: '#2d2926',
-            textDecoration: 'none',
-          }}>
-            Next →
-          </Link>
-        ) : <span />}
+        {/* PREVIOUS / NEXT */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          padding: '20px 24px',
+          borderTop: '1px solid #e2ddd0',
+        }}>
+          {prev ? (
+            <Link href={`/projekte/${prev.slug}`} style={{
+              fontFamily: "'TT Norms Pro', sans-serif",
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.16em',
+              textTransform: 'uppercase',
+              color: '#2d2926',
+              textDecoration: 'none',
+            }}>
+              ← Previous
+            </Link>
+          ) : <span />}
+          {next ? (
+            <Link href={`/projekte/${next.slug}`} style={{
+              fontFamily: "'TT Norms Pro', sans-serif",
+              fontSize: '11px',
+              fontWeight: 700,
+              letterSpacing: '0.16em',
+              textTransform: 'uppercase',
+              color: '#2d2926',
+              textDecoration: 'none',
+            }}>
+              Next →
+            </Link>
+          ) : <span />}
+        </div>
       </div>
 
       {/* Gallery */}
