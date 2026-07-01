@@ -23,6 +23,9 @@ export default function KontaktPage() {
         />
       </div>
 
+      {/* White gap */}
+      <div style={{ backgroundColor: '#ffffff', height: '32px', flexShrink: 0 }} />
+
       {/* Cream content block */}
       <div style={{ backgroundColor: '#f7f6f0', padding: '32px 20px 48px', flex: 1 }}>
         <h2 style={{
