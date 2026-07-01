@@ -37,9 +37,9 @@ export default function Preloader() {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/images/fyrnys-logo.svg"
+        src="/images/fyrnys-logo-new.png"
         alt="Studio Fyrnys"
-        style={{ width: '180px', maxWidth: '40vw', height: 'auto' }}
+        style={{ width: '220px', maxWidth: '50vw', height: 'auto' }}
       />
     </div>
   );
