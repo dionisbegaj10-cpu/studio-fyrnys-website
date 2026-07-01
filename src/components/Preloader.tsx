@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const DISPLAY_MS = 2600;
+const DISPLAY_MS = 2500;
 const FADE_MS = 600;
 
 export default function Preloader() {
@@ -10,18 +10,22 @@ export default function Preloader() {
   const [fading, setFading] = useState(false);
 
   useEffect(() => {
-    const fadeTimer = setTimeout(() => setFading(true), DISPLAY_MS);
-    const removeTimer = setTimeout(() => setVisible(false), DISPLAY_MS + FADE_MS);
-    return () => {
-      clearTimeout(fadeTimer);
-      clearTimeout(removeTimer);
-    };
+    const dismiss = () => setFading(true);
+    const fadeTimer = setTimeout(dismiss, DISPLAY_MS);
+    return () => clearTimeout(fadeTimer);
   }, []);
+
+  useEffect(() => {
+    if (!fading) return;
+    const removeTimer = setTimeout(() => setVisible(false), FADE_MS);
+    return () => clearTimeout(removeTimer);
+  }, [fading]);
 
   if (!visible) return null;
 
   return (
     <div
+      onClick={() => setFading(true)}
       style={{
         position: 'fixed',
         inset: 0,
@@ -33,6 +37,7 @@ export default function Preloader() {
         opacity: fading ? 0 : 1,
         transition: `opacity ${FADE_MS}ms ease`,
         pointerEvents: fading ? 'none' : 'auto',
+        cursor: 'pointer',
       }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
