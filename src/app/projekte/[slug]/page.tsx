@@ -100,41 +100,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         ))}
       </div>
 
-      {/* Bottom prev/next */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '20px 24px',
-        borderTop: '1px solid #e8e8e8',
-      }}>
-        {prev ? (
-          <Link href={`/projekte/${prev.slug}`} style={{
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            color: '#2d2926',
-            textDecoration: 'none',
-          }}>
-            ← {prev.name}
-          </Link>
-        ) : <span />}
-        {next ? (
-          <Link href={`/projekte/${next.slug}`} style={{
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '11px',
-            fontWeight: 700,
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            color: '#2d2926',
-            textDecoration: 'none',
-          }}>
-            {next.name} →
-          </Link>
-        ) : <span />}
-      </div>
-
       {/* Back to all projects */}
       <div style={{ padding: '8px 24px 40px', textAlign: 'center' }}>
         <Link href="/projekte" style={{
