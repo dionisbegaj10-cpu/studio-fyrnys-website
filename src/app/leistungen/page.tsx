@@ -189,7 +189,7 @@ export default function LeistungenPage() {
       <div className="spacer-sm bg-egg" />
 
       {/* ══ FOOTER ══ */}
-      <footer style={{ margin: '0 -16px', borderTop: '1px solid #ddd', backgroundColor: '#f0ede8', padding: '48px 16px' }}>
+      <footer style={{ margin: '0 -16px', backgroundColor: '#ffffff', padding: '48px 16px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', maxWidth: '1200px', margin: '0 auto' }}>
           <div>
             <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', marginBottom: '6px', marginTop: 0 }}>Studio Fyrnys</p>
