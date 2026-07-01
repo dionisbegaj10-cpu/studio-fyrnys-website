@@ -37,13 +37,13 @@ export default function UeberUnsPage() {
           Über uns
         </h2>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
-          Studio Fyrnys ist ein Innenarchitektur- und Einrichtungsstudio mit Sitz in Frankfurt am Main. Wir gestalten private Wohnräume, Büros und Hotels mit einem Fokus auf zeitlose Ästhetik, hochwertige Materialien und handwerkliche Präzision.
+          Fyrnys GmbH verbindet Innenarchitektur und hochwertiges Schreinerhandwerk. Von unserem Studio in Frankfurt aus erarbeiten wir gemeinsam mit Ihnen Raum- und Möblierungskonzepte für private Wohnräume und Gewerbeflächen, die in enger Verbindung mit unserer Manufakturschreinerei in Leingarten weitergedacht und umgesetzt werden können. Dort realisieren wir seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß.
         </p>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
-          Jedes Projekt beginnt mit einem tiefen Verständnis für die Menschen, die darin leben und arbeiten werden. Wir hören zu, beobachten und übersetzen individuelle Bedürfnisse in Räume, die sowohl funktional als auch emotional berühren.
+          Wir begleiten Projekte im In- und Ausland von der ersten Idee bis zum fertigen Raum. Dazu gehören Möblierungs- und Leuchtenkonzepte, die Ausarbeitung gestalterischer Planungen sowie die Abstimmung mit den beteiligten Gewerken während der Umsetzung. Unsere Arbeit reicht von Möblierungskonzepten über maßgefertigte Schreinerausbauten bis zur vollständigen Neugestaltung einzelner Räume oder ganzer Objekte.
         </p>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
-          Unser Team vereint Kompetenzen aus Innenarchitektur, Handwerk und Produktdesign. Von der ersten Skizze bis zur Endabnahme begleiten wir unsere Kunden durch alle Phasen des Projekts — mit Sorgfalt, Transparenz und einem unverwechselbaren Blick für das Wesentliche.
+          Unser Ziel ist eine Gestaltung, die zur Nutzung, zur Architektur und zu den Menschen passt. Dafür verbinden wir klare Planung, hochwertige Materialien und handwerkliche Präzision mit einer engen gestalterischen Begleitung im Projekt.
         </p>
       </div>
 
