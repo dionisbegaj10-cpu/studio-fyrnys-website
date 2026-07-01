@@ -239,17 +239,17 @@ body {
     flex: none !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: auto !important;
+    aspect-ratio: 3 / 4 !important;
     display: block !important;
     margin-bottom: 200px !important;
   }
   .il-item:last-child { margin-bottom: 0 !important; }
-  .il-item a { position: static !important; }
+  .il-item a { position: static !important; height: 100% !important; }
   .il-item .il-bg {
-    position: static !important;
+    position: absolute !important;
     width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
   .il-item .il-overlay { position: absolute !important; }
 }
