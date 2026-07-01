@@ -1,11 +1,68 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import LeistungenNav from '../leistungen/LeistungenNav';
-import { projects } from './data';
+import { projects, type Project } from './data';
 
 const GAP = 5;
+
+function ComingSoonCard({ project }: { project: Project }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <button
+      type="button"
+      onClick={() => setOpen(o => !o)}
+      style={{
+        display: 'block', width: '100%', height: '100%', position: 'relative',
+        background: '#f4f2ee', border: '1px solid #ddd7cb', cursor: 'pointer',
+        padding: 0, textAlign: 'left', overflow: 'hidden',
+      }}
+    >
+      {!open ? (
+        <span style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', padding: '0 24px' }}>
+          <span style={{ textAlign: 'center' }}>
+            <span style={{
+              display: 'block',
+              fontFamily: 'var(--font-cormorant), Georgia, serif',
+              fontSize: '24px', fontWeight: 400, letterSpacing: '1px',
+              textTransform: 'uppercase', color: '#000', marginBottom: '10px',
+            }}>
+              {project.name}
+            </span>
+            <span style={{
+              display: 'block',
+              fontFamily: "'TT Norms Pro', sans-serif",
+              fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
+              textTransform: 'uppercase', color: '#000',
+            }}>
+              Coming Soon
+            </span>
+          </span>
+        </span>
+      ) : (
+        <span style={{ position: 'absolute', inset: 0, overflowY: 'auto', padding: '28px 24px', display: 'block' }}>
+          <span style={{
+            display: 'block',
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontSize: '22px', fontWeight: 400, letterSpacing: '1px',
+            textTransform: 'uppercase', color: '#000', marginBottom: '14px',
+          }}>
+            {project.name}
+          </span>
+          <span style={{
+            display: 'block',
+            fontFamily: "'TT Norms Pro', sans-serif",
+            fontSize: '13px', lineHeight: 1.75, color: '#333',
+          }}>
+            {project.description}
+          </span>
+        </span>
+      )}
+    </button>
+  );
+}
 
 export default function ProjektePage() {
   const rootRef       = useRef<HTMLDivElement>(null);
@@ -132,6 +189,9 @@ export default function ProjektePage() {
             >
               {projects.map(project => (
                 <li key={project.id} className="il-item" style={{ flexShrink: 0, position: 'relative' }}>
+                  {project.comingSoon ? (
+                    <ComingSoonCard project={project} />
+                  ) : (
                   <Link href={`/projekte/${project.slug}`} style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}>
                     {/* Background image */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -172,6 +232,7 @@ export default function ProjektePage() {
                       </p>
                     </span>
                   </Link>
+                  )}
                 </li>
               ))}
             </ul>

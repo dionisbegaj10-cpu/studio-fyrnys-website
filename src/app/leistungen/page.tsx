@@ -173,7 +173,7 @@ export default function LeistungenPage() {
         </div>
         <div className="lg-container">
           <div className="moeblierung-grid" style={{ paddingLeft: '16px', paddingRight: '16px' }}>
-            {projects.slice(0, 4).map((p) => (
+            {projects.filter(p => !p.comingSoon).slice(0, 4).map((p) => (
               <a key={p.slug} href={`/projekte/${p.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <div style={{ overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
