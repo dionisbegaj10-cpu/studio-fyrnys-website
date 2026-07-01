@@ -1,22 +1,9 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import LeistungenNav from '../leistungen/LeistungenNav';
-
-const projects = [
-  { id: 1,  name: 'Frankenallee',        image: '/images/leistungen/empathie-01-portrait.webp' },
-  { id: 2,  name: 'Sachsenhausen',        image: '/images/leistungen/empathie-05-wide.webp' },
-  { id: 3,  name: 'Westend',              image: '/images/leistungen/innen-07-wide.webp' },
-  { id: 4,  name: 'Nordend',              image: '/images/leistungen/innen-03-portrait.webp' },
-  { id: 5,  name: 'Bornheim',             image: '/images/leistungen/handwerk-09-portrait.webp' },
-  { id: 6,  name: 'Bockenheim',           image: '/images/leistungen/handwerk-16-wide.webp' },
-  { id: 7,  name: 'Leingarten',           image: '/images/leistungen/moeblierung-01.webp' },
-  { id: 8,  name: 'Bad Vilbel',           image: '/images/leistungen/moeblierung-02.webp' },
-  { id: 9,  name: 'Hanauer Landstraße',   image: '/images/leistungen/projekt-17-portrait.webp' },
-  { id: 10, name: 'Mörfelder Landstraße', image: '/images/leistungen/projekt-pb-01.webp' },
-  { id: 11, name: 'Grüneburg',            image: '/images/leistungen/projekt-08-wide.webp' },
-  { id: 12, name: 'Konstablerwache',      image: '/images/leistungen/empathie-01-portrait.webp' },
-];
+import { projects } from './data';
 
 const GAP = 5;
 
@@ -54,7 +41,6 @@ export default function ProjektePage() {
       const totalW  = cw * projects.length + GAP * (projects.length - 1);
       stateRef.current.travelX = Math.max(0, totalW - viewport.clientWidth);
       scrollspace.style.height = `${sectionH + stateRef.current.travelX}px`;
-      // Set all items to the computed card width
       track.querySelectorAll<HTMLElement>('.il-item').forEach(el => {
         el.style.width = cw + 'px';
         el.style.height = sectionH + 'px';
@@ -146,42 +132,44 @@ export default function ProjektePage() {
             >
               {projects.map(project => (
                 <li key={project.id} className="il-item" style={{ flexShrink: 0, position: 'relative' }}>
-                  {/* Background image */}
-                  <span
-                    className="il-bg"
-                    style={{
-                      position: 'absolute', inset: 0, zIndex: 0,
-                      backgroundImage: `url('${project.image}')`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      display: 'block',
-                    }}
-                    aria-hidden="true"
-                  />
-                  {/* Overlay with name — matching Nate Berkus exactly */}
-                  <span
-                    className="il-overlay"
-                    style={{
-                      position: 'absolute', inset: 0, zIndex: 1,
-                      display: 'grid', placeItems: 'center',
-                      background: 'rgba(0,0,0,0.2)',
-                    }}
-                  >
-                    <p style={{
-                      fontFamily: 'var(--font-cormorant), Georgia, serif',
-                      fontSize: '30px',
-                      fontWeight: 400,
-                      fontStyle: 'normal',
-                      letterSpacing: '2px',
-                      textTransform: 'uppercase',
-                      color: '#f7f6f0',
-                      margin: 0,
-                      textAlign: 'center',
-                      padding: '0 16px',
-                    }}>
-                      {project.name}
-                    </p>
-                  </span>
+                  <Link href={`/projekte/${project.slug}`} style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}>
+                    {/* Background image */}
+                    <span
+                      className="il-bg"
+                      style={{
+                        position: 'absolute', inset: 0, zIndex: 0,
+                        backgroundImage: `url('${project.coverImage}')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        display: 'block',
+                      }}
+                      aria-hidden="true"
+                    />
+                    {/* Overlay with name */}
+                    <span
+                      className="il-overlay"
+                      style={{
+                        position: 'absolute', inset: 0, zIndex: 1,
+                        display: 'grid', placeItems: 'center',
+                        background: 'rgba(0,0,0,0.2)',
+                      }}
+                    >
+                      <p style={{
+                        fontFamily: 'var(--font-cormorant), Georgia, serif',
+                        fontSize: '30px',
+                        fontWeight: 400,
+                        fontStyle: 'normal',
+                        letterSpacing: '2px',
+                        textTransform: 'uppercase',
+                        color: '#f7f6f0',
+                        margin: 0,
+                        textAlign: 'center',
+                        padding: '0 16px',
+                      }}>
+                        {project.name}
+                      </p>
+                    </span>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -189,7 +177,6 @@ export default function ProjektePage() {
         </div>
       </div>
 
-      {/* Footer */}
       <footer style={{ padding: '20px 20px', borderTop: '1px solid #e2ddd6', backgroundColor: '#f7f6f0' }}>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
           Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
