@@ -200,7 +200,9 @@ export default function LeistungenPage() {
               <a key={href} href={href} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', textDecoration: 'none' }}>{label}</a>
             ))}
           </div>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', color: '#aaa', margin: 0 }}>© 2026 Studio Fyrnys</p>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
+            Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
+          </p>
         </div>
       </footer>
 
