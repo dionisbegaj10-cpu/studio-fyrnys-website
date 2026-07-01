@@ -50,41 +50,41 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             <p style={{ margin: 0 }}>Studio: Studio Fyrnys</p>
           </div>
         </div>
+      </div>
 
-        {/* PREVIOUS / NEXT */}
-        <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          padding: '20px 24px',
-          borderTop: '1px solid #e2ddd0',
-        }}>
-          {prev ? (
-            <Link href={`/projekte/${prev.slug}`} style={{
-              fontFamily: "'TT Norms Pro', sans-serif",
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '0.16em',
-              textTransform: 'uppercase',
-              color: '#2d2926',
-              textDecoration: 'none',
-            }}>
-              ← Previous
-            </Link>
-          ) : <span />}
-          {next ? (
-            <Link href={`/projekte/${next.slug}`} style={{
-              fontFamily: "'TT Norms Pro', sans-serif",
-              fontSize: '11px',
-              fontWeight: 700,
-              letterSpacing: '0.16em',
-              textTransform: 'uppercase',
-              color: '#2d2926',
-              textDecoration: 'none',
-            }}>
-              Next →
-            </Link>
-          ) : <span />}
-        </div>
+      {/* PREVIOUS / NEXT — white gap above gallery */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '20px 24px',
+        backgroundColor: '#ffffff',
+      }}>
+        {prev ? (
+          <Link href={`/projekte/${prev.slug}`} style={{
+            fontFamily: "'TT Norms Pro', sans-serif",
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.16em',
+            textTransform: 'uppercase',
+            color: '#2d2926',
+            textDecoration: 'none',
+          }}>
+            ← Previous
+          </Link>
+        ) : <span />}
+        {next ? (
+          <Link href={`/projekte/${next.slug}`} style={{
+            fontFamily: "'TT Norms Pro', sans-serif",
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.16em',
+            textTransform: 'uppercase',
+            color: '#2d2926',
+            textDecoration: 'none',
+          }}>
+            Next →
+          </Link>
+        ) : <span />}
       </div>
 
       {/* Gallery */}
