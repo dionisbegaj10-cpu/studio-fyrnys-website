@@ -99,9 +99,9 @@ body {
 /* ─── Bernd Gruber 1:1 layout system ────────────────────────────── */
 .bg-egg { background-color: #eaeae2; }
 
-/* container: 90% max-width centered on lg+ */
-.lg-container { }
-@media (min-width: 1024px) { .lg-container { max-width: 90%; margin-left: auto; margin-right: auto; } }
+/* container: 90% max-width centered on lg+, white 16px side gap on mobile */
+.lg-container { padding-left: 16px; padding-right: 16px; }
+@media (min-width: 1024px) { .lg-container { max-width: 90%; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; } }
 
 /* text padding: 16px mobile, 0 desktop */
 .text-pad { padding-left: 16px; padding-right: 16px; }
