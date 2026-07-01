@@ -3,13 +3,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { src: '/images/projekte/bellari/cover.webp', alt: 'Bellari Frankfurt' },
-  { src: '/images/projekte/rosenparkklinik/cover.webp', alt: 'Rosenparkklinik Darmstadt' },
-  { src: '/images/projekte/salon-troendle/cover.webp', alt: 'Salon Tobias Tröndle' },
-  { src: '/images/projekte/wild-beauty/cover.webp', alt: 'Wild Beauty' },
-  { src: '/images/projekte/bimberg/cover.webp', alt: 'Bimberg — Haus im Haus' },
-  { src: '/images/projekte/christophersen/cover.webp', alt: 'Christophersen — Skandinavisches Wohnen' },
-  { src: '/images/projekte/wild-schmitten/cover.webp', alt: 'Wild Schmitten — Villa Schmitten' },
+  { src: '/images/main/DSC01790_1.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/main/Fyrnys_wildbeauty_final_web-10.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/main/IMG_5786.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/main/IMG_7673.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/main/JSK_8701.jpg', alt: 'Studio Fyrnys' },
 ];
 
 const INTERVAL_MS = 4000;
