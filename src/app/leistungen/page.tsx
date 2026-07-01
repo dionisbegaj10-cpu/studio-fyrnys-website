@@ -22,6 +22,8 @@ export default function LeistungenPage() {
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h1>Leistungen</h1>
+            <p>&nbsp;</p>
+            <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Manufaktur verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
           </div>
         </div>
       </section>
@@ -34,7 +36,7 @@ export default function LeistungenPage() {
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h2>Interior Design</h2>
             <p>&nbsp;</p>
-            <p>Wir entwickeln Räume, die Haltung zeigen. Von der ersten Idee bis zum fertigen Entwurf verbinden wir Architektur, Materialität, Licht und Möblierung zu einem stimmigen Gesamtkonzept. So entsteht ein Interieur, das persönlich wirkt, klar funktioniert und langfristig Bestand hat.</p>
+            <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir Wünsche, Nutzung und Anspruch Ihres privaten oder gewerblichen Projekts. Daraus entsteht ein durchgängiges Gestaltungskonzept, in dem Architektur, Materialien, Licht und Möblierung sorgfältig aufeinander abgestimmt sind. So entsteht ein Interieur, das persönlich wirkt, klar funktioniert und langfristig Bestand hat.</p>
           </div>
         </div>
       </section>
@@ -97,7 +99,7 @@ export default function LeistungenPage() {
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h2>Möblierung</h2>
             <p>&nbsp;</p>
-            <p>Gemeinsam mit Ihnen entwickeln wir eine Ausstattung, die zu Ihrem Stil, zur Architektur und zum gewünschten Anspruch passt. Von einzelnen Akzenten bis zur vollständigen Einrichtung entsteht ein stimmiges Konzept aus Komfort, Qualität und Persönlichkeit. Durch unsere Zusammenarbeit mit ausgewählten Herstellern und Marken finden wir Möbel, Leuchten und Objekte, die den Raum ergänzen und seine Atmosphäre prägen.</p>
+            <p>Gemeinsam mit Ihnen entwickeln wir eine Ausstattung, die zu Ihrem Stil, zur Architektur und zum gewünschten Anspruch passt. Von einzelnen Akzenten bis zur vollständigen Einrichtung entsteht ein stimmiges Konzept aus Komfort, Qualität und Persönlichkeit. Wir arbeiten mit ausgewählten Herstellern und Marken und finden Möbel, Leuchten und Objekte, die den Raum ergänzen und seine Atmosphäre prägen.</p>
           </div>
         </div>
       </section>
@@ -131,9 +133,9 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#fff' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
-            <h2>Partner</h2>
+            <h2>Projektkoordination und Organisation</h2>
             <p>&nbsp;</p>
-            <p>Für die Umsetzung arbeiten wir mit einem eingespielten Netzwerk aus zuverlässigen Handwerksbetrieben und Spezialisten zusammen. Je nach Projekt können wir Ihnen passende Partner empfehlen, gestalterische Details abstimmen und die Umbauphase unterstützend im Sinne des Entwurfs begleiten. So bleibt die gestalterische Linie auch in der Ausführung nachvollziehbar und präzise.</p>
+            <p>Wir bereiten den ausgearbeiteten Entwurf als Grundlage für die Umsetzung vor und begleiten die Umbauphase im Sinne des festgelegten Gestaltungskonzepts. Dabei stehen wir in enger Abstimmung mit Ihnen und den beteiligten Gewerken, um gestalterische Details zu klären und die Planung nachvollziehbar weiterzuführen. Bei Bedarf empfehlen wir Ihnen zuverlässige Handwerksbetriebe und Spezialisten aus unserem Netzwerk. So bleibt die gestalterische Linie auch in der Ausführung klar erkennbar.</p>
           </div>
         </div>
       </section>
