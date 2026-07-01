@@ -134,16 +134,18 @@ export default function ProjektePage() {
                 <li key={project.id} className="il-item" style={{ flexShrink: 0, position: 'relative' }}>
                   <Link href={`/projekte/${project.slug}`} style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}>
                     {/* Background image */}
-                    <span
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       className="il-bg"
+                      src={project.coverImage}
+                      alt=""
                       style={{
                         position: 'absolute', inset: 0, zIndex: 0,
-                        backgroundImage: `url('${project.coverImage}')`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        width: '100%', height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
                         display: 'block',
                       }}
-                      aria-hidden="true"
                     />
                     {/* Overlay with name */}
                     <span

@@ -233,17 +233,25 @@ body {
     transform: none !important;
     overflow: visible !important;
     background: #fff !important;
-    padding: 0 !important;
+    padding: 0 16px !important;
   }
   .il-item {
     flex: none !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: 4 / 5 !important;
+    aspect-ratio: auto !important;
     display: block !important;
     margin-bottom: 200px !important;
   }
   .il-item:last-child { margin-bottom: 0 !important; }
+  .il-item a { position: static !important; }
+  .il-item .il-bg {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+  .il-item .il-overlay { position: absolute !important; }
 }
 
 /* ─── Projekte split layout (kept for reference) ─────────────────── */
