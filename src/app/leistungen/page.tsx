@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LeistungenNav from './LeistungenNav';
+import { projects } from '../projekte/data';
 
 export const metadata: Metadata = { title: 'Leistungen – Studio Fyrnys' };
 
@@ -170,18 +171,13 @@ export default function LeistungenPage() {
         </div>
         <div className="lg-container">
           <div className="moeblierung-grid" style={{ paddingLeft: '16px', paddingRight: '16px' }}>
-            {[
-              { title: 'Privathaus München', img: '/images/slide-1.jpg' },
-              { title: 'Penthouse Wien',     img: '/images/slide-4.jpg' },
-              { title: 'Villa am See',       img: '/images/slide-6.jpg' },
-              { title: 'Showroom',           img: '/images/slide-3.jpg' },
-            ].map((p) => (
-              <a key={p.title} href="/projekte" style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            {projects.slice(0, 4).map((p) => (
+              <a key={p.slug} href={`/projekte/${p.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <div style={{ overflow: 'hidden' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={p.img} alt={p.title} className="img-portrait project-thumb" />
+                  <img src={p.coverImage} alt={p.name} className="img-portrait project-thumb" />
                 </div>
-                <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', margin: 0 }}>{p.title}</p>
+                <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', margin: 0 }}>{p.name}</p>
               </a>
             ))}
           </div>
