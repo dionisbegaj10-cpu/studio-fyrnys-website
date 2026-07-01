@@ -8,7 +8,7 @@ const font: React.CSSProperties = { fontFamily: "'TT Norms Pro', sans-serif" };
 
 export default function LeistungenPage() {
   return (
-    <div style={{ ...font, color: '#333', backgroundColor: '#fff' }}>
+    <div style={{ ...font, color: '#333', backgroundColor: '#fff', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* ── header padding placeholder ── */}
@@ -166,13 +166,13 @@ export default function LeistungenPage() {
       {/* ══ PROJEKTE ══ */}
       <section className="bg-egg">
         <div className="lg-container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', paddingLeft: '16px', paddingRight: '16px', marginBottom: '24px', alignItems: 'end' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginBottom: '24px', alignItems: 'end' }}>
             <h2 style={{ fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 28px)', margin: 0 }}>Projekte</h2>
             <a href="/projekte" style={{ justifySelf: 'end', color: '#333', textDecoration: 'none', fontSize: '14px' }}>Alle anzeigen ›</a>
           </div>
         </div>
         <div className="lg-container">
-          <div className="moeblierung-grid" style={{ paddingLeft: '16px', paddingRight: '16px' }}>
+          <div className="moeblierung-grid">
             {projects.filter(p => !p.comingSoon).slice(0, 4).map((p) => (
               <a key={p.slug} href={`/projekte/${p.slug}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <div style={{ overflow: 'hidden' }}>
@@ -189,7 +189,7 @@ export default function LeistungenPage() {
       <div className="spacer-sm bg-egg" />
 
       {/* ══ FOOTER ══ */}
-      <footer style={{ borderTop: '1px solid #ddd', backgroundColor: '#f0ede8', padding: '48px 16px' }}>
+      <footer style={{ margin: '0 -16px', borderTop: '1px solid #ddd', backgroundColor: '#f0ede8', padding: '48px 16px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', maxWidth: '1200px', margin: '0 auto' }}>
           <div>
             <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', marginBottom: '6px', marginTop: 0 }}>Studio Fyrnys</p>
