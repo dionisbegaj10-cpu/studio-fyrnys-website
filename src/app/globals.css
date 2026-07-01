@@ -241,7 +241,7 @@ body {
     height: auto !important;
     aspect-ratio: 4 / 5 !important;
     display: block !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 200px !important;
   }
   .il-item:last-child { margin-bottom: 0 !important; }
 }
