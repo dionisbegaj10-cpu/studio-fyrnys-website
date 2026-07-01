@@ -19,7 +19,6 @@ export default function LeistungenNav() {
       <header className="nav-desktop-default" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #e8e8e8',
         height: '54px',
         display: 'flex',
         alignItems: 'center',
@@ -44,7 +43,6 @@ export default function LeistungenNav() {
       <header className="nav-mobile-default" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         backgroundColor: '#ffffff',
-        borderBottom: '1px solid #e8e8e8',
         height: '54px',
         display: 'flex',
         alignItems: 'center',
