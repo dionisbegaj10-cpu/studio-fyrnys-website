@@ -15,7 +15,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const { prev, next } = getAdjacentProjects(slug);
 
   return (
-    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', padding: '0 5px' }}>
+    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* Title + description block — cream colored frame like nateberkus.com */}
