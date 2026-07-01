@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { src: '/images/slide-1.jpg', alt: 'CG Lobby' },
-  { src: '/images/slide-2.jpg', alt: 'Greenpoint Lobby' },
-  { src: '/images/slide-3.jpg', alt: 'Market Street Lobby' },
-  { src: '/images/slide-4.jpg', alt: '90 Furman' },
-  { src: '/images/slide-5.jpg', alt: 'Tower 31 Lobby' },
-  { src: '/images/slide-6.jpg', alt: 'Master Bathroom Rendering' },
-  { src: '/images/slide-7.jpg', alt: 'Pequot Family Room Rendering' },
+  { src: '/images/projekte/bellari/cover.webp', alt: 'Bellari Frankfurt' },
+  { src: '/images/projekte/rosenparkklinik/cover.webp', alt: 'Rosenparkklinik Darmstadt' },
+  { src: '/images/projekte/salon-troendle/cover.webp', alt: 'Salon Tobias Tröndle' },
+  { src: '/images/projekte/wild-beauty/cover.webp', alt: 'Wild Beauty' },
+  { src: '/images/projekte/bimberg/cover.webp', alt: 'Bimberg — Haus im Haus' },
+  { src: '/images/projekte/christophersen/cover.webp', alt: 'Christophersen — Skandinavisches Wohnen' },
+  { src: '/images/projekte/wild-schmitten/cover.webp', alt: 'Wild Schmitten — Villa Schmitten' },
 ];
 
 const INTERVAL_MS = 4000;
