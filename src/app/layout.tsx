@@ -16,11 +16,24 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://studio-fyrnys-website.vercel.app'),
   title: 'Studio Fyrnys',
   description: 'Studio Fyrnys – Interior Design',
   icons: {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    title: 'Studio Fyrnys',
+    description: 'Studio Fyrnys – Interior Design',
+    images: ['/images/og-image.jpg'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Studio Fyrnys',
+    description: 'Studio Fyrnys – Interior Design',
+    images: ['/images/og-image.jpg'],
   },
 };
 
