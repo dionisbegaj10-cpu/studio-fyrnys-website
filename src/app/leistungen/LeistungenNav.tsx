@@ -24,7 +24,7 @@ export default function LeistungenNav() {
         alignItems: 'center',
         padding: '0 60px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1 }}>
+        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '16px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1 }}>
           Studio Fyrnys
         </Link>
         <nav style={{ display: 'flex', alignItems: 'center' }}>
@@ -49,7 +49,7 @@ export default function LeistungenNav() {
         justifyContent: 'space-between',
         padding: '0 20px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none' }}>
+        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '15px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none' }}>
           Studio Fyrnys
         </Link>
         <button onClick={() => setMenuOpen(true)} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', color: '#1a1a1a' }} aria-label="Menü öffnen">
