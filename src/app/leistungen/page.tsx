@@ -45,19 +45,9 @@ export default function LeistungenPage() {
 
       {/* ══ INTERIOR DESIGN grid ══ */}
       <section style={{ backgroundColor: '#fff' }}>
-        <div className="img-grid lg-container">
-          <div className="col-full lg-col-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/innen-07-wide.webp" alt="" className="img-landscape" />
-          </div>
-          <div className="col-half lg-col-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/slide-6.jpg" alt="" className="img-portrait" />
-          </div>
-          <div className="col-half lg-col-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/innen-03-portrait.webp" alt="" className="img-portrait" />
-          </div>
+        <div className="lg-container">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
@@ -78,15 +68,9 @@ export default function LeistungenPage() {
 
       {/* ══ MANUFAKTUR grid ══ */}
       <section style={{ backgroundColor: '#fff' }}>
-        <div className="img-grid lg-container">
-          <div className="col-full lg-col-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/handwerk-09-portrait.webp" alt="" className="img-landscape" style={{ aspectRatio: '2/3' }} />
-          </div>
-          <div className="col-full lg-col-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/handwerk-16-wide.webp" alt="" className="img-landscape" />
-          </div>
+        <div className="lg-container">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
@@ -112,11 +96,7 @@ export default function LeistungenPage() {
           <div className="moeblierung-grid">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/leistungen/moeblierung-01.webp" alt="" className="img-portrait" />
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/leistungen/moeblierung-02.webp" alt="" className="img-portrait" />
+              <img src="/images/leistungen/moeblierung-new.jpg" alt="Möblierung" className="img-portrait" />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div className="img-portrait" style={{
@@ -176,19 +156,9 @@ export default function LeistungenPage() {
 
       {/* ══ PARTNER grid ══ */}
       <section style={{ backgroundColor: '#fff' }}>
-        <div className="img-grid lg-container">
-          <div className="col-full lg-col-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/partner-02-stein.webp" alt="" className="img-landscape" style={{ aspectRatio: '2/3' }} />
-          </div>
-          <div className="col-full lg-col-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/partner-04-metall.webp" alt="" className="img-landscape" style={{ aspectRatio: '2/3' }} />
-          </div>
-          <div className="col-full lg-col-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/partner-03-stoff.webp" alt="" className="img-landscape" />
-          </div>
+        <div className="lg-container">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
