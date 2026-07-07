@@ -16,24 +16,15 @@ export const projects: Project[] = [
   {
     id: 1,
     slug: 'bellari',
-    name: 'Bellari Frankfurt',
+    name: 'Bellari',
     description: 'Für die BELLARI Frankfurt wurde eine bestehende Bürofläche im zweiten Obergeschoss zu einer modernen Praxis für ästhetische Medizin und professionelle Kosmetik umgebaut. Im Rahmen der Erweiterung entstanden hochwertig ausgestattete Behandlungsräume sowie ein Schulungsbereich, die den hohen Qualitätsanspruch der Marke widerspiegeln. Ziel des Entwurfs war es, eine zeitlose und ruhige Atmosphäre zu schaffen, die Professionalität, Diskretion und Wohlbefinden gleichermaßen vermittelt. Individuell gefertigte Wandverkleidungen aus Holz und Keramik sowie maßgefertigte Arbeitsbereiche aus der Schreinerei verleihen den Räumen eine klare architektonische Identität und unterstreichen den hochwertigen Charakter des Interieurs. Das Ergebnis ist eine Praxis, die Funktionalität, Präzision und eine elegante Gestaltung zu einem stimmigen Gesamtkonzept vereint.',
     coverImage: '/images/projekte/bellari/cover.webp',
     images: gallery('bellari', 10),
   },
   {
-    id: 10,
-    slug: 'cinerius-frankfurt',
-    name: 'Cinerius Frankfurt',
-    description: 'Für die Neugestaltung dieser Büroetage in einer Altbauvilla wurde ein Einrichtungskonzept entwickelt, das den Charakter des Bestands mit einer modernen, stilvollen Arbeitswelt verbindet. Ziel des Entwurfs war es, eine ruhige und hochwertige Arbeitsatmosphäre zu schaffen, die den repräsentativen Charakter der Villa unterstreicht und gleichzeitig den Anforderungen eines zeitgemäßen Büroalltags gerecht wird. Ausgewählte Möbel, hochwertige Materialien und eine harmonisch abgestimmte Farbwelt verleihen den Räumen eine klare gestalterische Identität. Die Kombination aus klassischer Architektur und modernem Interior schafft ein elegantes Arbeitsumfeld, das Funktionalität, Komfort und zeitlose Gestaltung miteinander verbindet. Das Ergebnis ist eine Büroetage, die den besonderen Charakter der Altbauvilla bewahrt und ihn durch eine zurückhaltend moderne Einrichtung neu interpretiert.',
-    coverImage: '',
-    images: [],
-    comingSoon: true,
-  },
-  {
     id: 11,
     slug: 'lpa-frankfurt',
-    name: 'LPA Frankfurt',
+    name: 'LPA',
     description: 'Im Rahmen des Umbaus dieser Büroebene wurde die bestehende Fläche neu strukturiert und an die Anforderungen zeitgemäßer Arbeitsabläufe angepasst. Ziel des Entwurfs war es, klar gegliederte Bereiche für konzentriertes Arbeiten, Austausch und informelle Gespräche zu schaffen und zugleich die Aufenthaltsqualität spürbar zu verbessern. Ergänzt wurde die Bürofläche durch einen Loungebereich, eine offene Küche sowie einen separaten Besprechungsraum. Durch die neue Grundrissaufteilung entstehen funktionale Zonen mit einer angenehmen Atmosphäre, die den Arbeitsalltag unterstützen und unterschiedliche Nutzungssituationen selbstverständlich aufnehmen. Das Ergebnis ist eine moderne Büroebene, die klare Struktur, Kommunikation und Aufenthaltsqualität miteinander verbindet.',
     coverImage: '',
     images: [],
@@ -42,7 +33,7 @@ export const projects: Project[] = [
   {
     id: 2,
     slug: 'rosenparkklinik',
-    name: 'Rosenparkklinik Darmstadt',
+    name: 'Rosenparkklinik',
     description: 'Die bestehenden Gebäude der Rosenparkklinik in Darmstadt, einer renommierten Klinik für ästhetische Medizin und plastische Chirurgie, wurden im Rahmen einer umfassenden Neugestaltung grundlegend überarbeitet. Ziel des Entwurfs war es, eine zeitlose und klassische Atmosphäre zu schaffen, die medizinische Präzision mit einem hochwertigen, vertrauensvollen Ambiente verbindet. Die Innenräume wurden dabei konsequent neu gedacht und gestalterisch so entwickelt, dass sie Ruhe, Diskretion und Eleganz ausstrahlen. Durch eine klare Formensprache, ausgewählte Materialien und eine harmonische Gestaltung entstand ein Interieur, das den hohen Anspruch der Klinik widerspiegelt und zugleich eine angenehme Umgebung für Patienten und Mitarbeitende schafft.',
     coverImage: '/images/projekte/rosenparkklinik/cover.webp',
     images: gallery('rosenparkklinik', 16),
@@ -66,7 +57,7 @@ export const projects: Project[] = [
   {
     id: 12,
     slug: 'zahnarztpraxis-europaviertel',
-    name: 'Zahnarztpraxis Europaviertel',
+    name: 'Zahnarztpraxis',
     description: 'Im Rahmen der Umgestaltung dieser Zahnarztpraxis im Frankfurter Europaviertel lag der Schwerpunkt auf der Neugestaltung des Empfangs- und Wartebereichs. Ziel des Entwurfs war es, ein zeitloses und hochwertiges Erscheinungsbild zu schaffen, das den ersten Eindruck der Praxis prägt und gleichzeitig mehr Ruhe, Diskretion und Privatsphäre im Empfangsbereich ermöglicht. Durch eine sorgfältig abgestimmte Materialauswahl, eine klare Zonierung und eine ruhige Formensprache entstand ein Ambiente, das Orientierung bietet und eine angenehme Atmosphäre für Patienten und das Praxisteam schafft. Das Ergebnis ist eine Praxisgestaltung, die Funktionalität und Ästhetik verbindet und den hohen Qualitätsanspruch der Praxis bereits beim Betreten erlebbar macht.',
     coverImage: '',
     images: [],
@@ -92,7 +83,7 @@ export const projects: Project[] = [
   {
     id: 6,
     slug: 'entholzer-liebigstrasse',
-    name: 'Entholzer Liebigstraße — Bel Étage',
+    name: 'Entholzer — Bel Étage',
     description: 'Die Gestaltung dieser Stadtwohnung in der Bel Étage eines repräsentativen Altbaus verbindet klassische Eleganz mit den Anforderungen eines modernen Familienlebens. Großzügige Raumproportionen, hohe Decken und die besondere Atmosphäre der Wohnung bilden die Grundlage für ein hochwertiges Einrichtungskonzept. Eine sorgfältig abgestimmte Auswahl von Möbeln, Materialien und Textilien schafft ein zeitloses Ambiente, das sowohl repräsentativ als auch wohnlich wirkt. Ziel war es, elegante Räume zu gestalten, die den Alltag einer Familie selbstverständlich aufnehmen. Komfort, Funktionalität und Ästhetik stehen dabei gleichwertig nebeneinander und schaffen eine harmonische Balance zwischen anspruchsvollem Design und entspanntem Wohnen. Das Ergebnis ist eine Stadtwohnung mit ruhiger, zeitloser Eleganz, die den Charakter der Bel Étage unterstreicht und zugleich ein einladendes Zuhause für die ganze Familie bietet.',
     coverImage: '/images/projekte/entholzer-liebigstrasse/cover.webp',
     images: gallery('entholzer-liebigstrasse', 9),
@@ -100,7 +91,7 @@ export const projects: Project[] = [
   {
     id: 14,
     slug: 'entholzer-gruneburgweg',
-    name: 'Entholzer Grüneburgweg — Reihenhaus Frankfurt',
+    name: 'Entholzer — Reihenhaus',
     description: 'Bei der Kernsanierung dieses Reihenhauses aus den 1930er-Jahren wurde die bestehende Struktur grundlegend neu gedacht und an die Bedürfnisse eines zeitgemäßen Familienlebens angepasst. Im Mittelpunkt des Entwurfs stand die Öffnung der Fassade zum Garten hin. Durch den modernen Anbau entstand eine großzügige Verbindung zwischen Innen- und Außenraum, die dem Haus mehr Licht, Offenheit und räumliche Tiefe verleiht. Die Küche bildet das Zentrum des Hauses und wurde als kommunikativer Mittelpunkt des Alltags gestaltet. Ergänzt wird das Raumkonzept durch intelligent integrierte Stauraumlösungen, die Funktionalität und klare Gestaltung miteinander verbinden. Das Ergebnis ist ein modernes Stadthaus, das den Charakter des Bestands respektiert und zugleich neue Wohnqualitäten schafft.',
     coverImage: '',
     images: [],
@@ -125,7 +116,7 @@ export const projects: Project[] = [
   {
     id: 15,
     slug: 'fritsch-pylos',
-    name: 'Fritsch Pylos — Mediterranes Ferienhaus',
+    name: 'Fritsch — Mediterranes Ferienhaus',
     description: 'Der Entwurf dieses Ferienhauses orientiert sich an der traditionellen Bauweise der Region und interpretiert deren charakteristische Materialien und Proportionen auf zeitgemäße Weise. Natursteinmauerwerk, rustikale Holzbalken und Steinböden prägen das architektonische Konzept und schaffen eine authentische, warme Atmosphäre. Die Materialwahl fügt sich harmonisch in die Landschaft ein und verleiht dem Gebäude eine natürliche Selbstverständlichkeit. Großzügige, lichtdurchflutete Räume und fließende Übergänge zwischen Innen- und Außenbereich schaffen ein entspanntes Wohngefühl und stellen den Bezug zur umgebenden Natur in den Mittelpunkt. Traditionelle Elemente werden dabei mit modernem Wohnkomfort kombiniert und zu einem zeitlosen Gesamtkonzept weiterentwickelt. Das Ergebnis ist ein Ferienhaus, das die regionale Baukultur respektiert und die Ruhe, Ursprünglichkeit und Schönheit des Ortes aufgreift.',
     coverImage: '',
     images: [],
@@ -134,7 +125,7 @@ export const projects: Project[] = [
   {
     id: 9,
     slug: 'wild-schmitten',
-    name: 'Wild Schmitten — Villa Schmitten',
+    name: 'Wild — Villa Schmitten',
     description: 'Im Rahmen des Umbaus dieses Einfamilienhauses im Taunus wurde der Bestand umfassend neu gestaltet und zu einem großzügigen, hochwertigen Wohnhaus weiterentwickelt. Das Gestaltungskonzept orientiert sich an der Formensprache der 1970er-Jahre und interpretiert diese auf zeitgemäße Weise. Warme Materialien, markante Oberflächen und eine sorgfältig abgestimmte Farbwelt verleihen dem Haus eine stilvolle, charakterstarke Atmosphäre. Offene Sichtachsen, fließende Übergänge und die besondere räumliche Struktur des Hauses verbinden die einzelnen Bereiche zu einem harmonischen Gesamtbild. Eine hochwertige Material- und Detailplanung unterstreicht den exklusiven Charakter und schafft zugleich ein wohnliches, entspanntes Ambiente. Das Ergebnis ist ein stilvolles Wohnhaus, das den Seventies Look mit zeitgemäßem Komfort und hochwertiger Ausführung verbindet.',
     coverImage: '/images/projekte/wild-schmitten/cover.webp',
     images: gallery('wild-schmitten', 17),
@@ -151,7 +142,7 @@ export const projects: Project[] = [
   {
     id: 17,
     slug: 'liesenberg-dachgeschoss',
-    name: 'Liesenberg — Dachgeschoss Westend',
+    name: 'Liesenberg — Dachgeschoss',
     description: 'Für diese Dachgeschosswohnung im Frankfurter Westend wurde ein maßgeschneidertes Einbaumöbelkonzept entwickelt, das Stauraum und Gestaltung präzise miteinander verbindet. Im Mittelpunkt steht die neue dunkelblaue Schreinerküche mit optimierter Funktionalität und großzügigem Stauraum. Der Durchgang zum Esszimmer wurde neu gefasst und um eine integrierte Kaffeenische ergänzt. Auch die Treppe wurde gestalterisch weiterentwickelt: Durch geschlossene Stufen und einen maßgefertigten Treppenschrank konnte der Raum darunter vollständig genutzt werden. Der Entwurf für den Treppenschrank stammt aus unserem Büro und wurde von der Schreinerei Muth umgesetzt. Das Ergebnis ist ein durchdachtes Innenraumkonzept, das Funktionalität, hochwertige Materialien und präzise Details harmonisch miteinander verbindet.',
     coverImage: '',
     images: [],
