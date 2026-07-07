@@ -231,7 +231,7 @@ body {
     grid-template-columns: repeat(4, 1fr) !important;
     height: auto !important;
     column-gap: 16px !important;
-    row-gap: 64px !important;
+    row-gap: 96px !important;
     transform: none !important;
     overflow: visible !important;
     background: #fff !important;
