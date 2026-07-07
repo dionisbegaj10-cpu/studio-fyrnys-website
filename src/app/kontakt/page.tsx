@@ -46,7 +46,8 @@ export default function KontaktPage() {
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>
           <strong style={{ fontWeight: 700, letterSpacing: '0.06em' }}>STUDIO FYRNYS</strong>
         </p>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>Hansaallee 13–15, 60322 Frankfurt am Main</p>
+        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', margin: 0 }}>Hansaallee 13–15</p>
+        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>60322 Frankfurt am Main</p>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>
           <a href="tel:+4969955037200" style={{ color: '#2d2926', textDecoration: 'none' }}>T +49 69 955 037 20</a>
         </p>
