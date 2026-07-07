@@ -124,8 +124,10 @@ export default function LeistungenPage() {
                 gridTemplateColumns: 'repeat(3, 1fr)',
                 alignContent: 'center',
                 justifyItems: 'center',
-                gap: '28px',
-                padding: '24px',
+                alignItems: 'center',
+                columnGap: '20px',
+                rowGap: '52px',
+                padding: '24px 16px',
               }}>
                 {[
                   ['/images/leistungen/partners/audo.svg', 'Audo'],
@@ -141,12 +143,12 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/sovet.png', 'Sovet'],
                 ].map(([src, name]) => (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '32px', width: 'auto', objectFit: 'contain' }} />
+                  <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '46px', width: 'auto', objectFit: 'contain' }} />
                 ))}
                 <p style={{
-                  fontFamily: "'TT Norms Pro', sans-serif",
-                  fontSize: '13px', fontWeight: 700, letterSpacing: '0.05em',
-                  color: '#333', margin: 0, textAlign: 'center',
+                  fontFamily: 'var(--font-cormorant), Georgia, serif',
+                  fontSize: '22px', fontWeight: 400, letterSpacing: '0.04em',
+                  color: '#2d2926', margin: 0, textAlign: 'center',
                 }}>
                   Potocco
                 </p>
