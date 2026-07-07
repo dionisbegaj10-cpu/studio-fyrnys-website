@@ -1,7 +1,7 @@
 import LeistungenNav from '../leistungen/LeistungenNav';
 
 const NB_FOOTER = (
-  <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#ffffff' }}>
+  <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
     <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
       Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
     </p>
@@ -10,7 +10,7 @@ const NB_FOOTER = (
 
 export default function UeberUnsPage() {
   return (
-    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '0 16px' }}>
+    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* Full-bleed hero image */}
@@ -24,7 +24,7 @@ export default function UeberUnsPage() {
       </div>
 
       {/* White gap */}
-      <div style={{ backgroundColor: '#ffffff', height: '32px', flexShrink: 0 }} />
+      <div style={{ backgroundColor: '#f7f6f0', height: '32px', flexShrink: 0 }} />
 
       {/* Cream content block */}
       <div style={{ backgroundColor: '#f7f6f0', padding: '32px 20px 48px', flex: 1 }}>

@@ -8,17 +8,17 @@ const font: React.CSSProperties = { fontFamily: "'TT Norms Pro', sans-serif" };
 
 export default function LeistungenPage() {
   return (
-    <div style={{ ...font, color: '#333', backgroundColor: '#fff', padding: '0 16px' }}>
+    <div style={{ ...font, color: '#333', backgroundColor: '#f7f6f0', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* ── header padding placeholder ── */}
       <div style={{ height: '0px' }} />
 
       {/* ══ SPACER white sm ══ */}
-      <div className="spacer-sm bg-white" />
+      <div className="spacer-sm" />
 
       {/* ══ HERO ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h1>Leistungen</h1>
@@ -28,10 +28,10 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-md" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ INTERIOR DESIGN heading ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h2>Interior Design</h2>
@@ -41,20 +41,20 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ INTERIOR DESIGN grid ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
-      <div className="spacer-md" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MANUFAKTUR heading ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h2>Manufaktur</h2>
@@ -64,17 +64,17 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MANUFAKTUR grid ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
-      <div className="spacer-md" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
       <div className="spacer-sm bg-egg" />
 
       {/* ══ MÖBLIERUNG heading ══ */}
@@ -139,10 +139,10 @@ export default function LeistungenPage() {
       </section>
 
       <div className="spacer-sm bg-egg" />
-      <div className="spacer-md" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ PARTNER heading ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
             <h2>Projektkoordination</h2>
@@ -152,17 +152,17 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ PARTNER grid ══ */}
-      <section style={{ backgroundColor: '#fff' }}>
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
-      <div className="spacer-md" style={{ backgroundColor: '#fff' }} />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
       <div className="spacer-sm bg-egg" />
 
       {/* ══ PROJEKTE ══ */}
@@ -191,7 +191,7 @@ export default function LeistungenPage() {
       <div className="spacer-sm bg-egg" />
 
       {/* ══ FOOTER ══ */}
-      <footer style={{ margin: '0 -16px', backgroundColor: '#ffffff', padding: '48px 16px' }}>
+      <footer style={{ margin: '0 -16px', backgroundColor: '#f7f6f0', padding: '48px 16px' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', maxWidth: '1200px', margin: '0 auto' }}>
           <div>
             <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', marginBottom: '6px', marginTop: 0 }}>Studio Fyrnys</p>

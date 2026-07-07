@@ -18,7 +18,7 @@ export default function LeistungenNav() {
       {/* Desktop white bar */}
       <header className="nav-desktop-default" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f7f6f0',
         height: '54px',
         display: 'flex',
         alignItems: 'center',
@@ -42,7 +42,7 @@ export default function LeistungenNav() {
       {/* Mobile bar */}
       <header className="nav-mobile-default" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f7f6f0',
         height: '54px',
         display: 'flex',
         alignItems: 'center',
@@ -61,7 +61,7 @@ export default function LeistungenNav() {
 
       {/* Mobile overlay */}
       {menuOpen && (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 200, backgroundColor: '#ffffff', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ position: 'fixed', inset: 0, zIndex: 200, backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
           <div style={{ height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px', flexShrink: 0 }}>
             <Link href="/" onClick={() => setMenuOpen(false)} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#2d2926', textDecoration: 'none' }}>
               Studio Fyrnys

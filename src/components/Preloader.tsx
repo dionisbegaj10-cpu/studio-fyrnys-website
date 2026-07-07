@@ -30,7 +30,7 @@ export default function Preloader() {
         position: 'fixed',
         inset: 0,
         zIndex: 9999,
-        backgroundColor: '#fff',
+        backgroundColor: '#f7f6f0',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

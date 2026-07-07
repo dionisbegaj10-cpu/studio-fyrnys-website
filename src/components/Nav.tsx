@@ -98,7 +98,7 @@ export default function Nav() {
           position: 'fixed',
           top: 0, left: 0, right: 0, bottom: 0,
           zIndex: 99,
-          backgroundColor: '#ffffff',
+          backgroundColor: '#f7f6f0',
           overflowY: 'auto',
           transform: menuOpen ? 'translateY(0)' : 'translateY(-100%)',
           transition: 'transform 0.45s cubic-bezier(0.76, 0, 0.24, 1)',
@@ -147,7 +147,7 @@ export default function Nav() {
       {menuOpen && (
         <div
           className="nav-mobile-default"
-          style={{ position: 'fixed', inset: 0, zIndex: 100, backgroundColor: '#ffffff', flexDirection: 'column' }}
+          style={{ position: 'fixed', inset: 0, zIndex: 100, backgroundColor: '#f7f6f0', flexDirection: 'column' }}
         >
           {/* Top bar: wordmark left, X right */}
           <div style={{ height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px 0 20px', flexShrink: 0 }}>

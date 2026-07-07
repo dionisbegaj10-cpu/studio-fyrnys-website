@@ -16,7 +16,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const { prev, next } = getAdjacentProjects(slug);
 
   return (
-    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', padding: '0 16px' }}>
+    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* Title + description block — cream colored frame like nateberkus.com */}
@@ -58,7 +58,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         display: 'flex',
         justifyContent: 'space-between',
         padding: '20px 24px',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f7f6f0',
       }}>
         {prev ? (
           <Link href={`/projekte/${prev.slug}`} style={{
@@ -105,7 +105,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Link>
       </div>
 
-      <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#ffffff' }}>
+      <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
           Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
         </p>
