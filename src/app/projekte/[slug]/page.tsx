@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import LeistungenNav from '../../leistungen/LeistungenNav';
 import { projects, getProjectBySlug, getAdjacentProjects } from '../data';
+import ProjectGallery from './ProjectGallery';
 
 export function generateStaticParams() {
   return projects.map(p => ({ slug: p.slug }));
@@ -88,17 +89,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </div>
 
       {/* Gallery */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-        {project.images.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            key={i}
-            src={src}
-            alt=""
-            style={{ width: '100%', display: 'block', objectFit: 'cover' }}
-          />
-        ))}
-      </div>
+      <ProjectGallery images={project.images} />
 
       {/* Back to all projects */}
       <div style={{ padding: '8px 24px 40px', textAlign: 'center' }}>
