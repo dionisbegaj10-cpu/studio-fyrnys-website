@@ -260,6 +260,14 @@ body {
     display: block !important;
   }
   .il-item .il-overlay { display: none !important; }
+  .il-item .il-cs-box {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    aspect-ratio: 2 / 3 !important;
+    height: auto !important;
+    display: grid !important;
+  }
   .il-item .il-mobile-title {
     display: block !important;
     font-family: var(--font-cormorant), Georgia, serif;

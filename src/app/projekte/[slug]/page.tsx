@@ -89,7 +89,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </div>
 
       {/* Gallery */}
-      <ProjectGallery images={project.images} />
+      {project.images.length > 0 && <ProjectGallery images={project.images} />}
 
       {/* Back to all projects */}
       <div style={{ padding: '8px 24px 40px', textAlign: 'center' }}>

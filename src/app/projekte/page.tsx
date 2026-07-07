@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import LeistungenNav from '../leistungen/LeistungenNav';
 import { projects, type Project } from './data';
@@ -8,59 +8,28 @@ import { projects, type Project } from './data';
 const GAP = 5;
 
 function ComingSoonCard({ project }: { project: Project }) {
-  const [open, setOpen] = useState(false);
-
   return (
-    <button
-      type="button"
-      onClick={() => setOpen(o => !o)}
+    <Link
+      href={`/projekte/${project.slug}`}
       style={{
         display: 'block', width: '100%', height: '100%', position: 'relative',
-        background: '#f4f2ee', border: '1px solid #ddd7cb', cursor: 'pointer',
-        padding: 0, textAlign: 'left', overflow: 'hidden',
       }}
     >
-      {!open ? (
-        <span style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', padding: '0 24px' }}>
-          <span style={{ textAlign: 'center' }}>
-            <span className="il-cs-title" style={{
-              display: 'block',
-              fontFamily: 'var(--font-cormorant), Georgia, serif',
-              fontSize: '24px', fontWeight: 400, letterSpacing: '1px',
-              textTransform: 'uppercase', color: '#000', marginBottom: '10px',
-            }}>
-              {project.name}
-            </span>
-            <span className="il-cs-sub" style={{
-              display: 'block',
-              fontFamily: "'TT Norms Pro', sans-serif",
-              fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
-              textTransform: 'uppercase', color: '#000',
-            }}>
-              Coming Soon
-            </span>
-          </span>
+      <span className="il-cs-box" style={{
+        position: 'absolute', inset: 0, display: 'grid', placeItems: 'center',
+        background: '#f4f2ee', border: '1px solid #ddd7cb', overflow: 'hidden',
+      }}>
+        <span className="il-cs-sub" style={{
+          display: 'block',
+          fontFamily: "'TT Norms Pro', sans-serif",
+          fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
+          textTransform: 'uppercase', color: '#000',
+        }}>
+          Coming Soon
         </span>
-      ) : (
-        <span style={{ position: 'absolute', inset: 0, overflowY: 'auto', padding: '28px 24px', display: 'block' }}>
-          <span style={{
-            display: 'block',
-            fontFamily: 'var(--font-cormorant), Georgia, serif',
-            fontSize: '22px', fontWeight: 400, letterSpacing: '1px',
-            textTransform: 'uppercase', color: '#000', marginBottom: '14px',
-          }}>
-            {project.name}
-          </span>
-          <span style={{
-            display: 'block',
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '13px', lineHeight: 1.75, color: '#333',
-          }}>
-            {project.description}
-          </span>
-        </span>
-      )}
-    </button>
+      </span>
+      <span className="il-mobile-title">{project.name}</span>
+    </Link>
   );
 }
 
