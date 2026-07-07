@@ -126,7 +126,7 @@ export default function LeistungenPage() {
                 justifyItems: 'center',
                 gap: '28px',
                 padding: '24px',
-                backgroundColor: '#fff',
+                backgroundColor: '#f7f6f0',
               }}>
                 {[
                   ['/images/leistungen/partners/audo.svg', 'Audo'],
@@ -135,7 +135,7 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/flexteam.png', 'Flexteam'],
                   ['/images/leistungen/partners/gommaire.png', 'Gommaire'],
                   ['/images/leistungen/partners/jadams.png', 'J. Adams'],
-                  ['/images/leistungen/partners/kvadrat.jpg', 'Kvadrat'],
+                  ['/images/leistungen/partners/kvadrat.png', 'Kvadrat'],
                   ['/images/leistungen/partners/luiz.svg', 'LUIZ'],
                   ['/images/leistungen/partners/meridiani.png', 'Meridiani'],
                   ['/images/leistungen/partners/prolicht.svg', 'Prolicht'],
