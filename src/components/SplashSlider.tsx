@@ -3,11 +3,18 @@
 import { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { src: '/images/main/DSC01790_1.jpg', alt: 'Studio Fyrnys' },
-  { src: '/images/main/Fyrnys_wildbeauty_final_web-10.jpg', alt: 'Studio Fyrnys' },
-  { src: '/images/main/IMG_5786.jpg', alt: 'Studio Fyrnys' },
-  { src: '/images/main/IMG_7673.jpg', alt: 'Studio Fyrnys' },
-  { src: '/images/main/JSK_8701.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/01-studio-1.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/02-studio-2.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/03-bimberg-2.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/04-bellari-1.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/05-wild-1.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/06-wildbeauty-7.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/07-wild-9.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/08-rosenparkklinik-6.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/09-bimberg-11.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/10-titel.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/11-wildbeauty-5.jpg', alt: 'Studio Fyrnys' },
+  { src: '/images/startseite/12-strenge-7.jpg', alt: 'Studio Fyrnys' },
 ];
 
 const INTERVAL_MS = 4000;

@@ -119,8 +119,39 @@ export default function LeistungenPage() {
               <img src="/images/leistungen/moeblierung-02.webp" alt="" className="img-portrait" />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/leistungen/moeblierung-logos.webp" alt="" className="img-portrait" />
+              <div className="img-portrait" style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 1fr)',
+                alignContent: 'center',
+                justifyItems: 'center',
+                gap: '28px',
+                padding: '24px',
+                backgroundColor: '#fff',
+              }}>
+                {[
+                  ['/images/leistungen/partners/audo.svg', 'Audo'],
+                  ['/images/leistungen/partners/deltalight.png', 'Deltalight'],
+                  ['/images/leistungen/partners/domedeco.png', 'Dome Deco'],
+                  ['/images/leistungen/partners/flexteam.png', 'Flexteam'],
+                  ['/images/leistungen/partners/gommaire.png', 'Gommaire'],
+                  ['/images/leistungen/partners/jadams.png', 'J. Adams'],
+                  ['/images/leistungen/partners/kvadrat.jpg', 'Kvadrat'],
+                  ['/images/leistungen/partners/luiz.svg', 'LUIZ'],
+                  ['/images/leistungen/partners/meridiani.png', 'Meridiani'],
+                  ['/images/leistungen/partners/prolicht.svg', 'Prolicht'],
+                  ['/images/leistungen/partners/sovet.png', 'Sovet'],
+                ].map(([src, name]) => (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '32px', width: 'auto', objectFit: 'contain' }} />
+                ))}
+                <p style={{
+                  fontFamily: "'TT Norms Pro', sans-serif",
+                  fontSize: '13px', fontWeight: 700, letterSpacing: '0.05em',
+                  color: '#333', margin: 0, textAlign: 'center',
+                }}>
+                  Potocco
+                </p>
+              </div>
             </div>
           </div>
         </div>
