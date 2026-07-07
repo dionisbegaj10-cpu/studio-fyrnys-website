@@ -133,7 +133,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#fff' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
-            <h2>Projektkoordination und Organisation</h2>
+            <h2>Projektkoordination</h2>
             <p>&nbsp;</p>
             <p>Wir bereiten den ausgearbeiteten Entwurf als Grundlage für die Umsetzung vor und begleiten die Umbauphase im Sinne des festgelegten Gestaltungskonzepts. Dabei stehen wir in enger Abstimmung mit Ihnen und den beteiligten Gewerken, um gestalterische Details zu klären und die Planung nachvollziehbar weiterzuführen. Bei Bedarf empfehlen wir Ihnen zuverlässige Handwerksbetriebe und Spezialisten aus unserem Netzwerk. So bleibt die gestalterische Linie auch in der Ausführung klar erkennbar.</p>
           </div>
