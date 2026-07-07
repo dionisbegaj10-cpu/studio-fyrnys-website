@@ -126,7 +126,6 @@ export default function LeistungenPage() {
                 justifyItems: 'center',
                 gap: '28px',
                 padding: '24px',
-                backgroundColor: '#f7f6f0',
               }}>
                 {[
                   ['/images/leistungen/partners/audo.svg', 'Audo'],
