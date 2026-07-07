@@ -23,7 +23,7 @@ function ComingSoonCard({ project }: { project: Project }) {
       {!open ? (
         <span style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', padding: '0 24px' }}>
           <span style={{ textAlign: 'center' }}>
-            <span style={{
+            <span className="il-cs-title" style={{
               display: 'block',
               fontFamily: 'var(--font-cormorant), Georgia, serif',
               fontSize: '24px', fontWeight: 400, letterSpacing: '1px',
@@ -31,7 +31,7 @@ function ComingSoonCard({ project }: { project: Project }) {
             }}>
               {project.name}
             </span>
-            <span style={{
+            <span className="il-cs-sub" style={{
               display: 'block',
               fontFamily: "'TT Norms Pro', sans-serif",
               fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
@@ -231,6 +231,7 @@ export default function ProjektePage() {
                         {project.name}
                       </p>
                     </span>
+                    <span className="il-mobile-title">{project.name}</span>
                   </Link>
                   )}
                 </li>

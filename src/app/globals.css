@@ -228,32 +228,58 @@ body {
   }
   .il-track {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     height: auto !important;
-    gap: 8px !important;
+    column-gap: 16px !important;
+    row-gap: 64px !important;
     transform: none !important;
     overflow: visible !important;
     background: #fff !important;
-    padding: 8px !important;
+    padding: 16px !important;
   }
   .il-item {
+    grid-column: span 2 !important;
     flex: none !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: 3 / 4 !important;
+    aspect-ratio: 2 / 3 !important;
     display: block !important;
     margin-bottom: 0 !important;
   }
-  .il-item:last-child { margin-bottom: 0 !important; }
-  .il-item a { position: static !important; height: 100% !important; }
-  .il-item .il-bg {
-    position: absolute !important;
-    width: 100% !important;
+  .il-item a {
+    position: static !important;
     height: 100% !important;
-    object-fit: cover !important;
+    display: block !important;
   }
-  .il-item .il-overlay { position: absolute !important; }
-  .il-item .il-overlay p { font-size: 16px !important; letter-spacing: 1px !important; padding: 0 8px !important; }
+  .il-item .il-bg {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 2 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+  .il-item .il-overlay { display: none !important; }
+  .il-item .il-mobile-title {
+    display: block !important;
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 12px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 701px) {
+  .il-mobile-title { display: none !important; }
+}
+
+@media (max-width: 700px) {
+  .il-cs-title { font-size: 15px !important; margin-bottom: 6px !important; }
+  .il-cs-sub { font-size: 9px !important; letter-spacing: 0.16em !important; }
 }
 
 /* ─── Projekte split layout (kept for reference) ─────────────────── */
