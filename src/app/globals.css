@@ -235,7 +235,7 @@ body {
     transform: none !important;
     overflow: visible !important;
     background: #fff !important;
-    padding: 16px !important;
+    padding: 0 !important;
   }
   .il-item {
     grid-column: span 2 !important;
@@ -269,6 +269,7 @@ body {
     text-transform: uppercase;
     color: #000;
     margin-top: 12px;
+    padding: 0 16px;
     text-align: left;
   }
 }
