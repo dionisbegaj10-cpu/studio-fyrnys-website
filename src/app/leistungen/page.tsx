@@ -143,7 +143,7 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/sovet.png', 'Sovet'],
                 ].map(([src, name]) => (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '46px', width: 'auto', objectFit: 'contain' }} />
+                  <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '58px', width: 'auto', objectFit: 'contain' }} />
                 ))}
                 <p style={{
                   fontFamily: 'var(--font-cormorant), Georgia, serif',
