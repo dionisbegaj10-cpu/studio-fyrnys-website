@@ -19,7 +19,7 @@ export const projects: Project[] = [
     name: 'Bellari',
     description: 'Für die BELLARI Frankfurt wurde eine bestehende Bürofläche im zweiten Obergeschoss zu einer modernen Praxis für ästhetische Medizin und professionelle Kosmetik umgebaut. Im Rahmen der Erweiterung entstanden hochwertig ausgestattete Behandlungsräume sowie ein Schulungsbereich, die den hohen Qualitätsanspruch der Marke widerspiegeln. Ziel des Entwurfs war es, eine zeitlose und ruhige Atmosphäre zu schaffen, die Professionalität, Diskretion und Wohlbefinden gleichermaßen vermittelt. Individuell gefertigte Wandverkleidungen aus Holz und Keramik sowie maßgefertigte Arbeitsbereiche aus der Schreinerei verleihen den Räumen eine klare architektonische Identität und unterstreichen den hochwertigen Charakter des Interieurs. Das Ergebnis ist eine Praxis, die Funktionalität, Präzision und eine elegante Gestaltung zu einem stimmigen Gesamtkonzept vereint.',
     coverImage: '/images/projekte/bellari/cover.webp',
-    images: gallery('bellari', 10),
+    images: gallery('bellari', 7),
   },
   {
     id: 11,
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     name: 'Rosenparkklinik',
     description: 'Die bestehenden Gebäude der Rosenparkklinik in Darmstadt, einer renommierten Klinik für ästhetische Medizin und plastische Chirurgie, wurden im Rahmen einer umfassenden Neugestaltung grundlegend überarbeitet. Ziel des Entwurfs war es, eine zeitlose und klassische Atmosphäre zu schaffen, die medizinische Präzision mit einem hochwertigen, vertrauensvollen Ambiente verbindet. Die Innenräume wurden dabei konsequent neu gedacht und gestalterisch so entwickelt, dass sie Ruhe, Diskretion und Eleganz ausstrahlen. Durch eine klare Formensprache, ausgewählte Materialien und eine harmonische Gestaltung entstand ein Interieur, das den hohen Anspruch der Klinik widerspiegelt und zugleich eine angenehme Umgebung für Patienten und Mitarbeitende schafft.',
     coverImage: '/images/projekte/rosenparkklinik/cover.webp',
-    images: gallery('rosenparkklinik', 16),
+    images: gallery('rosenparkklinik', 10),
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     name: 'Salon Tobias Tröndle',
     description: 'Für den renommierten Friseur Tobias Tröndle wurde eine bestehende Ladenfläche aus den 1970er-Jahren vollständig entkernt und zu einem modernen Salon mit eigenständiger Identität transformiert. Eine besondere Herausforderung stellte die vollständig verglaste Gebäudehülle dar. Der Wunsch bestand darin, trotz der großzügigen Fensterflächen ein hohes Maß an Privatsphäre für die Kundschaft zu schaffen, ohne die Offenheit und Transparenz des Raumes zu verlieren. Durch eine gezielte Zonierung sowie den bewussten Einsatz von Materialien und Raumstrukturen entstand ein ausgewogenes Verhältnis zwischen Rückzug und Offenheit. Gestalterisch verbindet das Konzept eine elegante, hochwertige Atmosphäre mit subtilen Anklängen an die Architektur- und Designsprache der 1970er-Jahre. Warme Materialien, sorgfältig ausgewählte Oberflächen und präzise gesetzte Details verleihen dem Salon einen unverwechselbaren Charakter und schaffen ein exklusives Ambiente für Kundinnen und Kunden. Das Ergebnis ist ein zeitgemäßer Salon, der die Geschichte des Ortes aufgreift und zugleich einen selbstbewussten, modernen Auftritt schafft.',
     coverImage: '/images/projekte/salon-troendle/cover.webp',
-    images: gallery('salon-troendle', 8),
+    images: gallery('salon-troendle', 7),
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     name: 'Wild Beauty',
     description: 'Für das Familienunternehmen Wild Beauty wurde im Zuge des Generationswechsels eine umfassende Transformation der bestehenden Unternehmensflächen entwickelt. Zwei Bestandsgebäude wurden architektonisch und innenräumlich neu gestaltet und zu individuellen Büroflächen sowie einem Schulungszentrum weiterentwickelt. Ziel war es, eine Arbeitswelt zu schaffen, die die Identität des Unternehmens stärkt und zugleich den Aufbruch in die nächste Generation sichtbar macht. Das Gestaltungskonzept orientiert sich an einer zeitgemäßen Interpretation des Midcentury-Stils. Klare Linien, warme Materialien und ausgewählte Details verleihen den Räumen eine eigenständige Atmosphäre zwischen Professionalität, Wertigkeit und Offenheit. Das Ergebnis ist ein Unternehmensstandort, der Bestand, neue Arbeitswelten und Markenidentität zu einem stimmigen Gesamtkonzept verbindet.',
     coverImage: '/images/projekte/wild-beauty/cover.webp',
-    images: gallery('wild-beauty', 17),
+    images: gallery('wild-beauty', 14),
   },
   {
     id: 12,
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     name: 'Bel Étage',
     description: 'Die Gestaltung dieser Stadtwohnung in der Bel Étage eines repräsentativen Altbaus verbindet klassische Eleganz mit den Anforderungen eines modernen Familienlebens. Großzügige Raumproportionen, hohe Decken und die besondere Atmosphäre der Wohnung bilden die Grundlage für ein hochwertiges Einrichtungskonzept. Eine sorgfältig abgestimmte Auswahl von Möbeln, Materialien und Textilien schafft ein zeitloses Ambiente, das sowohl repräsentativ als auch wohnlich wirkt. Ziel war es, elegante Räume zu gestalten, die den Alltag einer Familie selbstverständlich aufnehmen. Komfort, Funktionalität und Ästhetik stehen dabei gleichwertig nebeneinander und schaffen eine harmonische Balance zwischen anspruchsvollem Design und entspanntem Wohnen. Das Ergebnis ist eine Stadtwohnung mit ruhiger, zeitloser Eleganz, die den Charakter der Bel Étage unterstreicht und zugleich ein einladendes Zuhause für die ganze Familie bietet.',
     coverImage: '/images/projekte/entholzer-liebigstrasse/cover.webp',
-    images: gallery('entholzer-liebigstrasse', 9),
+    images: gallery('entholzer-liebigstrasse', 6),
   },
   {
     id: 14,
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     name: 'Villa Schmitten',
     description: 'Im Rahmen des Umbaus dieses Einfamilienhauses im Taunus wurde der Bestand umfassend neu gestaltet und zu einem großzügigen, hochwertigen Wohnhaus weiterentwickelt. Das Gestaltungskonzept orientiert sich an der Formensprache der 1970er-Jahre und interpretiert diese auf zeitgemäße Weise. Warme Materialien, markante Oberflächen und eine sorgfältig abgestimmte Farbwelt verleihen dem Haus eine stilvolle, charakterstarke Atmosphäre. Offene Sichtachsen, fließende Übergänge und die besondere räumliche Struktur des Hauses verbinden die einzelnen Bereiche zu einem harmonischen Gesamtbild. Eine hochwertige Material- und Detailplanung unterstreicht den exklusiven Charakter und schafft zugleich ein wohnliches, entspanntes Ambiente. Das Ergebnis ist ein stilvolles Wohnhaus, das den Seventies Look mit zeitgemäßem Komfort und hochwertiger Ausführung verbindet.',
     coverImage: '/images/projekte/wild-schmitten/cover.webp',
-    images: gallery('wild-schmitten', 17),
+    images: gallery('wild-schmitten', 15),
   },
   {
     id: 16,
