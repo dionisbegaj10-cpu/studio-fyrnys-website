@@ -242,13 +242,12 @@ body {
     flex: none !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: 2 / 3 !important;
     display: block !important;
     margin-bottom: 0 !important;
   }
   .il-item a {
     position: static !important;
-    height: 100% !important;
+    height: auto !important;
     display: block !important;
   }
   .il-item .il-bg {
