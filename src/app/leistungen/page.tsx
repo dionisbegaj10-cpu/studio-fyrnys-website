@@ -131,7 +131,7 @@ export default function LeistungenPage() {
                   <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '58px', width: 'auto', objectFit: 'contain' }} />
                 ))}
                 <p style={{
-                  fontFamily: 'var(--font-cormorant), Georgia, serif',
+                  fontFamily: 'var(--font-halis)',
                   fontSize: '22px', fontWeight: 400, letterSpacing: '0.04em',
                   color: '#2d2926', margin: 0, textAlign: 'center',
                 }}>
@@ -175,7 +175,7 @@ export default function LeistungenPage() {
       <section className="bg-egg">
         <div className="lg-container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginBottom: '24px', alignItems: 'end' }}>
-            <h2 style={{ fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 28px)', margin: 0 }}>Projekte</h2>
+            <h2 style={{ fontFamily: 'var(--font-halis)', fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 28px)', margin: 0 }}>Projekte</h2>
             <a href="/projekte" style={{ justifySelf: 'end', color: '#333', textDecoration: 'none', fontSize: '14px' }}>Alle anzeigen ›</a>
           </div>
         </div>

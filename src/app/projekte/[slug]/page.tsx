@@ -24,7 +24,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div style={{ padding: '48px 24px 24px' }}>
           <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
           <h1 style={{
-            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontFamily: 'var(--font-halis)',
             fontSize: 'clamp(36px, 10vw, 64px)',
             fontWeight: 400,
             letterSpacing: '0.08em',

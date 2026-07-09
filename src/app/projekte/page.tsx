@@ -22,8 +22,8 @@ function ComingSoonCard({ project }: { project: Project }) {
         <span className="il-cs-sub" style={{
           display: 'block',
           fontFamily: "'TT Norms Pro', sans-serif",
-          fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
-          textTransform: 'uppercase', color: '#000',
+          fontSize: '12px', fontWeight: 700, letterSpacing: '0.18em',
+          textTransform: 'uppercase', color: '#2d2926',
         }}>
           Demnächst
         </span>
@@ -186,7 +186,7 @@ export default function ProjektePage() {
                       }}
                     >
                       <p style={{
-                        fontFamily: 'var(--font-cormorant), Georgia, serif',
+                        fontFamily: 'var(--font-halis)',
                         fontSize: '30px',
                         fontWeight: 400,
                         fontStyle: 'normal',

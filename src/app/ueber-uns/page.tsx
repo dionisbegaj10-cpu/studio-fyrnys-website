@@ -30,7 +30,7 @@ export default function UeberUnsPage() {
       <div style={{ backgroundColor: '#f7f6f0', padding: '32px 20px 48px', flex: 1 }}>
         <div style={{ width: '100%', maxWidth: '560px', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
         <h2 style={{
-          fontFamily: 'var(--font-cormorant), Georgia, serif',
+          fontFamily: 'var(--font-halis)',
           fontSize: '30px',
           fontWeight: 400,
           letterSpacing: '2px',
