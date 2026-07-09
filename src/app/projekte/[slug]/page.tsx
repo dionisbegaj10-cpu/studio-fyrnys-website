@@ -48,7 +48,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </p>
 
           <div style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#999', lineHeight: 2 }}>
-            <p style={{ margin: 0 }}>Fotograf: {project.photographer ?? 'Fyrnys GmbH'}</p>
+            <p style={{ margin: 0 }}>{project.photographer ? `Fotograf: ${project.photographer}` : 'Studio: Fyrnys GmbH'}</p>
           </div>
         </div>
       </div>
