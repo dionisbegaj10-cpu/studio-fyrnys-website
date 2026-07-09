@@ -6,6 +6,7 @@ export interface Project {
   coverImage: string;
   images: string[];
   comingSoon?: boolean;
+  photographer?: string;
 }
 
 function gallery(slug: string, count: number): string[] {
@@ -53,6 +54,7 @@ export const projects: Project[] = [
     description: 'Für das Familienunternehmen Wild Beauty wurde im Zuge des Generationswechsels eine umfassende Transformation der bestehenden Unternehmensflächen entwickelt. Zwei Bestandsgebäude wurden architektonisch und innenräumlich neu gestaltet und zu individuellen Büroflächen sowie einem Schulungszentrum weiterentwickelt. Ziel war es, eine Arbeitswelt zu schaffen, die die Identität des Unternehmens stärkt und zugleich den Aufbruch in die nächste Generation sichtbar macht. Das Gestaltungskonzept orientiert sich an einer zeitgemäßen Interpretation des Midcentury-Stils. Klare Linien, warme Materialien und ausgewählte Details verleihen den Räumen eine eigenständige Atmosphäre zwischen Professionalität, Wertigkeit und Offenheit. Das Ergebnis ist ein Unternehmensstandort, der Bestand, neue Arbeitswelten und Markenidentität zu einem stimmigen Gesamtkonzept verbindet.',
     coverImage: '/images/projekte/wild-beauty/cover.webp',
     images: gallery('wild-beauty', 14),
+    photographer: 'Nicolas Rose',
   },
   {
     id: 12,
@@ -112,6 +114,7 @@ export const projects: Project[] = [
     description: 'Für eine junge Familie entstand in Frankfurt ein Zuhause, das skandinavische Leichtigkeit mit hoher Funktionalität verbindet. Ziel des Projekts war es, eine helle, freundliche und einladende Wohnatmosphäre zu schaffen, die den Anforderungen des Familienalltags gerecht wird. Im Mittelpunkt des Entwurfs steht die großzügige Wohnküche als zentraler Treffpunkt des Hauses. Offene Raumbezüge, natürliche Materialien und eine zurückhaltende Farbpalette schaffen eine warme und zeitlose Umgebung für gemeinsames Kochen, Essen und Leben. Besonderes Augenmerk lag auf der Entwicklung maßgeschneiderter Stauraumlösungen. Durch intelligent integrierte Einbauten und klar strukturierte Funktionsbereiche konnte ausreichend Platz für die Bedürfnisse der Familie geschaffen werden, ohne die Leichtigkeit des Raumkonzepts zu beeinträchtigen. Das Ergebnis ist ein harmonisches Zuhause, das skandinavische Gestaltung mit Wohnkomfort, Funktionalität und einer hohen Aufenthaltsqualität vereint.',
     coverImage: '/images/projekte/christophersen/cover.webp',
     images: gallery('christophersen', 14),
+    photographer: 'Nicolas Rose',
   },
   {
     id: 15,

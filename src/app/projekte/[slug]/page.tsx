@@ -22,6 +22,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       {/* Title + description block — cream colored frame like nateberkus.com */}
       <div style={{ backgroundColor: '#f7f6f0' }}>
         <div style={{ padding: '48px 24px 24px' }}>
+          <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
           <h1 style={{
             fontFamily: 'var(--font-cormorant), Georgia, serif',
             fontSize: 'clamp(36px, 10vw, 64px)',
@@ -47,8 +48,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </p>
 
           <div style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#999', lineHeight: 2 }}>
-            <p style={{ margin: 0 }}>Ort: Frankfurt am Main</p>
-            <p style={{ margin: 0 }}>Studio: Studio Fyrnys</p>
+            <p style={{ margin: 0 }}>Fotograf: {project.photographer ?? 'Fyrnys GmbH'}</p>
           </div>
         </div>
       </div>

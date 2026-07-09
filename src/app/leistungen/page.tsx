@@ -21,6 +21,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h1>Leistungen</h1>
             <p>&nbsp;</p>
             <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Manufaktur verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
@@ -34,6 +35,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Interior Design</h2>
             <p>&nbsp;</p>
             <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir Wünsche, Nutzung und Anspruch Ihres privaten oder gewerblichen Projekts. Daraus entsteht ein durchgängiges Gestaltungskonzept, in dem Architektur, Materialien, Licht und Möblierung sorgfältig aufeinander abgestimmt sind. So entsteht ein Interieur, das persönlich wirkt, klar funktioniert und langfristig Bestand hat.</p>
@@ -57,6 +59,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Manufaktur</h2>
             <p>&nbsp;</p>
             <p>In unserer Manufaktur realisieren wir seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Hier verbinden sich Gestaltung, handwerkliche Präzision und Materialverständnis. Jede Lösung wird passgenau entwickelt, sauber ausgeführt und mit dem Anspruch gefertigt, dem Raum dauerhaft Wert zu verleihen.</p>
@@ -81,6 +84,7 @@ export default function LeistungenPage() {
       <section className="bg-egg">
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
             <h2>Möblierung</h2>
             <p>&nbsp;</p>
             <p>Gemeinsam mit Ihnen entwickeln wir eine Ausstattung, die zu Ihrem Stil, zur Architektur und zum gewünschten Anspruch passt. Von einzelnen Akzenten bis zur vollständigen Einrichtung entsteht ein stimmiges Konzept aus Komfort, Qualität und Persönlichkeit. Wir arbeiten mit ausgewählten Herstellern und Marken und finden Möbel, Leuchten und Objekte, die den Raum ergänzen und seine Atmosphäre prägen.</p>
@@ -146,6 +150,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Projektkoordination</h2>
             <p>&nbsp;</p>
             <p>Wir bereiten den ausgearbeiteten Entwurf als Grundlage für die Umsetzung vor und begleiten die Umbauphase im Sinne des festgelegten Gestaltungskonzepts. Dabei stehen wir in enger Abstimmung mit Ihnen und den beteiligten Gewerken, um gestalterische Details zu klären und die Planung nachvollziehbar weiterzuführen. Bei Bedarf empfehlen wir Ihnen zuverlässige Handwerksbetriebe und Spezialisten aus unserem Netzwerk. So bleibt die gestalterische Linie auch in der Ausführung klar erkennbar.</p>
