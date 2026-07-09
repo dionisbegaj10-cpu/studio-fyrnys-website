@@ -121,6 +121,7 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/meridiani.png', 'Meridiani'],
                   ['/images/leistungen/partners/prolicht.svg', 'Prolicht'],
                   ['/images/leistungen/partners/sovet.png', 'Sovet'],
+                  ['/images/leistungen/partners/wever-ducre.png', 'Wever & Ducré'],
                 ].map(([src, name]) => (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '58px', width: 'auto', objectFit: 'contain' }} />
