@@ -53,7 +53,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
       </div>
 
-      {/* PREVIOUS / NEXT — white gap above gallery */}
+      {/* Gallery */}
+      {project.images.length > 0 && <ProjectGallery images={project.images} />}
+
+      {/* PREVIOUS / NEXT — below gallery */}
       <div style={{
         display: 'flex',
         justifyContent: 'space-between',
@@ -87,9 +90,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           </Link>
         ) : <span />}
       </div>
-
-      {/* Gallery */}
-      {project.images.length > 0 && <ProjectGallery images={project.images} />}
 
       {/* Back to all projects */}
       <div style={{ padding: '8px 24px 40px', textAlign: 'center' }}>
