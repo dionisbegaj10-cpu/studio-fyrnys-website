@@ -217,14 +217,14 @@ body {
 
 /* ── ≤700px: vertical stacked feed (Nate Berkus Interiors mobile style) ── */
 @media (max-width: 700px) {
-  .il-projekte-root { padding: 0 !important; opacity: 1 !important; background: #fff !important; }
+  .il-projekte-root { padding: 0 !important; opacity: 1 !important; background: #f7f6f0 !important; }
   .il-scrollspace { position: static !important; height: auto !important; min-height: 0 !important; }
   .il-viewport {
     position: static !important;
     top: auto !important;
     height: auto !important;
     overflow: visible !important;
-    background: #fff !important;
+    background: #f7f6f0 !important;
   }
   .il-track {
     display: grid !important;
@@ -234,7 +234,7 @@ body {
     row-gap: 96px !important;
     transform: none !important;
     overflow: visible !important;
-    background: #fff !important;
+    background: #f7f6f0 !important;
     padding: 0 !important;
   }
   .il-item {

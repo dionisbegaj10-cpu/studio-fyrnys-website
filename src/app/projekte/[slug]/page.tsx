@@ -70,7 +70,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             color: '#2d2926',
             textDecoration: 'none',
           }}>
-            ← Previous
+            ← Zurück
           </Link>
         ) : <span />}
         {next ? (
@@ -83,7 +83,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             color: '#2d2926',
             textDecoration: 'none',
           }}>
-            Next →
+            Weiter →
           </Link>
         ) : <span />}
       </div>

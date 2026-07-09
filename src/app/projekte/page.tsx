@@ -25,7 +25,7 @@ function ComingSoonCard({ project }: { project: Project }) {
           fontSize: '12px', fontWeight: 700, letterSpacing: '0.24em',
           textTransform: 'uppercase', color: '#000',
         }}>
-          Coming Soon
+          Demnächst
         </span>
       </span>
       <span className="il-mobile-title">{project.name}</span>

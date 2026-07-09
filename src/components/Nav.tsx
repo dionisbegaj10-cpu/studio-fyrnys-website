@@ -55,7 +55,7 @@ export default function Nav() {
             <Link href="/" style={wordmarkStyle}>Studio Fyrnys</Link>
             <button
               onClick={() => setMenuOpen(true)}
-              aria-label="Menu öffnen"
+              aria-label="Menü öffnen"
               style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--marble-white)', padding: 0, display: 'flex', alignItems: 'center' }}
             >
               <HamburgerIcon />
@@ -79,7 +79,7 @@ export default function Nav() {
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--linen-beige)')}
                 onMouseLeave={e => (e.currentTarget.style.color = 'var(--marble-white)')}
               >
-                Menu
+                Menü
               </button>
               <a href="https://www.instagram.com/studio_fyrnys/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -113,7 +113,7 @@ export default function Nav() {
           <button onClick={() => setMenuOpen(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#888', padding: 0, transition: 'color 0.2s' }}
             onMouseEnter={e => (e.currentTarget.style.color = '#1a1a1a')}
             onMouseLeave={e => (e.currentTarget.style.color = '#888')}
-          >Close</button>
+          >Schließen</button>
         </div>
         <div style={{ padding: '48px 30px 56px', display: 'flex', flexDirection: 'column' }}>
           {navLinks.map((link, i) => (
