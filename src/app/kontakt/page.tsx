@@ -1,4 +1,5 @@
 import LeistungenNav from '../leistungen/LeistungenNav';
+import ContactFormModal from './ContactFormModal';
 
 const NB_FOOTER = (
   <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
@@ -40,9 +41,7 @@ export default function KontaktPage() {
         }}>
           Kontakt
         </h2>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '24px' }}>
-          Füllen Sie unser <a href="mailto:studio@fyrnys.de" style={{ color: '#2d2926', textDecoration: 'underline' }}>Kontaktformular</a> aus oder schreiben Sie uns direkt. Für alle weiteren Anfragen erreichen Sie uns unter:
-        </p>
+        <ContactFormModal />
 
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>
           <strong style={{ fontWeight: 700, letterSpacing: '0.06em' }}>STUDIO FYRNYS</strong>
