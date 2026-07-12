@@ -1,13 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
-const NAV_LINKS = [
-  { label: 'About', href: '#' },
-  { label: 'Interiors', href: '#' },
-  { label: 'Selected Press', href: '#' },
-  { label: 'Work With Us', href: '#' },
-];
+import LeistungenNav from '../leistungen/LeistungenNav';
 
 const FIELDS: Array<{ name: string; label: string; type: 'text' | 'textarea'; full?: boolean }> = [
   { name: 'firstName', label: 'First Name', type: 'text' },
@@ -30,44 +24,7 @@ export default function KontaktPage() {
 
   return (
     <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* Header */}
-      <header
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '20px 30px',
-          flexWrap: 'wrap',
-          gap: '16px',
-          borderBottom: '1px solid transparent',
-        }}
-      >
-        <a href="/" aria-label="Nate Berkus Associates">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nate-berkus/logo.svg" alt="Nate Berkus Associates" style={{ height: '22px', width: 'auto', display: 'block' }} />
-        </a>
-        <nav style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-          {NAV_LINKS.map((link, i) => (
-            <span key={link.label} style={{ display: 'flex', alignItems: 'center' }}>
-              {i > 0 && <span style={{ color: 'rgba(45,41,38,0.4)', fontSize: '13px', margin: '0 16px' }}>|</span>}
-              <a
-                href={link.href}
-                style={{
-                  fontFamily: "'Gotham', 'Avenir Next', Arial, sans-serif",
-                  fontWeight: 500,
-                  fontSize: '14px',
-                  letterSpacing: '0.6px',
-                  color: 'rgb(45, 41, 38)',
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                }}
-              >
-                {link.label}
-              </a>
-            </span>
-          ))}
-        </nav>
-      </header>
+      <LeistungenNav />
 
       {/* Form */}
       <main style={{ flex: 1, padding: '48px 30px 64px', display: 'flex', justifyContent: 'center' }}>
