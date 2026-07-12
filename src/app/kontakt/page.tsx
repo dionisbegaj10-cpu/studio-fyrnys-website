@@ -1,66 +1,196 @@
-import LeistungenNav from '../leistungen/LeistungenNav';
-import ContactFormModal from './ContactFormModal';
+'use client';
 
-const NB_FOOTER = (
-  <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
-    <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
-      Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
-    </p>
-  </footer>
-);
+import { useState } from 'react';
+
+const NAV_LINKS = [
+  { label: 'About', href: '#' },
+  { label: 'Interiors', href: '#' },
+  { label: 'Selected Press', href: '#' },
+  { label: 'Work With Us', href: '#' },
+];
+
+const FIELDS: Array<{ name: string; label: string; type: 'text' | 'textarea'; full?: boolean }> = [
+  { name: 'firstName', label: 'First Name', type: 'text' },
+  { name: 'lastName', label: 'Last Name', type: 'text' },
+  { name: 'phone', label: 'Phone', type: 'text' },
+  { name: 'email', label: 'Email', type: 'text' },
+  { name: 'address', label: 'Project Address', type: 'text', full: true },
+  { name: 'scope', label: 'General Scope of Work', type: 'textarea', full: true },
+  { name: 'budgetFurniture', label: 'Estimated Budget for Furniture & Decoration', type: 'text' },
+  { name: 'budgetConstruction', label: 'Estimated Budget for Construction & Renovations', type: 'text' },
+  { name: 'startDate', label: 'Anticipated Start Date', type: 'text', full: true },
+];
 
 export default function KontaktPage() {
+  const [values, setValues] = useState<Record<string, string>>({});
+
+  const handleChange = (name: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setValues((v) => ({ ...v, [name]: e.target.value }));
+  };
+
   return (
-    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '0 16px' }}>
-      <LeistungenNav />
+    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      {/* Header */}
+      <header
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '20px 30px',
+          flexWrap: 'wrap',
+          gap: '16px',
+          borderBottom: '1px solid transparent',
+        }}
+      >
+        <a href="/" aria-label="Nate Berkus Associates">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/nate-berkus/logo.svg" alt="Nate Berkus Associates" style={{ height: '22px', width: 'auto', display: 'block' }} />
+        </a>
+        <nav style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+          {NAV_LINKS.map((link, i) => (
+            <span key={link.label} style={{ display: 'flex', alignItems: 'center' }}>
+              {i > 0 && <span style={{ color: 'rgba(45,41,38,0.4)', fontSize: '13px', margin: '0 16px' }}>|</span>}
+              <a
+                href={link.href}
+                style={{
+                  fontFamily: "'Gotham', 'Avenir Next', Arial, sans-serif",
+                  fontWeight: 500,
+                  fontSize: '14px',
+                  letterSpacing: '0.6px',
+                  color: 'rgb(45, 41, 38)',
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                }}
+              >
+                {link.label}
+              </a>
+            </span>
+          ))}
+        </nav>
+      </header>
 
-      {/* Full-bleed hero image */}
-      <div style={{ width: '100%', flexShrink: 0 }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/leistungen/handwerk-09-portrait.webp"
-          alt="Kontakt"
-          style={{ width: '100%', height: '70vw', maxHeight: '520px', objectFit: 'cover', display: 'block' }}
-        />
-      </div>
+      {/* Form */}
+      <main style={{ flex: 1, padding: '48px 30px 64px', display: 'flex', justifyContent: 'center' }}>
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          style={{ width: '100%', maxWidth: '1200px' }}
+        >
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              columnGap: '48px',
+            }}
+            className="nb-contact-grid"
+          >
+            {FIELDS.map((field) => (
+              <div
+                key={field.name}
+                style={{
+                  gridColumn: field.full ? '1 / -1' : 'auto',
+                  marginBottom: '20px',
+                }}
+              >
+                <label
+                  htmlFor={field.name}
+                  style={{
+                    display: 'block',
+                    fontFamily: "'Assistant', Arial, sans-serif",
+                    fontSize: '14px',
+                    fontWeight: 400,
+                    color: '#000000',
+                    marginBottom: '4px',
+                  }}
+                >
+                  {field.label}
+                </label>
+                {field.type === 'textarea' ? (
+                  <textarea
+                    id={field.name}
+                    value={values[field.name] || ''}
+                    onChange={handleChange(field.name)}
+                    rows={3}
+                    style={{
+                      width: '100%',
+                      fontFamily: "'Avenir Next', Arial, sans-serif",
+                      fontSize: '13px',
+                      color: '#000000',
+                      border: 'none',
+                      borderBottom: '1px solid rgb(45, 41, 38)',
+                      outline: 'none',
+                      padding: '19.5px 13px 8px 0',
+                      resize: 'vertical',
+                      background: 'transparent',
+                    }}
+                  />
+                ) : (
+                  <input
+                    id={field.name}
+                    type="text"
+                    value={values[field.name] || ''}
+                    onChange={handleChange(field.name)}
+                    style={{
+                      width: '100%',
+                      fontFamily: "'Avenir Next', Arial, sans-serif",
+                      fontSize: '13px',
+                      color: '#000000',
+                      border: 'none',
+                      borderBottom: '1px solid rgb(45, 41, 38)',
+                      outline: 'none',
+                      padding: '19.5px 13px 8px 0',
+                      background: 'transparent',
+                    }}
+                  />
+                )}
+              </div>
+            ))}
+          </div>
 
-      {/* White gap */}
-      <div style={{ backgroundColor: '#f7f6f0', height: '32px', flexShrink: 0 }} />
+          <button
+            type="submit"
+            style={{
+              marginTop: '32px',
+              backgroundColor: '#000000',
+              color: '#ffffff',
+              fontFamily: "'Avenir Next', Arial, sans-serif",
+              fontSize: '14px',
+              fontWeight: 400,
+              letterSpacing: '2.1px',
+              textTransform: 'uppercase',
+              border: 'none',
+              padding: '17.5px 47.5px',
+              cursor: 'pointer',
+            }}
+          >
+            Submit
+          </button>
+        </form>
+      </main>
 
-      {/* Cream content block */}
-      <div style={{ backgroundColor: '#f7f6f0', padding: '32px 20px 48px', flex: 1 }}>
-        <div style={{ width: '100%', maxWidth: '560px', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
-        <h2 style={{
-          fontFamily: 'var(--font-halis)',
-          fontSize: '30px',
-          fontWeight: 400,
-          letterSpacing: '2px',
-          color: '#2d2926',
-          marginBottom: '20px',
-          textTransform: 'uppercase',
-        }}>
-          Kontakt
-        </h2>
-        <ContactFormModal />
-
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>
-          <strong style={{ fontWeight: 700, letterSpacing: '0.06em' }}>STUDIO FYRNYS</strong>
+      {/* Footer */}
+      <footer
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '20px 30px',
+          flexWrap: 'wrap',
+          gap: '8px',
+        }}
+      >
+        <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
+          Careers&nbsp;|&nbsp;Terms of Service
         </p>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', margin: 0 }}>Hansaallee 13–15</p>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>60322 Frankfurt am Main</p>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '4px' }}>
-          <a href="tel:+4969955037200" style={{ color: '#2d2926', textDecoration: 'none' }}>T +49 69 955 037 20</a>
+        <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
+          © All Rights Reserved {new Date().getFullYear()}. Nate Berkus | KWIN Made
         </p>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', lineHeight: 1.8, color: '#2d2926', marginBottom: '32px' }}>
-          <a href="mailto:studio@fyrnys.de" style={{ color: '#2d2926', textDecoration: 'underline' }}>studio@fyrnys.de</a>
-        </p>
+      </footer>
 
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
-          Besuchen Sie unsere <a href="https://www.instagram.com/studio_fyrnys/" target="_blank" rel="noopener noreferrer" style={{ color: '#2d2926', textDecoration: 'underline' }}>Instagram-Seite</a>, um aktuelle Projekte und Einblicke in unsere Arbeit zu entdecken.
-        </p>
-      </div>
-
-      {NB_FOOTER}
+      <style>{`
+        @media (max-width: 700px) {
+          .nb-contact-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </div>
   );
 }
