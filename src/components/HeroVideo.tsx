@@ -28,6 +28,21 @@ export default function HeroVideo() {
           objectPosition: '50% 50%',
         }}
       />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/fyrnys-logo-transparent.png"
+        alt="Studio Fyrnys"
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 'min(40vw, 320px)',
+          height: 'auto',
+          filter: 'brightness(0) invert(1)',
+          pointerEvents: 'none',
+        }}
+      />
     </div>
   );
 }
