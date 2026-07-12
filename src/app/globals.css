@@ -248,7 +248,9 @@ body {
   scroll-behavior: auto;
 }
 
-/* ── ≤700px: vertical stacked feed (Nate Berkus Interiors mobile style) ── */
+/* ── ≤700px: single-column vertical stacked feed (Nate Berkus Interiors 1:1 mobile style) ── */
+.il-mobile-title { display: none !important; }
+
 @media (max-width: 700px) {
   .il-projekte-root { padding: 0 !important; opacity: 1 !important; background: #f7f6f0 !important; }
   .il-scrollspace { position: static !important; height: auto !important; min-height: 0 !important; }
@@ -260,65 +262,45 @@ body {
     background: #f7f6f0 !important;
   }
   .il-track {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
+    display: flex !important;
+    flex-direction: column !important;
     height: auto !important;
-    column-gap: 16px !important;
-    row-gap: 96px !important;
+    gap: 16px !important;
     transform: none !important;
     overflow: visible !important;
     background: #f7f6f0 !important;
-    padding: 0 !important;
+    padding: 16px !important;
   }
   .il-item {
-    grid-column: span 2 !important;
     flex: none !important;
     width: 100% !important;
     height: auto !important;
+    aspect-ratio: 5 / 7 !important;
     display: block !important;
     margin-bottom: 0 !important;
   }
   .il-item a {
-    position: static !important;
-    height: auto !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
     display: block !important;
   }
   .il-item .il-bg {
-    position: relative !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
-    aspect-ratio: 2 / 3 !important;
-    height: auto !important;
+    height: 100% !important;
     object-fit: cover !important;
     display: block !important;
   }
-  .il-item .il-overlay { display: none !important; }
+  .il-item .il-overlay { display: grid !important; }
   .il-item .il-cs-box {
-    position: relative !important;
-    inset: auto !important;
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
-    aspect-ratio: 2 / 3 !important;
-    height: auto !important;
+    height: 100% !important;
     display: grid !important;
   }
-  .il-item .il-mobile-title {
-    display: block !important;
-    font-family: var(--font-halis);
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #2d2926;
-    margin-top: 14px;
-    padding: 0 16px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 701px) {
-  .il-mobile-title { display: none !important; }
-}
-
-@media (max-width: 700px) {
   .il-cs-title { font-size: 15px !important; margin-bottom: 6px !important; }
   .il-cs-sub { font-size: 10px !important; letter-spacing: 0.18em !important; }
 }
