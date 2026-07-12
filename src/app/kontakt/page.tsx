@@ -4,15 +4,15 @@ import { useState } from 'react';
 import LeistungenNav from '../leistungen/LeistungenNav';
 
 const FIELDS: Array<{ name: string; label: string; type: 'text' | 'textarea'; full?: boolean }> = [
-  { name: 'firstName', label: 'First Name', type: 'text' },
-  { name: 'lastName', label: 'Last Name', type: 'text' },
-  { name: 'phone', label: 'Phone', type: 'text' },
-  { name: 'email', label: 'Email', type: 'text' },
-  { name: 'address', label: 'Project Address', type: 'text', full: true },
-  { name: 'scope', label: 'General Scope of Work', type: 'textarea', full: true },
-  { name: 'budgetFurniture', label: 'Estimated Budget for Furniture & Decoration', type: 'text' },
-  { name: 'budgetConstruction', label: 'Estimated Budget for Construction & Renovations', type: 'text' },
-  { name: 'startDate', label: 'Anticipated Start Date', type: 'text', full: true },
+  { name: 'firstName', label: 'Vorname', type: 'text' },
+  { name: 'lastName', label: 'Nachname', type: 'text' },
+  { name: 'phone', label: 'Telefon', type: 'text' },
+  { name: 'email', label: 'E-Mail', type: 'text' },
+  { name: 'address', label: 'Projektadresse', type: 'text', full: true },
+  { name: 'scope', label: 'Allgemeiner Leistungsumfang', type: 'textarea', full: true },
+  { name: 'budgetFurniture', label: 'Geschätztes Budget für Möbel & Dekoration', type: 'text' },
+  { name: 'budgetConstruction', label: 'Geschätztes Budget für Bau & Renovierung', type: 'text' },
+  { name: 'startDate', label: 'Voraussichtlicher Starttermin', type: 'text', full: true },
 ];
 
 export default function KontaktPage() {
@@ -23,7 +23,7 @@ export default function KontaktPage() {
   };
 
   return (
-    <div style={{ backgroundColor: '#ffffff', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <LeistungenNav />
 
       {/* Form */}
@@ -119,7 +119,7 @@ export default function KontaktPage() {
               cursor: 'pointer',
             }}
           >
-            Submit
+            Absenden
           </button>
         </form>
       </main>
@@ -136,10 +136,10 @@ export default function KontaktPage() {
         }}
       >
         <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-          Careers&nbsp;|&nbsp;Terms of Service
+          Karriere&nbsp;|&nbsp;Nutzungsbedingungen
         </p>
         <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-          © All Rights Reserved {new Date().getFullYear()}. Nate Berkus | KWIN Made
+          © Alle Rechte vorbehalten {new Date().getFullYear()}. Studio Fyrnys Interior Design
         </p>
       </footer>
 
