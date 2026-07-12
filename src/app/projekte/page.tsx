@@ -196,7 +196,7 @@ export default function ProjektePage() {
                       style={{
                         position: 'absolute', inset: 0, zIndex: 1,
                         display: 'grid', placeItems: 'center',
-                        background: 'rgba(0,0,0,0.2)',
+                        background: 'rgba(50,50,50,0.3)',
                       }}
                     >
                       <p style={{
