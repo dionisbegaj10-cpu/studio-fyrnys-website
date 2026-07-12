@@ -20,7 +20,7 @@ export default function LeistungenPage() {
       {/* ══ HERO ══ */}
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
-          <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+          <div className="richtext-block" style={{ maxWidth: '900px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h1>Leistungen</h1>
             <p>&nbsp;</p>
@@ -34,7 +34,7 @@ export default function LeistungenPage() {
       {/* ══ INTERIOR DESIGN heading ══ */}
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
-          <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+          <div className="richtext-block" style={{ maxWidth: '900px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Interior Design</h2>
             <p>&nbsp;</p>
@@ -58,7 +58,7 @@ export default function LeistungenPage() {
       {/* ══ MANUFAKTUR heading ══ */}
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
-          <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+          <div className="richtext-block" style={{ maxWidth: '900px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Manufaktur</h2>
             <p>&nbsp;</p>
@@ -83,7 +83,7 @@ export default function LeistungenPage() {
       {/* ══ MÖBLIERUNG heading ══ */}
       <section className="bg-egg">
         <div className="lg-container">
-          <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+          <div className="richtext-block" style={{ maxWidth: '900px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
             <h2>Möblierung</h2>
             <p>&nbsp;</p>
@@ -149,7 +149,7 @@ export default function LeistungenPage() {
       {/* ══ PARTNER heading ══ */}
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
-          <div className="text-pad richtext-block" style={{ maxWidth: '900px' }}>
+          <div className="richtext-block" style={{ maxWidth: '900px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Projektkoordination</h2>
             <p>&nbsp;</p>
