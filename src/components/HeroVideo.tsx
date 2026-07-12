@@ -31,7 +31,7 @@ export default function HeroVideo() {
       <div
         style={{
           position: 'absolute',
-          top: '50%',
+          top: '46%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           display: 'flex',
@@ -54,7 +54,7 @@ export default function HeroVideo() {
         <span
           style={{
             fontFamily: 'var(--font-halis)',
-            fontSize: 'clamp(18px, 2.4vw, 28px)',
+            fontSize: 'clamp(26px, 3.6vw, 42px)',
             fontWeight: 400,
             letterSpacing: '0.3em',
             textTransform: 'uppercase',
