@@ -19,13 +19,27 @@ function ComingSoonCard({ project }: { project: Project }) {
         position: 'absolute', inset: 0, display: 'grid', placeItems: 'center',
         background: '#f4f2ee', border: '1px solid #ddd7cb', overflow: 'hidden',
       }}>
-        <span className="il-cs-sub" style={{
-          display: 'block',
-          fontFamily: "'TT Norms Pro', sans-serif",
-          fontSize: '12px', fontWeight: 700, letterSpacing: '0.18em',
-          textTransform: 'uppercase', color: '#2d2926',
-        }}>
-          Demnächst
+        <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+          <span className="il-cs-title" style={{
+            fontFamily: 'var(--font-halis)',
+            fontSize: '30px',
+            fontWeight: 400,
+            letterSpacing: '2px',
+            textTransform: 'uppercase',
+            color: '#2d2926',
+            textAlign: 'center',
+            padding: '0 16px',
+          }}>
+            {project.name}
+          </span>
+          <span className="il-cs-sub" style={{
+            display: 'block',
+            fontFamily: "'TT Norms Pro', sans-serif",
+            fontSize: '12px', fontWeight: 700, letterSpacing: '0.18em',
+            textTransform: 'uppercase', color: '#9b9690',
+          }}>
+            Demnächst
+          </span>
         </span>
       </span>
       <span className="il-mobile-title">{project.name}</span>
