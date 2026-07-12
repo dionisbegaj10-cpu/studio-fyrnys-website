@@ -28,21 +28,42 @@ export default function HeroVideo() {
           objectPosition: '50% 50%',
         }}
       />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/fyrnys-logo-transparent.png"
-        alt="Studio Fyrnys"
+      <div
         style={{
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 'min(40vw, 320px)',
-          height: 'auto',
-          filter: 'brightness(0) invert(1)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '16px',
           pointerEvents: 'none',
         }}
-      />
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/fyrnys-logo-transparent.png"
+          alt="Studio Fyrnys"
+          style={{
+            width: 'min(40vw, 320px)',
+            height: 'auto',
+            filter: 'brightness(0) invert(1)',
+          }}
+        />
+        <span
+          style={{
+            fontFamily: 'var(--font-halis)',
+            fontSize: 'clamp(18px, 2.4vw, 28px)',
+            fontWeight: 400,
+            letterSpacing: '0.3em',
+            textTransform: 'uppercase',
+            color: '#ffffff',
+          }}
+        >
+          Fyrnys
+        </span>
+      </div>
     </div>
   );
 }
