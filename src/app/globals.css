@@ -215,8 +215,11 @@ body {
   height: 100%;
 }
 
+.il-overlay { transition: background-color 0.2s ease; }
+
 .il-card:hover .il-overlay,
-.il-card:focus-visible .il-overlay {
+.il-card:focus-visible .il-overlay,
+.il-card:active .il-overlay {
   background: rgba(0,0,0,0.55) !important;
 }
 

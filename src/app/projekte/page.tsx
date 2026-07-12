@@ -175,7 +175,7 @@ export default function ProjektePage() {
                   {project.comingSoon ? (
                     <ComingSoonCard project={project} />
                   ) : (
-                  <Link href={`/projekte/${project.slug}`} style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}>
+                  <Link href={`/projekte/${project.slug}`} className="il-card" onTouchStart={() => {}} style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}>
                     {/* Background image */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
