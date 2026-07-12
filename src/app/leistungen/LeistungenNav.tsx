@@ -79,6 +79,19 @@ export default function LeistungenNav() {
               </Link>
             ))}
           </nav>
+          <div style={{ padding: '24px 20px', marginTop: 'auto' }}>
+            <a
+              href="https://www.instagram.com/studio_fyrnys/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#2d2926', textDecoration: 'none' }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/instagram-white.svg" alt="" style={{ height: '14px', width: 'auto', filter: 'invert(0.5)' }} />
+              Instagram
+            </a>
+          </div>
         </div>
       )}
       {/* Spacer so page content clears the fixed nav */}
