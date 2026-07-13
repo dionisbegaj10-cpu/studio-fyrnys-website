@@ -61,7 +61,7 @@ export default function LeistungenNav() {
 
       {/* Mobile overlay */}
       {menuOpen && (
-        <div style={{ position: 'fixed', top: 'max(env(safe-area-inset-top, 0px), 47px)', left: 0, right: 0, bottom: 'max(env(safe-area-inset-bottom, 0px), 0px)', zIndex: 200, backgroundColor: '#61695e', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ position: 'fixed', inset: 0, zIndex: 200, backgroundColor: '#61695e', display: 'flex', flexDirection: 'column' }}>
           <div style={{ height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px', flexShrink: 0 }}>
             <Link href="/" onClick={() => setMenuOpen(false)} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#ffffff', textDecoration: 'none' }}>
               Studio Fyrnys
@@ -100,12 +100,6 @@ export default function LeistungenNav() {
             </a>
           </nav>
         </div>
-      )}
-      {menuOpen && (
-        <>
-          <div style={{ position: 'fixed', left: 0, right: 0, top: 0, height: 'max(env(safe-area-inset-top, 0px), 47px)', zIndex: 201, backgroundColor: '#f7f6f0', pointerEvents: 'none' }} />
-          <div style={{ position: 'fixed', left: 0, right: 0, bottom: 0, height: 'env(safe-area-inset-bottom, 0px)', zIndex: 201, backgroundColor: '#f7f6f0', pointerEvents: 'none' }} />
-        </>
       )}
       {/* Spacer so page content clears the fixed nav */}
       <div style={{ height: '54px' }} />
