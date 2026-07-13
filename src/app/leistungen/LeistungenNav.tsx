@@ -17,6 +17,9 @@ export default function LeistungenNav() {
   useEffect(() => {
     const meta = document.querySelector('meta[name="theme-color"]');
     const color = menuOpen ? '#61695e' : '#f7f6f0';
+    // DIAGNOSTIC: keep the meta green in BOTH states to test whether this
+    // iOS/Safari honors theme-color for the top status bar at all.
+    const metaColor = '#61695e';
 
     // iOS Safari derives its top/bottom bar tint from the NORMAL-FLOW document
     // background (it ignores position:fixed overlays) and re-samples only on
@@ -38,7 +41,7 @@ export default function LeistungenNav() {
       document.documentElement.style.backgroundColor = color;
       document.body.style.backgroundColor = color;
       painted.forEach(el => { el.style.backgroundColor = color; });
-      if (meta) meta.setAttribute('content', color);
+      if (meta) meta.setAttribute('content', metaColor);
     };
     apply();
     let raf = 0;
@@ -69,7 +72,7 @@ export default function LeistungenNav() {
       document.body.style.backgroundColor = '';
       document.body.style.overflowY = '';
       painted.forEach((el, i) => { el.style.backgroundColor = prev[i]; });
-      if (meta) meta.setAttribute('content', '#f7f6f0');
+      if (meta) meta.setAttribute('content', metaColor);
     };
   }, [menuOpen]);
 
