@@ -72,26 +72,32 @@ export default function LeistungenNav() {
               </svg>
             </button>
           </div>
-          <nav style={{ display: 'flex', flexDirection: 'column', paddingTop: '8px' }}>
+          <nav style={{ display: 'flex', flexDirection: 'column', paddingTop: '16px', gap: '20px', padding: '16px 20px 0' }}>
             {navLinks.map(link => (
-              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} style={{ display: 'block', fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#ffffff', textDecoration: 'none', padding: '11px 20px' }}>
+              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} style={{
+                display: 'inline-block', width: 'fit-content',
+                fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 700,
+                letterSpacing: '0.06em', textTransform: 'uppercase', color: '#ffffff',
+                textDecoration: 'none', borderBottom: '1px solid #ffffff', paddingBottom: '4px',
+              }}>
                 {link.label}
               </Link>
             ))}
-          </nav>
-          <div style={{ padding: '24px 20px', marginTop: 'auto' }}>
             <a
               href="https://www.instagram.com/studio_fyrnys/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#ffffff', textDecoration: 'none' }}
+              style={{
+                display: 'inline-block', width: 'fit-content',
+                fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 700,
+                letterSpacing: '0.06em', textTransform: 'uppercase', color: '#ffffff',
+                textDecoration: 'none', borderBottom: '1px solid #ffffff', paddingBottom: '4px',
+              }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/instagram-white.svg" alt="" style={{ height: '14px', width: 'auto' }} />
               Instagram
             </a>
-          </div>
+          </nav>
         </div>
       )}
       {/* Spacer so page content clears the fixed nav */}
