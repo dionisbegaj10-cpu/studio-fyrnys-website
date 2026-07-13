@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 const navLinks = [
@@ -12,21 +12,32 @@ const navLinks = [
 
 export default function LeistungenNav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const markerRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const meta = document.querySelector('meta[name="theme-color"]');
     const color = menuOpen ? '#61695e' : '#f7f6f0';
 
-    // iOS Safari derives its top/bottom bar tint from the html/body background
-    // and re-samples ONLY on scroll activity. (Same technique as seosuite.studio.)
-    // Guarantee the page is always scrollable so a scroll can actually fire.
+    // iOS Safari derives its top/bottom bar tint from the NORMAL-FLOW document
+    // background (it ignores position:fixed overlays) and re-samples only on
+    // scroll activity. So paint the whole ancestor chain — every opaque page
+    // wrapper between this nav and <html> — plus body/html, and nudge a scroll.
     document.body.style.overflowY = 'scroll';
 
-    // Apply immediately, then persist the colour every frame so Safari keeps
-    // agreeing with the page.
+    // Collect the ancestor wrappers (page root divs with their own background)
+    // so a fixed green overlay isn't the only green thing on the page.
+    const painted: HTMLElement[] = [];
+    let node: HTMLElement | null = markerRef.current?.parentElement ?? null;
+    while (node && node !== document.documentElement) {
+      painted.push(node);
+      node = node.parentElement;
+    }
+    const prev = painted.map(el => el.style.backgroundColor);
+
     const apply = () => {
       document.documentElement.style.backgroundColor = color;
       document.body.style.backgroundColor = color;
+      painted.forEach(el => { el.style.backgroundColor = color; });
       if (meta) meta.setAttribute('content', color);
     };
     apply();
@@ -57,12 +68,15 @@ export default function LeistungenNav() {
       document.documentElement.style.backgroundColor = '';
       document.body.style.backgroundColor = '';
       document.body.style.overflowY = '';
+      painted.forEach((el, i) => { el.style.backgroundColor = prev[i]; });
       if (meta) meta.setAttribute('content', '#f7f6f0');
     };
   }, [menuOpen]);
 
   return (
     <>
+      {/* Marker: lets the effect walk up to the page wrapper(s) for iOS bar tinting */}
+      <span ref={markerRef} style={{ display: 'none' }} aria-hidden="true" />
       {/* Desktop white bar */}
       <header className="nav-desktop-default" style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
