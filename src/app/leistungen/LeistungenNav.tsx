@@ -16,8 +16,10 @@ export default function LeistungenNav() {
   useEffect(() => {
     const meta = document.querySelector('meta[name="theme-color"]');
     const color = menuOpen ? '#61695e' : '#f7f6f0';
-    // iOS Safari samples the <html> background for its bar tint, not just
-    // the theme-color meta tag, and only re-samples on scroll activity.
+    // iOS Safari ignores theme-color and derives its bar tint from the BODY
+    // background, re-sampling only on scroll activity. Drive body bg directly
+    // and nudge the scroll (two moves in DIFFERENT frames so a scroll fires).
+    document.body.style.backgroundColor = color;
     document.documentElement.style.backgroundColor = color;
     if (meta) meta.setAttribute('content', color);
     requestAnimationFrame(() => {
@@ -25,6 +27,7 @@ export default function LeistungenNav() {
       setTimeout(() => window.scrollBy(0, -1), 120);
     });
     return () => {
+      document.body.style.backgroundColor = '';
       document.documentElement.style.backgroundColor = '';
     };
   }, [menuOpen]);
