@@ -130,7 +130,9 @@ body {
 }
 
 /* ─── Bernd Gruber 1:1 layout system ────────────────────────────── */
-.bg-egg { background-color: #eaeae2; }
+.bg-egg { background-color: #61695e; }
+.bg-egg h1, .bg-egg h2, .bg-egg h3, .bg-egg p, .bg-egg a { color: #ffffff !important; }
+.bg-egg img[src$=".svg"], .bg-egg img[src$=".png"] { filter: brightness(0) invert(1); }
 
 /* container: 90% max-width centered on lg+, white 16px side gap on mobile */
 .lg-container { padding-left: 16px; padding-right: 16px; }
