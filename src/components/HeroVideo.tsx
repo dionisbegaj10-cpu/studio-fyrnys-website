@@ -7,11 +7,12 @@ export default function HeroVideo() {
         position: 'relative',
         width: '100%',
         height: '100vh',
-        backgroundColor: '#000',
+        backgroundColor: '#383126',
         overflow: 'hidden',
       }}
     >
       <video
+        className="hero-video"
         src="/videos/hero.mp4"
         poster="/images/hero-poster.jpg"
         autoPlay
@@ -24,7 +25,6 @@ export default function HeroVideo() {
           inset: 0,
           width: '100%',
           height: '100%',
-          objectFit: 'cover',
           objectPosition: '50% 50%',
         }}
       />

@@ -321,6 +321,12 @@ body {
   .projekte-img-col  { display: block; flex: 1; position: relative; min-height: calc(100vh - 54px); }
 }
 
+/* ─── Hero video: cover on mobile (portrait matches portrait), contain on desktop (avoid crazy zoom-crop of portrait source) ── */
+.hero-video { object-fit: cover; }
+@media (min-width: 900px) {
+  .hero-video { object-fit: contain; }
+}
+
 /* ─── Animations ─────────────────────────────────────────────────── */
 @keyframes fadeIn {
   from { opacity: 0; }
