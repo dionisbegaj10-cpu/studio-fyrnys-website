@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const navLinks = [
@@ -12,6 +12,16 @@ const navLinks = [
 
 export default function LeistungenNav() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) return;
+    const previous = meta.getAttribute('content');
+    meta.setAttribute('content', menuOpen ? '#61695e' : '#f7f6f0');
+    return () => {
+      if (previous) meta.setAttribute('content', previous);
+    };
+  }, [menuOpen]);
 
   return (
     <>
