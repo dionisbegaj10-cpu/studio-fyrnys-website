@@ -15,11 +15,17 @@ export default function LeistungenNav() {
 
   useEffect(() => {
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (!meta) return;
-    const previous = meta.getAttribute('content');
-    meta.setAttribute('content', menuOpen ? '#61695e' : '#f7f6f0');
+    const color = menuOpen ? '#61695e' : '#f7f6f0';
+    // iOS Safari samples the <html> background for its bar tint, not just
+    // the theme-color meta tag, and only re-samples on scroll activity.
+    document.documentElement.style.backgroundColor = color;
+    if (meta) meta.setAttribute('content', color);
+    requestAnimationFrame(() => {
+      window.scrollBy(0, 1);
+      setTimeout(() => window.scrollBy(0, -1), 120);
+    });
     return () => {
-      if (previous) meta.setAttribute('content', previous);
+      document.documentElement.style.backgroundColor = '';
     };
   }, [menuOpen]);
 
