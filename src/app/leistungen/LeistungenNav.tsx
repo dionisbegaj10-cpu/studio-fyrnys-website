@@ -16,26 +16,47 @@ export default function LeistungenNav() {
   useEffect(() => {
     const meta = document.querySelector('meta[name="theme-color"]');
     const color = menuOpen ? '#61695e' : '#f7f6f0';
-    // iOS Safari derives its bar tint from the BODY/HTML background and
-    // re-samples only on scroll activity. Assert the colour every frame and
-    // nudge the scroll a few times so both bars re-tint.
-    let raf = 0;
-    let nudges = 0;
-    const tick = () => {
-      document.body.style.backgroundColor = color;
+
+    // iOS Safari derives its top/bottom bar tint from the html/body background
+    // and re-samples ONLY on scroll activity. (Same technique as seosuite.studio.)
+    // Guarantee the page is always scrollable so a scroll can actually fire.
+    document.body.style.overflowY = 'scroll';
+
+    // Apply immediately, then persist the colour every frame so Safari keeps
+    // agreeing with the page.
+    const apply = () => {
       document.documentElement.style.backgroundColor = color;
+      document.body.style.backgroundColor = color;
       if (meta) meta.setAttribute('content', color);
-      if (nudges < 6) {
-        window.scrollBy(0, nudges % 2 === 0 ? 1 : -1);
-        nudges++;
-      }
+    };
+    apply();
+    let raf = 0;
+    const tick = () => {
+      apply();
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
+
+    // Nudge the scroll so Safari re-samples. The two moves MUST land in
+    // different frames well apart (≈120ms) — adjacent frames coalesce to a
+    // net-zero scroll before paint and no scroll event ever fires.
+    const timers: number[] = [];
+    const nudge = () => {
+      requestAnimationFrame(() => {
+        window.scrollBy(0, 1);
+        timers.push(window.setTimeout(() => window.scrollBy(0, -1), 120));
+      });
+    };
+    nudge();
+    timers.push(window.setTimeout(nudge, 260));
+    timers.push(window.setTimeout(nudge, 520));
+
     return () => {
       cancelAnimationFrame(raf);
-      document.body.style.backgroundColor = '';
+      timers.forEach(clearTimeout);
       document.documentElement.style.backgroundColor = '';
+      document.body.style.backgroundColor = '';
+      document.body.style.overflowY = '';
       if (meta) meta.setAttribute('content', '#f7f6f0');
     };
   }, [menuOpen]);
