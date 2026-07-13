@@ -72,6 +72,7 @@ export default function LeistungenNav() {
               </svg>
             </button>
           </div>
+          <div style={{ width: '100%', height: '1px', backgroundColor: '#ffffff', flexShrink: 0 }} />
           <nav style={{ display: 'flex', flexDirection: 'column', paddingTop: '16px', gap: '20px', padding: '16px 20px 0' }}>
             {navLinks.map(link => (
               <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} style={{
