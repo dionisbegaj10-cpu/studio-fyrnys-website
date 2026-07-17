@@ -32,6 +32,23 @@ export default function KontaktPage() {
           onSubmit={(e) => e.preventDefault()}
           style={{ width: '100%', maxWidth: '1200px' }}
         >
+          <div className="desktop-only-block" style={{ marginBottom: '56px' }}>
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
+            <h1 style={{
+              fontFamily: 'var(--font-halis)',
+              fontSize: '40px',
+              fontWeight: 400,
+              letterSpacing: '2px',
+              color: '#2d2926',
+              margin: '0 0 12px',
+              textTransform: 'uppercase',
+            }}>
+              Kontakt
+            </h1>
+            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '15px', color: '#666', margin: 0, maxWidth: '560px' }}>
+              Erzählen Sie uns von Ihrem Projekt – wir melden uns zeitnah bei Ihnen zurück.
+            </p>
+          </div>
           <div
             style={{
               display: 'grid',

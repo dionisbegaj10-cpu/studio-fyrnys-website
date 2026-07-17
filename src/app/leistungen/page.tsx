@@ -41,7 +41,7 @@ export default function LeistungenPage() {
             loop
             playsInline
             preload="metadata"
-            className="img-landscape"
+            className="img-landscape li-media-landscape"
             style={{ maxWidth: '900px', margin: '0 auto' }}
           />
         </div>
@@ -67,7 +67,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+          <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
@@ -83,7 +83,7 @@ export default function LeistungenPage() {
             loop
             playsInline
             preload="metadata"
-            className="img-landscape"
+            className="img-landscape li-media-landscape"
             style={{ maxWidth: '560px', margin: '0 auto' }}
           />
         </div>
@@ -110,7 +110,7 @@ export default function LeistungenPage() {
       <section className="bg-egg">
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+          <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
@@ -135,12 +135,12 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="moeblierung-grid">
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div className="lg-col-2" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/leistungen/moeblierung-new.jpg" alt="Möblierung" className="img-portrait" />
+              <img src="/images/leistungen/moeblierung-new.jpg" alt="Möblierung" className="img-portrait li-media-portrait" />
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div style={{
+            <div className="lg-col-2" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <div className="li-partner-grid" style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
                 justifyItems: 'center',
@@ -214,7 +214,7 @@ export default function LeistungenPage() {
       <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+          <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 

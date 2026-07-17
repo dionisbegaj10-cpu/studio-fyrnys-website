@@ -177,7 +177,28 @@ body {
 
 /* möblierung: 1-col mobile (full-width stacked), 4-col desktop */
 .moeblierung-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
-@media (min-width: 768px) { .moeblierung-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; } }
+@media (min-width: 768px) { .moeblierung-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; } .moeblierung-grid .lg-col-2 { grid-column: span 2; } }
+
+/* ─── Desktop-only aesthetic refinements (no effect below 1024px) ─── */
+@media (min-width: 1024px) {
+  /* Single showcase images/videos on Leistungen: give them real presence
+     instead of the same small mobile width stretched into empty space. */
+  .li-media-portrait { max-width: 760px !important; }
+  .li-media-landscape { max-width: 1100px !important; }
+
+  /* Partner logo grid: denser, more balanced now that the panel spans
+     the full row instead of a lone quarter of it. */
+  .li-partner-grid { grid-template-columns: repeat(5, 1fr) !important; column-gap: 32px !important; row-gap: 60px !important; }
+
+  /* Readable line length for body copy that isn't already wrapped in a
+     constrained richtext-block (e.g. Über uns). */
+  .desktop-readable { max-width: 680px !important; }
+
+  /* Elements that exist for desktop composition only; hidden on mobile
+     by default via .desktop-only-block so mobile markup renders nothing. */
+  .desktop-only-block { display: block !important; }
+}
+.desktop-only-block { display: none; }
 
 /* ─── Leistungen page responsive ────────────────────────────────── */
 .leistungen-hero    { padding: 60px 20px 40px !important; }
