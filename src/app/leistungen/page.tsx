@@ -140,10 +140,9 @@ export default function LeistungenPage() {
               <img src="/images/leistungen/moeblierung-new.jpg" alt="Möblierung" className="img-portrait" />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div className="img-portrait" style={{
+              <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(3, 1fr)',
-                alignContent: 'center',
                 justifyItems: 'center',
                 alignItems: 'center',
                 columnGap: '20px',
