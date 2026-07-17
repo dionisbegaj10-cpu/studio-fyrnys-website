@@ -56,10 +56,11 @@ export default function LeistungenPage() {
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MANUFAKTUR heading ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
+      <div className="spacer-sm bg-egg" />
+      <section className="bg-egg">
         <div className="lg-container">
           <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
             <h2>Manufaktur</h2>
             <p>&nbsp;</p>
             <p>In unserer Manufaktur realisieren wir seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Hier verbinden sich Gestaltung, handwerkliche Präzision und Materialverständnis. Jede Lösung wird passgenau entwickelt, sauber ausgeführt und mit dem Anspruch gefertigt, dem Raum dauerhaft Wert zu verleihen.</p>
@@ -67,24 +68,24 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
+      <div className="spacer-sm bg-egg" />
 
       {/* ══ MANUFAKTUR grid ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
+      <section className="bg-egg">
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
         </div>
       </section>
 
-      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
       <div className="spacer-sm bg-egg" />
+      <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MÖBLIERUNG heading ══ */}
-      <section className="bg-egg">
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
+            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Möblierung</h2>
             <p>&nbsp;</p>
             <p>Gemeinsam mit Ihnen entwickeln wir eine Ausstattung, die zu Ihrem Stil, zur Architektur und zum gewünschten Anspruch passt. Von einzelnen Akzenten bis zur vollständigen Einrichtung entsteht ein stimmiges Konzept aus Komfort, Qualität und Persönlichkeit. Wir arbeiten mit ausgewählten Herstellern und Marken und finden Möbel, Leuchten und Objekte, die den Raum ergänzen und seine Atmosphäre prägen.</p>
@@ -92,10 +93,10 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm bg-egg" />
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MÖBLIERUNG grid ══ */}
-      <section className="bg-egg">
+      <section style={{ backgroundColor: '#f7f6f0' }}>
         <div className="lg-container">
           <div className="moeblierung-grid">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -143,7 +144,6 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      <div className="spacer-sm bg-egg" />
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ PARTNER heading ══ */}
