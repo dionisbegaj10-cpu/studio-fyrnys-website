@@ -17,7 +17,7 @@ export default function UeberUnsPage() {
       <div style={{ width: '100%', flexShrink: 0 }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/leistungen/empathie-01-portrait.webp"
+          src="/images/leistungen/ueber-uns-neu.webp"
           alt="Über uns"
           style={{ width: '100%', height: '70vw', maxHeight: '520px', objectFit: 'cover', display: 'block' }}
         />
@@ -41,13 +41,16 @@ export default function UeberUnsPage() {
           Über uns
         </h2>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
-          Fyrnys GmbH verbindet Innenarchitektur und hochwertiges Schreinerhandwerk. Von unserem Studio in Frankfurt aus erarbeiten wir gemeinsam mit Ihnen Raum- und Möblierungskonzepte für private Wohnräume und Gewerbeflächen, die in enger Verbindung mit unserer Manufakturschreinerei in Leingarten weitergedacht und umgesetzt werden können. Dort realisieren wir seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß.
+          Von unserem Studio in Frankfurt aus planen wir individuelle private Wohnräume und Gewerbeflächen. Dabei begleiten wir jedes Projekt persönlich und mit viel Gespür für Details – von der ersten Idee über die Planung bis hin zur Umsetzung.
         </p>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
-          Wir begleiten Projekte im In- und Ausland von der ersten Idee bis zum fertigen Raum. Dazu gehören Möblierungs- und Leuchtenkonzepte, die Ausarbeitung gestalterischer Planungen sowie die Abstimmung mit den beteiligten Gewerken während der Umsetzung. Unsere Arbeit reicht von Möblierungskonzepten über maßgefertigte Schreinerausbauten bis zur vollständigen Neugestaltung einzelner Räume oder ganzer Objekte.
+          Je nach Aufgabe entwickeln wir Raum-, Möblierungs- und Leuchtenkonzepte, planen individuelle Einbauten und klären gestalterische Details mit den beteiligten Gewerken. Unsere Arbeit reicht von der Auswahl einzelner Möbel bis zur vollständigen Neugestaltung von Wohnungen, Häusern, Praxen und Büroflächen.
+        </p>
+        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
+          Eng verbunden ist das Studio mit unserer familiengeführten Manufakturschreinerei in Leingarten. Dort entstehen seit 1969 individuelle Küchen, Möbel und Innenausbauten nach Maß. Viele unserer Entwürfe können wir dadurch gemeinsam mit den Schreinern bis ins Detail entwickeln und umsetzen.
         </p>
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
-          Unser Ziel ist eine Gestaltung, die zur Nutzung, zur Architektur und zu den Menschen passt. Dafür verbinden wir klare Planung, hochwertige Materialien und handwerkliche Präzision mit einer engen gestalterischen Begleitung im Projekt.
+          Uns ist wichtig, dass eine Gestaltung zum Gebäude, zur Nutzung und zu den Menschen passt. Eine klare Planung, sorgfältig ausgewählte Materialien und eine präzise Ausführung bilden dafür die Grundlage.
         </p>
       </div>
 

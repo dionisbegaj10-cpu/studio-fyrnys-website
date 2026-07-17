@@ -56,7 +56,9 @@ export default function LeistungenPage() {
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Interior Design</h2>
             <p>&nbsp;</p>
-            <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir Wünsche, Nutzung und Anspruch Ihres privaten oder gewerblichen Projekts. Daraus entsteht ein durchgängiges Gestaltungskonzept, in dem Architektur, Materialien, Licht und Möblierung sorgfältig aufeinander abgestimmt sind. So entsteht ein Interieur, das persönlich wirkt, klar funktioniert und langfristig Bestand hat.</p>
+            <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir, was Ihr privates oder gewerbliches Projekt braucht und wie die Räume genutzt werden sollen.</p>
+            <p>&nbsp;</p>
+            <p>Darauf aufbauend entsteht ein durchgängiges Gestaltungskonzept. Möbel, Materialien und Licht stimmen wir sorgfältig aufeinander ab. So entsteht ein Interior, das persönlich wirkt und im Alltag funktioniert.</p>
           </div>
         </div>
       </section>
@@ -99,7 +101,9 @@ export default function LeistungenPage() {
             <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
             <h2>Manufaktur</h2>
             <p>&nbsp;</p>
-            <p>In unserer Manufaktur realisieren wir seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Hier verbinden sich Gestaltung, handwerkliche Präzision und Materialverständnis. Jede Lösung wird passgenau entwickelt, sauber ausgeführt und mit dem Anspruch gefertigt, dem Raum dauerhaft Wert zu verleihen.</p>
+            <p>In unserer Manufaktur entstehen seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Gestaltung und handwerkliche Präzision gehen dabei Hand in Hand.</p>
+            <p>&nbsp;</p>
+            <p>Jede Lösung wird passend zum Raum entwickelt, sorgfältig ausgeführt und mit einem klaren Verständnis für Material und Funktion gefertigt. So entstehen Maßanfertigungen, die dauerhaft Bestand haben.</p>
           </div>
         </div>
       </section>
@@ -124,7 +128,9 @@ export default function LeistungenPage() {
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h2>Möblierung</h2>
             <p>&nbsp;</p>
-            <p>Gemeinsam mit Ihnen entwickeln wir eine Ausstattung, die zu Ihrem Stil, zur Architektur und zum gewünschten Anspruch passt. Von einzelnen Akzenten bis zur vollständigen Einrichtung entsteht ein stimmiges Konzept aus Komfort, Qualität und Persönlichkeit. Wir arbeiten mit ausgewählten Herstellern und Marken und finden Möbel, Leuchten und Objekte, die den Raum ergänzen und seine Atmosphäre prägen.</p>
+            <p>Wir entwickeln Einrichtungskonzepte, die sich selbstverständlich in die Architektur einfügen und den persönlichen Stil widerspiegeln. Je nach Projekt ergänzen einzelne Stücke den Raum oder es entsteht eine vollständige Möblierung.</p>
+            <p>&nbsp;</p>
+            <p>Gemeinsam mit ausgewählten Herstellern und Marken wählen wir Möbel und Leuchten aus, die die Atmosphäre des Raums prägen.</p>
           </div>
         </div>
       </section>
