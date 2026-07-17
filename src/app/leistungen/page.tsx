@@ -127,6 +127,20 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/prolicht.svg', 'Prolicht'],
                   ['/images/leistungen/partners/sovet.png', 'Sovet'],
                   ['/images/leistungen/partners/wever-ducre.png', 'Wever & Ducré'],
+                  ['/images/leistungen/partners/cto-lighting.png', 'CTO Lighting'],
+                  ['/images/leistungen/partners/edra.svg', 'Edra'],
+                  ['/images/leistungen/partners/expormim.png', 'Expormim'],
+                  ['/images/leistungen/partners/extendo.png', 'Extendo'],
+                  ['/images/leistungen/partners/inalco.png', 'Inalco'],
+                  ['/images/leistungen/partners/kristina-dam.png', 'Kristina Dam'],
+                  ['/images/leistungen/partners/newworks.png', 'New Works'],
+                  ['/images/leistungen/partners/object-carpet.png', 'Object Carpet'],
+                  ['/images/leistungen/partners/oluce.png', 'Oluce'],
+                  ['/images/leistungen/partners/tekna.png', 'Tekna'],
+                  ['/images/leistungen/partners/vescom.png', 'Vescom'],
+                  ['/images/leistungen/partners/vincent-sheppard.svg', 'Vincent Sheppard'],
+                  ['/images/leistungen/partners/vola.png', 'Vola'],
+                  ['/images/leistungen/partners/wendelbo.png', 'Wendelbo'],
                 ].map(([src, name]) => (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img key={name} src={src} alt={name} style={{ maxWidth: '100%', maxHeight: '58px', width: 'auto', objectFit: 'contain' }} />
