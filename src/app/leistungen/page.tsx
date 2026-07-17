@@ -29,6 +29,24 @@ export default function LeistungenPage() {
         </div>
       </section>
 
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
+
+      {/* ══ LEISTUNGEN video ══ */}
+      <section style={{ backgroundColor: '#f7f6f0' }}>
+        <div className="lg-container">
+          <video
+            src="/videos/leistungen-hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="img-landscape"
+            style={{ maxWidth: '900px', margin: '0 auto' }}
+          />
+        </div>
+      </section>
+
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ INTERIOR DESIGN heading ══ */}
@@ -50,6 +68,24 @@ export default function LeistungenPage() {
         <div className="lg-container">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+        </div>
+      </section>
+
+      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
+
+      {/* ══ INTERIOR DESIGN video ══ */}
+      <section style={{ backgroundColor: '#f7f6f0' }}>
+        <div className="lg-container">
+          <video
+            src="/videos/interior-design.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="img-landscape"
+            style={{ maxWidth: '560px', margin: '0 auto' }}
+          />
         </div>
       </section>
 
