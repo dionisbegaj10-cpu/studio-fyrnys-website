@@ -186,6 +186,13 @@ body {
   .li-media-portrait { max-width: 760px !important; }
   .li-media-landscape { max-width: 1100px !important; }
 
+  /* Interior Design stacks an image + video in one column — at full size
+     together they tower over the text beside them, so shrink this pair. */
+  .li-split-media > section .li-media-portrait,
+  .li-split-media > section .li-media-landscape {
+    max-width: 460px !important;
+  }
+
   /* Partner logo grid: denser, more balanced now that the panel spans
      the full row instead of a lone quarter of it. */
   .li-partner-grid { grid-template-columns: repeat(5, 1fr) !important; column-gap: 32px !important; row-gap: 60px !important; }
