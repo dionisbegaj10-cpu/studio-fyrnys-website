@@ -243,6 +243,24 @@ body {
     justify-content: center !important;
     padding: 0 80px !important;
   }
+
+  /* Leistungen page: same editorial split-screen language as Über uns —
+     heading/copy on one side, media vertically centered on the other,
+     alternating sides per section for rhythm down the page. */
+  .li-split {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 72px !important;
+  }
+  .li-split-reverse { flex-direction: row-reverse !important; }
+  .li-split-text { width: 40% !important; flex-shrink: 0 !important; }
+  .li-split-media { width: 60% !important; display: flex !important; flex-direction: column !important; gap: 24px !important; }
+  .li-split-media .li-media-portrait,
+  .li-split-media .li-media-landscape {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .li-split-spacer { display: none !important; }
 }
 .desktop-only-block { display: none; }
 

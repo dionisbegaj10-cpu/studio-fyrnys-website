@@ -18,103 +18,112 @@ export default function LeistungenPage() {
       <div className="spacer-sm" />
 
       {/* ══ HERO ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
-            <h1>Leistungen</h1>
-            <p>&nbsp;</p>
-            <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Manufaktur verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
+      <div className="li-split" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
+        <section className="li-split-text" style={{ backgroundColor: '#f7f6f0' }}>
+          <div className="lg-container">
+            <div className="richtext-block" style={{ maxWidth: '900px' }}>
+              <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
+              <h1>Leistungen</h1>
+              <p>&nbsp;</p>
+              <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Manufaktur verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
+        <div className="spacer-sm li-split-spacer" style={{ backgroundColor: '#f7f6f0' }} />
 
-      {/* ══ LEISTUNGEN video ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <video
-            src="/videos/leistungen-hero.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="img-landscape li-media-landscape"
-            style={{ maxWidth: '900px', margin: '0 auto' }}
-          />
-        </div>
-      </section>
+        {/* ══ LEISTUNGEN video ══ */}
+        <section className="li-split-media" style={{ backgroundColor: '#f7f6f0' }}>
+          <div className="lg-container">
+            <video
+              src="/videos/leistungen-hero.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="img-landscape li-media-landscape"
+              style={{ maxWidth: '900px', margin: '0 auto' }}
+            />
+          </div>
+        </section>
+      </div>
 
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ INTERIOR DESIGN heading ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
-            <h2>Interior Design</h2>
-            <p>&nbsp;</p>
-            <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir, was Ihr privates oder gewerbliches Projekt braucht und wie die Räume genutzt werden sollen. Darauf aufbauend entsteht ein durchgängiges Gestaltungskonzept. Möbel, Materialien und Licht stimmen wir sorgfältig aufeinander ab. So entsteht ein Interior, das persönlich wirkt und im Alltag funktioniert.</p>
+      <div className="li-split li-split-reverse" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
+        <section className="li-split-text" style={{ backgroundColor: '#f7f6f0' }}>
+          <div className="lg-container">
+            <div className="richtext-block" style={{ maxWidth: '900px' }}>
+              <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
+              <h2>Interior Design</h2>
+              <p>&nbsp;</p>
+              <p>Wir entwickeln Raumkonzepte, die Atmosphäre, Funktion und Persönlichkeit verbinden. Gemeinsam mit Ihnen klären wir, was Ihr privates oder gewerbliches Projekt braucht und wie die Räume genutzt werden sollen. Darauf aufbauend entsteht ein durchgängiges Gestaltungskonzept. Möbel, Materialien und Licht stimmen wir sorgfältig aufeinander ab. So entsteht ein Interior, das persönlich wirkt und im Alltag funktioniert.</p>
+            </div>
           </div>
+        </section>
+
+        <div className="spacer-sm li-split-spacer" style={{ backgroundColor: '#f7f6f0' }} />
+
+        <div className="li-split-media">
+          {/* ══ INTERIOR DESIGN grid ══ */}
+          <section style={{ backgroundColor: '#f7f6f0' }}>
+            <div className="lg-container">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+            </div>
+          </section>
+
+          <div className="spacer-sm li-split-spacer" style={{ backgroundColor: '#f7f6f0' }} />
+
+          {/* ══ INTERIOR DESIGN video ══ */}
+          <section style={{ backgroundColor: '#f7f6f0' }}>
+            <div className="lg-container">
+              <video
+                src="/videos/interior-design.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="img-landscape li-media-landscape"
+                style={{ maxWidth: '560px', margin: '0 auto' }}
+              />
+            </div>
+          </section>
         </div>
-      </section>
-
-      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
-
-      {/* ══ INTERIOR DESIGN grid ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
-        </div>
-      </section>
-
-      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
-
-      {/* ══ INTERIOR DESIGN video ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <video
-            src="/videos/interior-design.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="img-landscape li-media-landscape"
-            style={{ maxWidth: '560px', margin: '0 auto' }}
-          />
-        </div>
-      </section>
+      </div>
 
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MANUFAKTUR heading ══ */}
-      <div className="spacer-sm bg-egg" />
-      <section className="bg-egg">
-        <div className="lg-container">
-          <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
-            <h2>Manufaktur</h2>
-            <p>&nbsp;</p>
-            <p>In unserer Manufaktur entstehen seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Gestaltung und handwerkliche Präzision gehen dabei Hand in Hand. Jede Lösung wird passend zum Raum entwickelt, sorgfältig ausgeführt und mit einem klaren Verständnis für Material und Funktion gefertigt. So entstehen Maßanfertigungen, die dauerhaft Bestand haben.</p>
+      <div className="li-split bg-egg" style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className="spacer-sm bg-egg" />
+        <section className="li-split-text bg-egg">
+          <div className="lg-container">
+            <div className="richtext-block" style={{ maxWidth: '900px' }}>
+              <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
+              <h2>Manufaktur</h2>
+              <p>&nbsp;</p>
+              <p>In unserer Manufaktur entstehen seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Gestaltung und handwerkliche Präzision gehen dabei Hand in Hand. Jede Lösung wird passend zum Raum entwickelt, sorgfältig ausgeführt und mit einem klaren Verständnis für Material und Funktion gefertigt. So entstehen Maßanfertigungen, die dauerhaft Bestand haben.</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="spacer-sm bg-egg" />
+        <div className="spacer-sm bg-egg li-split-spacer" />
 
-      {/* ══ MANUFAKTUR grid ══ */}
-      <section className="bg-egg">
-        <div className="lg-container">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
-        </div>
-      </section>
+        {/* ══ MANUFAKTUR grid ══ */}
+        <section className="li-split-media bg-egg">
+          <div className="lg-container">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+          </div>
+        </section>
 
-      <div className="spacer-sm bg-egg" />
+        <div className="spacer-sm bg-egg" />
+      </div>
+
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ MÖBLIERUNG heading ══ */}
@@ -197,26 +206,28 @@ export default function LeistungenPage() {
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ PARTNER heading ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <div className="richtext-block" style={{ maxWidth: '900px' }}>
-            <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
-            <h2>Projektkoordination</h2>
-            <p>&nbsp;</p>
-            <p>Wir bereiten den ausgearbeiteten Entwurf als Grundlage für die Umsetzung vor und begleiten die Umbauphase im Sinne des festgelegten Gestaltungskonzepts. Dabei stehen wir in enger Abstimmung mit Ihnen und den beteiligten Gewerken, um gestalterische Details zu klären und die Planung nachvollziehbar weiterzuführen. Bei Bedarf empfehlen wir Ihnen zuverlässige Handwerksbetriebe und Spezialisten aus unserem Netzwerk. So bleibt die gestalterische Linie auch in der Ausführung klar erkennbar.</p>
+      <div className="li-split li-split-reverse" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
+        <section className="li-split-text" style={{ backgroundColor: '#f7f6f0' }}>
+          <div className="lg-container">
+            <div className="richtext-block" style={{ maxWidth: '900px' }}>
+              <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
+              <h2>Projektkoordination</h2>
+              <p>&nbsp;</p>
+              <p>Wir bereiten den ausgearbeiteten Entwurf als Grundlage für die Umsetzung vor und begleiten die Umbauphase im Sinne des festgelegten Gestaltungskonzepts. Dabei stehen wir in enger Abstimmung mit Ihnen und den beteiligten Gewerken, um gestalterische Details zu klären und die Planung nachvollziehbar weiterzuführen. Bei Bedarf empfehlen wir Ihnen zuverlässige Handwerksbetriebe und Spezialisten aus unserem Netzwerk. So bleibt die gestalterische Linie auch in der Ausführung klar erkennbar.</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="spacer-sm" style={{ backgroundColor: '#f7f6f0' }} />
+        <div className="spacer-sm li-split-spacer" style={{ backgroundColor: '#f7f6f0' }} />
 
-      {/* ══ PARTNER grid ══ */}
-      <section style={{ backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
-        </div>
-      </section>
+        {/* ══ PARTNER grid ══ */}
+        <section className="li-split-media" style={{ backgroundColor: '#f7f6f0' }}>
+          <div className="lg-container">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+          </div>
+        </section>
+      </div>
 
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
       <div className="spacer-sm bg-egg" />
