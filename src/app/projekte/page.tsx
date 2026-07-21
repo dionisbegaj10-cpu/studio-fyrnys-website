@@ -68,8 +68,14 @@ export default function ProjektePage() {
       return h ? h.offsetHeight : 56;
     }
 
+    function visibleCards() {
+      // Mirrors the CSS breakpoints for .il-item: 3 cards >1050px, 2 cards down to 701px.
+      return window.innerWidth <= 1050 ? 2 : 3;
+    }
+
     function cardWidth() {
-      return viewport.clientWidth - GAP;
+      const n = visibleCards();
+      return (viewport.clientWidth - GAP * (n - 1)) / n;
     }
 
     function setupDesktop() {
