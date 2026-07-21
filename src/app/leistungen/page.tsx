@@ -55,7 +55,7 @@ export default function LeistungenPage() {
       <div className="li-split li-split-reverse" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
         <section className="li-split-text" style={{ backgroundColor: '#f7f6f0' }}>
           <div className="lg-container">
-            <div className="richtext-block" style={{ maxWidth: '900px' }}>
+            <div className="richtext-block li-text-lg" style={{ maxWidth: '900px' }}>
               <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
               <h2>Interior Design</h2>
               <p>&nbsp;</p>

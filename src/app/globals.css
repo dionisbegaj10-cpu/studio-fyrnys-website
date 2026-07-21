@@ -268,6 +268,10 @@ body {
     margin: 0 !important;
   }
   .li-split-spacer { display: none !important; }
+
+  /* Interior Design: larger heading and body copy. */
+  .li-text-lg h2 { font-size: 40px !important; }
+  .li-text-lg p { font-size: 17px !important; line-height: 1.8 !important; }
 }
 .desktop-only-block { display: none; }
 
