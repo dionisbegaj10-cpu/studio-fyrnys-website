@@ -268,16 +268,6 @@ body {
     margin: 0 !important;
   }
   .li-split-spacer { display: none !important; }
-
-  /* Interior Design: centre the text block in the white space between
-     the media column and the page edge, instead of flush against it. */
-  .li-split-text-centered .lg-container {
-    display: flex !important;
-    justify-content: center !important;
-  }
-  .li-split-text-centered .richtext-block {
-    max-width: 420px !important;
-  }
 }
 .desktop-only-block { display: none; }
 
