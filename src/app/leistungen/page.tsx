@@ -271,7 +271,7 @@ export default function LeistungenPage() {
             <a href="https://www.instagram.com/studio_fyrnys/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', textDecoration: 'none' }}>Instagram</a>
           </div>
           <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
-            Impressum&nbsp;&nbsp;|&nbsp;&nbsp;Datenschutz&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
+            <a href="/impressum" style={{ color: 'inherit', textDecoration: 'none' }}>Impressum</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/datenschutz" style={{ color: 'inherit', textDecoration: 'none' }}>Datenschutz</a>&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
           </p>
         </div>
       </footer>
