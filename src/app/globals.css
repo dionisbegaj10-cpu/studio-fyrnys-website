@@ -218,6 +218,31 @@ body {
 
   /* Project detail description: a touch wider for desktop readability. */
   .pg-description { max-width: 680px !important; }
+
+  /* Über uns: full-height split screen — photo left, copy vertically
+     centered right (editorial "about the firm" composition). */
+  .au-split {
+    flex-direction: row !important;
+    min-height: calc(100vh - 54px) !important;
+  }
+  .au-media {
+    width: 50% !important;
+    flex-shrink: 0 !important;
+    align-self: stretch !important;
+  }
+  .au-media-img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+  }
+  .au-gap { display: none !important; }
+  .au-content {
+    width: 50% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 0 80px !important;
+  }
 }
 .desktop-only-block { display: none; }
 
