@@ -197,6 +197,27 @@ body {
   /* Elements that exist for desktop composition only; hidden on mobile
      by default via .desktop-only-block so mobile markup renders nothing. */
   .desktop-only-block { display: block !important; }
+
+  /* Project gallery: mobile's one-at-a-time swipe carousel becomes a
+     proper multi-column grid — no swipe/dots needed with everything visible. */
+  .pg-track {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+  }
+  .pg-track .pg-img {
+    flex: none !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3 / 4 !important;
+    scroll-snap-align: none !important;
+  }
+  .pg-dots { display: none !important; }
+
+  /* Project detail description: a touch wider for desktop readability. */
+  .pg-description { max-width: 680px !important; }
 }
 .desktop-only-block { display: none; }
 

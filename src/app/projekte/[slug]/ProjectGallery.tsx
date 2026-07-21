@@ -35,6 +35,7 @@ export default function ProjectGallery({ images }: { images: string[] }) {
     <div>
       <div
         ref={trackRef}
+        className="pg-track"
         style={{
           display: 'flex',
           overflowX: 'auto',
@@ -49,6 +50,7 @@ export default function ProjectGallery({ images }: { images: string[] }) {
             key={i}
             src={src}
             alt=""
+            className="pg-img"
             style={{
               flex: '0 0 100%',
               width: '100%',
@@ -62,7 +64,7 @@ export default function ProjectGallery({ images }: { images: string[] }) {
       </div>
 
       {images.length > 1 && (
-        <div style={{
+        <div className="pg-dots" style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',

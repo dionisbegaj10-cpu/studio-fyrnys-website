@@ -39,7 +39,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             {project.name}
           </h1>
 
-          <p style={{
+          <p className="pg-description" style={{
             fontFamily: "'TT Norms Pro', sans-serif",
             fontSize: '15px',
             lineHeight: 1.75,
