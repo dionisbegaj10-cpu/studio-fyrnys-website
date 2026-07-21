@@ -206,7 +206,7 @@ export default function LeistungenPage() {
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
       {/* ══ PARTNER heading ══ */}
-      <div className="li-split li-split-reverse" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
+      <div className="li-split" style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column' }}>
         <section className="li-split-text" style={{ backgroundColor: '#f7f6f0' }}>
           <div className="lg-container">
             <div className="richtext-block" style={{ maxWidth: '900px' }}>
