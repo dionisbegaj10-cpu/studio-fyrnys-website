@@ -23,14 +23,15 @@ export default function KontaktPage() {
   };
 
   return (
-    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '0 16px' }}>
       <LeistungenNav />
 
       {/* Form */}
-      <main style={{ flex: 1, padding: '48px 32px 64px', display: 'flex', justifyContent: 'center' }}>
+      <main style={{ flex: 1, padding: '48px 0 64px' }}>
+        <div className="lg-container">
         <form
           onSubmit={(e) => e.preventDefault()}
-          style={{ width: '100%', maxWidth: '1200px' }}
+          style={{ width: '100%' }}
         >
           <div className="desktop-only-block" style={{ marginBottom: '56px' }}>
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
@@ -69,8 +70,8 @@ export default function KontaktPage() {
                   htmlFor={field.name}
                   style={{
                     display: 'block',
-                    fontFamily: "'Assistant', Arial, sans-serif",
-                    fontSize: '14px',
+                    fontFamily: "'TT Norms Pro', sans-serif",
+                    fontSize: 'calc(14px * var(--body-scale))',
                     fontWeight: 400,
                     color: '#000000',
                     marginBottom: '4px',
@@ -86,7 +87,7 @@ export default function KontaktPage() {
                     rows={3}
                     style={{
                       width: '100%',
-                      fontFamily: "'Avenir Next', Arial, sans-serif",
+                      fontFamily: "'TT Norms Pro', sans-serif",
                       fontSize: '13px',
                       color: '#000000',
                       border: 'none',
@@ -105,7 +106,7 @@ export default function KontaktPage() {
                     onChange={handleChange(field.name)}
                     style={{
                       width: '100%',
-                      fontFamily: "'Avenir Next', Arial, sans-serif",
+                      fontFamily: "'TT Norms Pro', sans-serif",
                       fontSize: '13px',
                       color: '#000000',
                       border: 'none',
@@ -126,7 +127,7 @@ export default function KontaktPage() {
               marginTop: '32px',
               backgroundColor: '#000000',
               color: '#ffffff',
-              fontFamily: "'Avenir Next', Arial, sans-serif",
+              fontFamily: "'TT Norms Pro', sans-serif",
               fontSize: '14px',
               fontWeight: 400,
               letterSpacing: '2.1px',
@@ -139,25 +140,28 @@ export default function KontaktPage() {
             Absenden
           </button>
         </form>
+        </div>
       </main>
 
       {/* Footer */}
-      <footer
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '20px 30px',
-          flexWrap: 'wrap',
-          gap: '8px',
-        }}
-      >
-        <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-          Karriere&nbsp;|&nbsp;Nutzungsbedingungen
-        </p>
-        <p style={{ fontFamily: "'Avenir Next', Arial, sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-          © Alle Rechte vorbehalten {new Date().getFullYear()}. Studio Fyrnys Interior Design
-        </p>
+      <footer style={{ padding: '20px 0' }}>
+        <div
+          className="lg-container"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '8px',
+          }}
+        >
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
+            Karriere&nbsp;|&nbsp;Nutzungsbedingungen
+          </p>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
+            © Alle Rechte vorbehalten {new Date().getFullYear()}. Studio Fyrnys Interior Design
+          </p>
+        </div>
       </footer>
 
       <style>{`
