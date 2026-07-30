@@ -259,7 +259,9 @@ body {
     width: 50% !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
+    /* Top-aligned so the rule above "Über uns" sits level with the top
+       edge of the photo in the adjacent column. */
+    justify-content: flex-start !important;
     padding: 0 80px !important;
   }
 
