@@ -16,13 +16,13 @@ export default function LeistungenNav() {
         backgroundColor: '#f7f6f0',
         height: '54px',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'baseline',
         padding: '0 60px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1 }}>
+        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1, lineHeight: 1 }}>
           Studio Fyrnys
         </Link>
-        <nav style={{ display: 'flex', alignItems: 'center' }}>
+        <nav style={{ display: 'flex', alignItems: 'baseline' }}>
           {navLinks.map((link, i) => (
             <span key={link.href} style={{ display: 'flex', alignItems: 'center' }}>
               {i > 0 && <span style={{ color: '#c0c0c0', fontSize: '11px', margin: '0 18px' }}>|</span>}
@@ -44,7 +44,7 @@ export default function LeistungenNav() {
         justifyContent: 'space-between',
         padding: '0 20px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none' }}>
+        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', lineHeight: 1 }}>
           Studio Fyrnys
         </Link>
         {/* Real navigation (plain <a>, no client routing): the menu page paints
