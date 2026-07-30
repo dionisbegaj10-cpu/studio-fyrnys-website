@@ -46,7 +46,7 @@ export default function KontaktPage() {
             }}>
               Kontakt
             </h1>
-            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(15px * var(--body-scale))', color: '#666', margin: 0, maxWidth: '560px' }}>
+            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, color: '#000000', margin: 0, maxWidth: '560px' }}>
               Erzählen Sie uns von Ihrem Projekt – wir melden uns zeitnah bei Ihnen zurück.
             </p>
           </div>
