@@ -268,9 +268,11 @@ body {
      alternating sides per section for rhythm down the page. */
   .li-split {
     flex-direction: row !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     gap: 72px !important;
   }
+  /* Leistungen hero only: top-align heading/divider with its media. */
+  .li-split-top-align { align-items: flex-start !important; }
   .li-split-reverse { flex-direction: row-reverse !important; }
   .li-split-text { width: 40% !important; flex-shrink: 0 !important; }
   .li-split-media { width: 60% !important; display: flex !important; flex-direction: column !important; gap: 24px !important; }
