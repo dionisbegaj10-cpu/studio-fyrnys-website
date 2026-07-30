@@ -22,7 +22,7 @@ export default function LeistungenNav() {
         {/* Same container as page sections, so the wordmark's left edge lines
             up with body copy/headings at every viewport width. */}
         <div className="lg-container" style={{ width: '100%', display: 'flex', alignItems: 'baseline' }}>
-          <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1, lineHeight: 1 }}>
+          <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1, lineHeight: 1 }}>
             Studio Fyrnys
           </Link>
           <nav style={{ display: 'flex', alignItems: 'baseline' }}>
@@ -48,7 +48,7 @@ export default function LeistungenNav() {
         justifyContent: 'space-between',
         padding: '0 32px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', lineHeight: 1 }}>
+        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', lineHeight: 1 }}>
           Studio Fyrnys
         </Link>
         {/* Real navigation (plain <a>, no client routing): the menu page paints
