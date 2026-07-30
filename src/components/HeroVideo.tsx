@@ -55,7 +55,7 @@ export default function HeroVideo() {
         />
         <span
           style={{
-            fontFamily: "'Halis R', Georgia, serif",
+            fontFamily: "'TT Norms Pro', sans-serif",
             fontSize: 'clamp(18px, 2.6vw, 30px)',
             fontWeight: 400,
             letterSpacing: '0.12em',
