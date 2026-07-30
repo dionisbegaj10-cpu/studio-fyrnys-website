@@ -99,7 +99,7 @@ export default function LeistungenPage() {
 
       {/* ══ MANUFAKTUR heading ══ */}
       <div className="li-split bg-egg" style={{ display: 'flex', flexDirection: 'column' }}>
-        <div className="spacer-sm bg-egg" />
+        <div className="spacer-sm bg-egg li-split-spacer" />
         <section className="li-split-text bg-egg">
           <div className="lg-container">
             <div className="richtext-block" style={{ maxWidth: '900px' }}>
@@ -121,7 +121,7 @@ export default function LeistungenPage() {
           </div>
         </section>
 
-        <div className="spacer-sm bg-egg" />
+        <div className="spacer-sm bg-egg li-split-spacer" />
       </div>
 
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />

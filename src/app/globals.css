@@ -281,6 +281,20 @@ body {
   }
   .li-split-spacer { display: none !important; }
 
+  /* Split sections whose copy sits on the LEFT: inset the text column to the
+     page's standard container edge (the same 5% inset .lg-container uses at
+     full width), so headings/copy line up with the nav wordmark and with
+     full-width sections instead of being centred inside the 40% column.
+     Reversed sections are excluded — their copy is on the right. */
+  .li-split:not(.li-split-reverse) > .li-split-text {
+    padding-left: calc(5vw - 1.6px) !important;
+  }
+  .li-split:not(.li-split-reverse) > .li-split-text > .lg-container {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   /* Interior Design: larger heading and body copy. */
   .li-text-lg h2 { font-size: 40px !important; }
   .li-text-lg p { font-size: 17px !important; line-height: 1.8 !important; }

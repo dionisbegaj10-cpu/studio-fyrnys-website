@@ -29,7 +29,7 @@ export default function UeberUnsPage() {
         <div className="au-gap" style={{ backgroundColor: '#f7f6f0', height: '32px', flexShrink: 0 }} />
 
         {/* Cream content block */}
-        <div className="au-content" style={{ backgroundColor: '#f7f6f0', padding: '32px 20px 48px', flex: 1 }}>
+        <div className="au-content" style={{ backgroundColor: '#f7f6f0', padding: '32px 16px 48px', flex: 1 }}>
         <div className="desktop-readable" style={{ width: '100%', maxWidth: '560px', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
         <div className="desktop-readable">
           <h2 style={{

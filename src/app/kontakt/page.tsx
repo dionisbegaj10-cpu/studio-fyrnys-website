@@ -27,7 +27,7 @@ export default function KontaktPage() {
       <LeistungenNav />
 
       {/* Form */}
-      <main style={{ flex: 1, padding: '48px 30px 64px', display: 'flex', justifyContent: 'center' }}>
+      <main style={{ flex: 1, padding: '48px 32px 64px', display: 'flex', justifyContent: 'center' }}>
         <form
           onSubmit={(e) => e.preventDefault()}
           style={{ width: '100%', maxWidth: '1200px' }}

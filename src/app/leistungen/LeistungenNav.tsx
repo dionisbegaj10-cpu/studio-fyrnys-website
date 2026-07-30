@@ -16,22 +16,26 @@ export default function LeistungenNav() {
         backgroundColor: '#f7f6f0',
         height: '54px',
         display: 'flex',
-        alignItems: 'baseline',
-        padding: '0 60px',
+        alignItems: 'center',
+        padding: '0 16px',
       }}>
-        <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1, lineHeight: 1 }}>
-          Studio Fyrnys
-        </Link>
-        <nav style={{ display: 'flex', alignItems: 'baseline' }}>
-          {navLinks.map((link, i) => (
-            <span key={link.href} style={{ display: 'flex', alignItems: 'center' }}>
-              {i > 0 && <span style={{ color: '#c0c0c0', fontSize: '11px', margin: '0 18px' }}>|</span>}
-              <Link href={link.href} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none' }}>
-                {link.label}
-              </Link>
-            </span>
-          ))}
-        </nav>
+        {/* Same container as page sections, so the wordmark's left edge lines
+            up with body copy/headings at every viewport width. */}
+        <div className="lg-container" style={{ width: '100%', display: 'flex', alignItems: 'baseline' }}>
+          <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '0.28em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', flex: 1, lineHeight: 1 }}>
+            Studio Fyrnys
+          </Link>
+          <nav style={{ display: 'flex', alignItems: 'baseline' }}>
+            {navLinks.map((link, i) => (
+              <span key={link.href} style={{ display: 'flex', alignItems: 'baseline' }}>
+                {i > 0 && <span style={{ color: '#c0c0c0', fontSize: '11px', margin: '0 18px' }}>|</span>}
+                <Link href={link.href} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', lineHeight: 1 }}>
+                  {link.label}
+                </Link>
+              </span>
+            ))}
+          </nav>
+        </div>
       </header>
 
       {/* Mobile bar */}
@@ -42,7 +46,7 @@ export default function LeistungenNav() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0 20px',
+        padding: '0 32px',
       }}>
         <Link href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.24em', textTransform: 'uppercase', color: '#1a1a1a', textDecoration: 'none', lineHeight: 1 }}>
           Studio Fyrnys
