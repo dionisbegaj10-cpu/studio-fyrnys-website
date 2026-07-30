@@ -268,7 +268,7 @@ body {
      alternating sides per section for rhythm down the page. */
   .li-split {
     flex-direction: row !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     gap: 72px !important;
   }
   .li-split-reverse { flex-direction: row-reverse !important; }
