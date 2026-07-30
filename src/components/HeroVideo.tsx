@@ -32,12 +32,14 @@ export default function HeroVideo() {
         style={{
           position: 'absolute',
           top: '46%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
+          left: 0,
+          right: 0,
+          transform: 'translateY(-50%)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           gap: '16px',
+          padding: '0 16px',
           pointerEvents: 'none',
         }}
       >
@@ -54,14 +56,15 @@ export default function HeroVideo() {
         <span
           style={{
             fontFamily: "'Halis R', Georgia, serif",
-            fontSize: 'clamp(26px, 3.6vw, 42px)',
+            fontSize: 'clamp(18px, 2.6vw, 30px)',
             fontWeight: 400,
-            letterSpacing: '0.3em',
+            letterSpacing: '0.12em',
             textTransform: 'uppercase',
             color: '#ffffff',
+            whiteSpace: 'nowrap',
           }}
         >
-          Fyrnys
+          Interior Design
         </span>
       </div>
     </div>
