@@ -36,8 +36,8 @@ export default function KontaktPage() {
             <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
             <h1 style={{
               fontFamily: 'var(--font-halis)',
-              fontSize: '40px',
-              fontWeight: 400,
+              fontSize: 'calc(40px * var(--headline-scale))',
+              fontWeight: 700,
               letterSpacing: '2px',
               color: '#2d2926',
               margin: '0 0 12px',
@@ -45,7 +45,7 @@ export default function KontaktPage() {
             }}>
               Kontakt
             </h1>
-            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '15px', color: '#666', margin: 0, maxWidth: '560px' }}>
+            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(15px * var(--body-scale))', color: '#666', margin: 0, maxWidth: '560px' }}>
               Erzählen Sie uns von Ihrem Projekt – wir melden uns zeitnah bei Ihnen zurück.
             </p>
           </div>

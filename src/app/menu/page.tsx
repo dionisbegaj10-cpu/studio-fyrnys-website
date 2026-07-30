@@ -23,7 +23,7 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
 
 const linkStyle: React.CSSProperties = {
   display: 'inline-block',
-  width: 'fit-content',
+  width: '140px',
   fontFamily: "'TT Norms Pro', sans-serif",
   fontSize: '14px',
   fontWeight: 700,

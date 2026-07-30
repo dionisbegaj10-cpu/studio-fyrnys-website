@@ -118,7 +118,7 @@ export default function Nav() {
         <div style={{ padding: '48px 30px 56px', display: 'flex', flexDirection: 'column' }}>
           {navLinks.map((link, i) => (
             <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}
-              style={{ display: 'block', fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'clamp(28px, 3.5vw, 48px)', fontWeight: 300, letterSpacing: '0.06em', color: '#1a1a1a', textDecoration: 'none', padding: '18px 0', borderBottom: i < navLinks.length - 1 ? '1px solid #efefef' : 'none', transition: 'color 0.2s' }}
+              style={{ display: 'flex', alignItems: 'center', height: 'clamp(64px, 7vw, 96px)', boxSizing: 'border-box', fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'clamp(28px, 3.5vw, 48px)', lineHeight: 1, fontWeight: 300, letterSpacing: '0.06em', color: '#1a1a1a', textDecoration: 'none', whiteSpace: 'nowrap', borderBottom: i < navLinks.length - 1 ? '1px solid #efefef' : 'none', transition: 'color 0.2s' }}
               onMouseEnter={e => (e.currentTarget.style.color = '#b0a898')}
               onMouseLeave={e => (e.currentTarget.style.color = '#1a1a1a')}
             >{link.label}</Link>

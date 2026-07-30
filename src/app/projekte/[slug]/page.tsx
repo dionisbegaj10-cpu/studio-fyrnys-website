@@ -25,8 +25,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
           <h1 style={{
             fontFamily: 'var(--font-halis)',
-            fontSize: 'clamp(32px, 9vw, 64px)',
-            fontWeight: 400,
+            fontSize: 'calc(clamp(32px, 9vw, 64px) * var(--headline-scale))',
+            fontWeight: 700,
             letterSpacing: '0.08em',
             textTransform: 'uppercase',
             color: '#2d2926',
@@ -41,7 +41,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
           <p className="pg-description" style={{
             fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: '15px',
+            fontSize: 'calc(15px * var(--body-scale))',
             lineHeight: 1.75,
             color: '#666',
             margin: '0 0 24px 0',

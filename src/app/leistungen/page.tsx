@@ -236,7 +236,7 @@ export default function LeistungenPage() {
       <section className="bg-egg">
         <div className="lg-container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginBottom: '24px', alignItems: 'end' }}>
-            <h2 style={{ fontFamily: 'var(--font-halis)', fontWeight: 500, fontSize: 'clamp(18px, 2.5vw, 28px)', margin: 0 }}>Projekte</h2>
+            <h2 style={{ fontFamily: 'var(--font-halis)', fontWeight: 700, fontSize: 'calc(clamp(18px, 2.5vw, 28px) * var(--headline-scale))', margin: 0 }}>Projekte</h2>
             <a href="/projekte" style={{ justifySelf: 'end', color: '#333', textDecoration: 'none', fontSize: '14px' }}>Alle anzeigen ›</a>
           </div>
         </div>

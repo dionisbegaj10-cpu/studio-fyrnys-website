@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     id: 5,
     slug: 'bimberg',
-    name: 'Haus im Haus',
+    name: 'Haus Frankfurt',
     description: 'Bei diesem Umbau wurden zwei separate Wohnungen zu einer großzügigen Wohneinheit zusammengeführt. Das Prinzip „Haus im Haus" gliedert die Wohnbereiche über mehrere Ebenen und gibt dem Stadthaus seine besondere Struktur. Die Grundrisse wurden vollständig neu organisiert und auf das Leben der Familie abgestimmt. Die neue Küche befindet sich in einem filigranen Glasanbau. Sie öffnet sich zum Außenbereich und bringt viel Tageslicht in das Haus. Gleichzeitig wurde der Altbau sorgfältig weiterentwickelt. Türstürze wurden erhöht, Raumproportionen angepasst und Stuckelemente wieder ergänzt. Der ursprüngliche Charakter des Hauses bleibt dadurch spürbar und wird mit der neuen Architektur verbunden.',
     coverImage: '/images/projekte/bimberg/cover.webp',
     images: gallery('bimberg', 14),
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   {
     id: 8,
     slug: 'christophersen',
-    name: 'Skandinavisches Wohnen',
+    name: 'Wohnung Frankfurt',
     description: 'Für eine junge Familie in Frankfurt wurde das Zuhause neu geplant und auf den gemeinsamen Alltag ausgerichtet. Im Zentrum steht die offene Wohnküche. Hier gehen Kochen, Essen und Zusammensein direkt ineinander über. Helle Hölzer, natürliche Materialien und ruhige Farben geben den Räumen ihre skandinavische Leichtigkeit. Trotzdem musste ausreichend Platz für die vielen Dinge des Familienlebens geschaffen werden. Maßgefertigte Einbauten aus unserer Schreinerei nehmen den benötigten Stauraum auf. Sie fügen sich zurückhaltend in die Räume ein und lassen den offenen Charakter der Wohnung bestehen.',
     coverImage: '/images/projekte/christophersen/cover.webp',
     images: gallery('christophersen', 14),
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   {
     id: 7,
     slug: 'strenge',
-    name: 'Stadthaus Modern',
+    name: 'Haus Frankfurt',
     description: 'Bei der Kernsanierung dieses Stadthauses wurde die vorhandene Raumstruktur grundlegend überarbeitet. Die zuvor getrennten Bereiche wurden geöffnet und klarer miteinander verbunden. Individuell geplante Einbauten übernehmen wichtige Funktionen und sorgen für Ordnung im Alltag. Materialien und Oberflächen sind bewusst zurückhaltend gewählt. Dadurch wirken die Räume ruhig, ohne an Wohnlichkeit zu verlieren. Der Bestand wurde nicht verändert, sondern gezielt an die heutige Nutzung angepasst.',
     coverImage: '/images/projekte/strenge/cover.webp',
     images: gallery('strenge', 13),
@@ -75,7 +75,7 @@ export const projects: Project[] = [
   {
     id: 9,
     slug: 'wild-schmitten',
-    name: 'Villa Schmitten',
+    name: 'Haus im Taunus',
     description: 'Die Architektur dieses Einfamilienhauses im Taunus trägt deutliche Bezüge zu den 1970er-Jahren. Genau dieser Charakter bildete den Ausgangspunkt für den Umbau. Die Räume wurden geöffnet und stärker miteinander verbunden. Neue Sichtachsen lassen das Haus großzügiger wirken und machen seine besondere räumliche Struktur wieder erlebbar. Warme Materialien, markante Oberflächen und eine fein abgestimmte Farbwelt führen die vorhandene Architektur weiter. Maßgefertigte Einbauten ergänzen das Haus, ohne sich in den Vordergrund zu stellen.',
     coverImage: '/images/projekte/wild-schmitten/cover.webp',
     images: gallery('wild-schmitten', 15),
@@ -83,7 +83,7 @@ export const projects: Project[] = [
   {
     id: 6,
     slug: 'entholzer-liebigstrasse',
-    name: 'Bel Étage',
+    name: 'Wohnung Frankfurt',
     description: 'Die großzügigen Räume und hohen Decken prägen diese Stadtwohnung in der Bel Étage eines Frankfurter Altbaus. Für eine Familie wurde dazu ein Einrichtungskonzept entwickelt, das den Charakter der Wohnung aufnimmt. Möbel, Leuchten, und Materialien wurden über die einzelnen Räume hinweg zusammengestellt. Dabei durfte die Wohnung elegant wirken, sollte aber nicht förmlich werden. So entstand eine persönliche Einrichtung, die dem Altbau gerecht wird und gleichzeitig genügend Raum für den Familienalltag lässt.',
     coverImage: '/images/projekte/entholzer-liebigstrasse/cover.webp',
     images: gallery('entholzer-liebigstrasse', 6),
@@ -91,7 +91,7 @@ export const projects: Project[] = [
   {
     id: 15,
     slug: 'fritsch-pylos',
-    name: 'Mediterranes Ferienhaus',
+    name: 'Haus Griechenland',
     description: 'Das Ferienhaus in Griechenland ist als Rückzugsort für eine Familie entstanden. Die Architektur orientiert sich an der traditionellen Bauweise der Umgebung. Naturstein, massive Holzbalken und durchgehende Steinböden bestimmen den Charakter des Hauses. Große Fenster verbinden die Wohnräume mit den Terrassen und der umgebenden Landschaft und bringen viel Tageslicht ins Haus. Das Leben findet dadurch ganz selbstverständlich zwischen innen und außen statt. Im Inneren bleiben die Materialien ursprünglich und zurückhaltend, sodass sich die Räume trotz ihrer Großzügigkeit wohnlich anfühlen.',
     coverImage: '/images/projekte/fritsch-pylos/cover.webp',
     images: ['/images/projekte/fritsch-pylos/cover.webp'],
@@ -107,7 +107,7 @@ export const projects: Project[] = [
   {
     id: 16,
     slug: 'fischer-penthouse',
-    name: 'Penthouse',
+    name: 'Wohnung Frankfurt',
     description: 'Bei der Kernsanierung dieses Penthouses aus den 1980er-Jahren wurde der Grundriss vollständig neu organisiert. Die ehemals kleinteilige Struktur wurde geöffnet. Dadurch entstanden großzügige Wohnbereiche mit viel Tageslicht. Gleichzeitig gliedert der neue Grundriss die Wohnung klar in gemeinschaftliche und private Bereiche. Individuelle Einbauten aus unserer Schreinerei schaffen Stauraum genau dort, wo er benötigt wird. Sie übernehmen zugleich die Zonierung einzelner Räume und fügen sich ruhig in die Architektur ein.',
     coverImage: '/images/projekte/fischer-penthouse/cover.webp',
     images: ['/images/projekte/fischer-penthouse/cover.webp'],
@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     id: 13,
     slug: 'brinkmann-wohnhaus',
-    name: 'Wohnhaus',
+    name: 'Haus Frankfurt',
     description: 'Bei der Sanierung dieser Altbauvilla wurde die bestehende Raumstruktur vor allem durch individuell geplante Schreinerarbeiten weiterentwickelt. Der Toilettenbereich wurde vollständig verkleidet und als eigenes Volumen in den Grundriss integriert. Dadurch tritt er optisch in den Hintergrund und fügt sich ruhiger in den Raum ein. Auch die bestehende Schachtwand zwischen Flur und Wohnbereich erhielt eine neue Verkleidung. Zusätzlicher Stauraum, klare Fluchten und abgerundete Übergänge verbinden die einzelnen Bereiche miteinander. Die Einbauten wirken nicht wie nachträgliche Ergänzungen, sondern wie ein Teil der Architektur.',
     coverImage: '/images/projekte/brinkmann-wohnhaus/cover.webp',
     images: ['/images/projekte/brinkmann-wohnhaus/cover.webp'],
@@ -123,7 +123,7 @@ export const projects: Project[] = [
   {
     id: 14,
     slug: 'entholzer-gruneburgweg',
-    name: 'Reihenhaus',
+    name: 'Haus Frankfurt',
     description: 'Bei der Kernsanierung dieses Reihenhauses aus den 1930er-Jahren wurde die vorhandene Struktur auf das heutige Familienleben abgestimmt. Ein neuer Anbau öffnet das Haus zum Garten und bringt mehr Licht in das Erdgeschoss. Die Küche bildet nun den Mittelpunkt des Hauses. Von hier aus gehen Kochen, Essen und Wohnen fließend ineinander über. Integrierte Stauraumlösungen nutzen den vorhandenen Platz und halten die Räume im Alltag übersichtlich. Der kompakte Bestand wird dadurch deutlich offener und großzügiger wahrgenommen.',
     coverImage: '/images/projekte/entholzer-gruneburgweg/cover.webp',
     images: ['/images/projekte/entholzer-gruneburgweg/cover.webp'],

@@ -34,8 +34,8 @@ export default function UeberUnsPage() {
         <div className="desktop-readable">
           <h2 style={{
             fontFamily: 'var(--font-halis)',
-            fontSize: '30px',
-            fontWeight: 400,
+            fontSize: 'calc(30px * var(--headline-scale))',
+            fontWeight: 700,
             letterSpacing: '2px',
             color: '#2d2926',
             marginBottom: '20px',
@@ -43,16 +43,16 @@ export default function UeberUnsPage() {
           }}>
             Über uns
           </h2>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
             Von unserem Studio in Frankfurt aus planen wir individuelle private Wohnräume und Gewerbeflächen. Dabei begleiten wir jedes Projekt persönlich und mit viel Gespür für Details – von der ersten Idee über die Planung bis hin zur Umsetzung.
           </p>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
             Je nach Aufgabe entwickeln wir Raum-, Möblierungs- und Leuchtenkonzepte, planen individuelle Einbauten und klären gestalterische Details mit den beteiligten Gewerken. Unsere Arbeit reicht von der Auswahl einzelner Möbel bis zur vollständigen Neugestaltung von Wohnungen, Häusern, Praxen und Büroflächen.
           </p>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
             Eng verbunden ist das Studio mit unserer familiengeführten Manufakturschreinerei in Leingarten. Dort entstehen seit 1969 individuelle Küchen, Möbel und Innenausbauten nach Maß. Viele unserer Entwürfe können wir dadurch gemeinsam mit den Schreinern bis ins Detail entwickeln und umsetzen.
           </p>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '14px', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
+          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
             Uns ist wichtig, dass eine Gestaltung zum Gebäude, zur Nutzung und zu den Menschen passt. Eine klare Planung, sorgfältig ausgewählte Materialien und eine präzise Ausführung bilden dafür die Grundlage.
           </p>
         </div>

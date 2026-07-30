@@ -53,7 +53,7 @@ export default function HeroVideo() {
         />
         <span
           style={{
-            fontFamily: 'var(--font-halis)',
+            fontFamily: "'Halis R', Georgia, serif",
             fontSize: 'clamp(26px, 3.6vw, 42px)',
             fontWeight: 400,
             letterSpacing: '0.3em',

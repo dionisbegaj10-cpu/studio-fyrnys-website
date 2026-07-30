@@ -2,6 +2,16 @@
 
 /* ─── Fonts ─────────────────────────────────────────────────────── */
 @font-face {
+  font-family: 'Grumpy 24';
+  src: url('/fonts/Grumpy-Black24.woff2') format('woff2'),
+       url('/fonts/Grumpy-Black24.woff') format('woff'),
+       url('/fonts/Grumpy-Black24.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'TT Norms Pro';
   src: url('/fonts/TTNormsPro-Thin.ttf') format('truetype');
   font-weight: 100;
@@ -81,7 +91,9 @@
   --linen-beige: #ddcab0;
   --pebble-grey: #8d8479;
   --white: #ffffff;
-  --font-halis: 'Halis R', Georgia, serif;
+  --font-halis: var(--font-fraunces), 'Halis R', Georgia, serif;
+  --headline-scale: 1;
+  --body-scale: 1;
 }
 
 /* ─── Reset / Base ───────────────────────────────────────────────── */
@@ -105,7 +117,7 @@ body {
   background-color: #f7f6f0;
   color: #1a1a1a;
   font-family: 'TT Norms Pro', sans-serif;
-  font-size: 14px;
+  font-size: calc(14px * var(--body-scale));
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -143,10 +155,10 @@ body {
 @media (min-width: 1024px) { .text-pad { padding-left: 0; padding-right: 0; } }
 
 /* richtext styles matching bernd-gruber */
-.richtext-block h1 { font-family: var(--font-halis); font-weight: 500; font-size: clamp(24px, 4vw, 42px); line-height: 1.15; margin-bottom: 0; }
-.richtext-block h2 { font-family: var(--font-halis); font-weight: 500; font-size: clamp(18px, 2.5vw, 28px); line-height: 1.2; margin-bottom: 0.75rem; }
-.richtext-block h3 { font-weight: 500; font-size: 16px; margin-bottom: 0; }
-.richtext-block p { font-size: 15px; line-height: 1.7; color: #333; margin: 0; }
+.richtext-block h1 { font-family: var(--font-halis); font-weight: 700; font-size: calc(clamp(24px, 4vw, 42px) * var(--headline-scale)); line-height: 1.15; margin-bottom: 0; }
+.richtext-block h2 { font-family: var(--font-halis); font-weight: 700; font-size: calc(clamp(18px, 2.5vw, 28px) * var(--headline-scale)); line-height: 1.2; margin-bottom: 0.75rem; }
+.richtext-block h3 { font-weight: 500; font-size: calc(16px * var(--body-scale)); margin-bottom: 0; }
+.richtext-block p { font-size: calc(15px * var(--body-scale)); line-height: 1.7; color: #333; margin: 0; }
 .richtext-block p + p { margin-top: 1em; }
 .richtext-block a { color: #333; text-decoration: underline; }
 
@@ -419,11 +431,8 @@ body {
   .projekte-img-col  { display: block; flex: 1; position: relative; min-height: calc(100vh - 54px); }
 }
 
-/* ─── Hero video: cover on mobile (portrait matches portrait), contain on desktop (avoid crazy zoom-crop of portrait source) ── */
+/* ─── Hero video: cover everywhere so the landscape source fills the frame on any desktop size without letterboxing ── */
 .hero-video { object-fit: cover; }
-@media (min-width: 900px) {
-  .hero-video { object-fit: contain; }
-}
 
 /* ─── Animations ─────────────────────────────────────────────────── */
 @keyframes fadeIn {

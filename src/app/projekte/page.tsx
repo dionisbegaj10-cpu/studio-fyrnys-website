@@ -22,7 +22,7 @@ function ComingSoonCard({ project }: { project: Project }) {
         <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
           <span className="il-cs-title" style={{
             fontFamily: 'var(--font-halis)',
-            fontSize: '30px',
+            fontSize: '24px',
             fontWeight: 400,
             letterSpacing: '2px',
             textTransform: 'uppercase',
@@ -207,7 +207,7 @@ export default function ProjektePage() {
                     >
                       <p style={{
                         fontFamily: 'var(--font-halis)',
-                        fontSize: '30px',
+                        fontSize: '24px',
                         fontWeight: 400,
                         fontStyle: 'normal',
                         letterSpacing: '2px',
