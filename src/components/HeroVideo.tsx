@@ -57,7 +57,7 @@ export default function HeroVideo() {
           style={{
             fontFamily: "'TT Norms Pro', sans-serif",
             fontSize: 'clamp(18px, 2.6vw, 30px)',
-            fontWeight: 400,
+            fontWeight: 700,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
             color: '#ffffff',
