@@ -240,27 +240,37 @@ body {
 
   /* Über uns: full-height split screen — photo left, copy vertically
      centered right (editorial "about the firm" composition). */
+  /* Grid so the row height is driven by the copy column; the photo stretches
+     to that height. The pair is then centred vertically, which puts the top
+     of the photo level with the rule above "Über uns". */
   .au-split {
-    flex-direction: row !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: stretch !important;
+    align-content: center !important;
     min-height: calc(100vh - 54px) !important;
   }
   .au-media {
-    width: 50% !important;
-    flex-shrink: 0 !important;
+    width: auto !important;
     align-self: stretch !important;
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 0 !important;
   }
+  /* Taken out of flow so the photo never dictates the row height. */
   .au-media-img {
+    position: absolute !important;
+    inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
     max-height: none !important;
+    object-fit: cover !important;
   }
   .au-gap { display: none !important; }
   .au-content {
-    width: 50% !important;
+    width: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    /* Top-aligned so the rule above "Über uns" sits level with the top
-       edge of the photo in the adjacent column. */
     justify-content: flex-start !important;
     padding: 0 80px !important;
   }
