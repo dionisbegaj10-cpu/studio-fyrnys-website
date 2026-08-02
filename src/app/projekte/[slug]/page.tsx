@@ -20,8 +20,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       <LeistungenNav />
 
       {/* Title + description block — cream colored frame like nateberkus.com */}
-      <div style={{ backgroundColor: '#f7f6f0' }}>
-        <div style={{ padding: '48px 24px 24px' }}>
+      <div style={{ backgroundColor: '#f7f6f0', padding: '48px 0 24px' }}>
+        <div className="lg-container">
           <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
           <h1 style={{
             fontFamily: 'var(--font-halis)',
@@ -57,13 +57,18 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       </div>
 
       {/* Gallery */}
-      {project.images.length > 0 && <ProjectGallery images={project.images} />}
+      {project.images.length > 0 && (
+        <div className="lg-container">
+          <ProjectGallery images={project.images} />
+        </div>
+      )}
 
       {/* PREVIOUS / NEXT — below gallery */}
-      <div style={{
+      <div className="lg-container" style={{
         display: 'flex',
         justifyContent: 'space-between',
-        padding: '20px 24px',
+        marginTop: '20px',
+        marginBottom: '20px',
         backgroundColor: '#f7f6f0',
       }}>
         {prev ? (
@@ -108,10 +113,12 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </Link>
       </div>
 
-      <footer style={{ margin: '0 -16px', padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
+      <footer style={{ padding: '20px 0', backgroundColor: '#f7f6f0' }}>
+        <div className="lg-container">
         <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
           <Link href="/impressum" style={{ color: 'inherit', textDecoration: 'none' }}>Impressum</Link>&nbsp;&nbsp;|&nbsp;&nbsp;<Link href="/datenschutz" style={{ color: 'inherit', textDecoration: 'none' }}>Datenschutz</Link>&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
         </p>
+        </div>
       </footer>
     </div>
   );
