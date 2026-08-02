@@ -27,8 +27,10 @@ const linkStyle: React.CSSProperties = {
   width: '140px',
   fontFamily: "'TT Norms Pro', sans-serif",
   fontSize: '14px',
-  fontWeight: 700,
-  letterSpacing: '0.06em',
+  // Same weight and tracking as the site's nav links (LeistungenNav),
+  // so the menu reads as part of the same typographic system.
+  fontWeight: 400,
+  letterSpacing: '0.18em',
   textTransform: 'uppercase',
   color: '#ffffff',
   textDecoration: 'none',
