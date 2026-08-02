@@ -24,18 +24,19 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
 
 const linkStyle: React.CSSProperties = {
   display: 'inline-block',
-  width: '140px',
-  fontFamily: "'TT Norms Pro', sans-serif",
-  fontSize: '14px',
-  // Same weight and tracking as the site's nav links (LeistungenNav),
-  // so the menu reads as part of the same typographic system.
-  fontWeight: 400,
-  letterSpacing: '0.18em',
-  textTransform: 'uppercase',
+  width: '180px',
+  // Same face and treatment as the section titles (Leistungen, Interior
+  // Design, Blog): the --font-halis stack, bold, normal case.
+  fontFamily: 'var(--font-halis)',
+  fontSize: '22px',
+  fontWeight: 700,
+  letterSpacing: 'normal',
+  textTransform: 'none',
+  lineHeight: 1.2,
   color: '#ffffff',
   textDecoration: 'none',
   borderBottom: '1px solid #ffffff',
-  paddingBottom: '4px',
+  paddingBottom: '6px',
 };
 
 export default function MenuPage() {
