@@ -322,8 +322,15 @@ body {
     margin-right: 0 !important;
   }
 
-  /* Interior Design: larger heading and body copy. */
-  .li-text-lg h2 { font-size: 40px !important; }
+  /* Leistungen: every section heading matches the "Leistungen" /
+     "Interior Design" scale. Scoped away from the legal pages, which are
+     the only other users of .richtext-block. */
+  .richtext-block:not(.desktop-readable) h2,
+  .li-section-title {
+    font-size: calc(40px * var(--headline-scale)) !important;
+  }
+
+  /* Interior Design: larger body copy. */
   .li-text-lg p { font-size: 17px !important; line-height: 1.8 !important; }
 }
 .desktop-only-block { display: none; }
