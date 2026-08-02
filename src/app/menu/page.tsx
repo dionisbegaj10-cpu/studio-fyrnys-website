@@ -47,7 +47,7 @@ export default function MenuPage() {
         <BackButton />
       </div>
       <div style={{ width: '100%', height: '1px', backgroundColor: '#ffffff', flexShrink: 0 }} />
-      <nav style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '16px 20px 0' }}>
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '40px 20px 0' }}>
         {navLinks.map(link =>
           link.external ? (
             <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" style={linkStyle}>
