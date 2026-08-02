@@ -17,6 +17,7 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: 'Leistungen', href: '/leistungen' },
   { label: 'Projekte', href: '/projekte' },
   { label: 'Über uns', href: '/ueber-uns' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Kontakt', href: '/kontakt' },
   { label: 'Instagram', href: 'https://www.instagram.com/studio_fyrnys/', external: true },
 ];
