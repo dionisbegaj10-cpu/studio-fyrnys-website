@@ -73,9 +73,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <main style={{ flex: 1, padding: '40px 0 72px' }}>
         <div className="lg-container">
           <div className="richtext-block desktop-readable">
-            {post.body.map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
+            {post.body.map((block, i) =>
+              block.type === 'h2' ? (
+                <h2 key={i} style={{ marginTop: i === 0 ? 0 : '2em' }}>{block.text}</h2>
+              ) : (
+                <p key={i}>{block.text}</p>
+              )
+            )}
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', marginTop: '48px', flexWrap: 'wrap' }}>
