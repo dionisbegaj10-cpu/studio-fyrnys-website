@@ -309,6 +309,19 @@ body {
     margin-right: 0 !important;
   }
 
+  /* Reversed splits put the media on the LEFT. Its inner container is
+     auto-centred by default, so images started ~28px inside the copy edge.
+     Inset the column to the page container edge and left-align its contents
+     so pictures begin exactly where the copy begins. */
+  .li-split-reverse > .li-split-media {
+    padding-left: calc(5vw - 1.6px) !important;
+  }
+  .li-split-reverse > .li-split-media .lg-container {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   /* Interior Design: larger heading and body copy. */
   .li-text-lg h2 { font-size: 40px !important; }
   .li-text-lg p { font-size: 17px !important; line-height: 1.8 !important; }
