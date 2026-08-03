@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LeistungenNav from '../leistungen/LeistungenNav';
+import SiteFooter from '@/components/SiteFooter';
 
 export const metadata: Metadata = { title: 'Impressum – Studio Fyrnys' };
 
@@ -77,11 +78,7 @@ export default function ImpressumPage() {
 
       <div className="spacer-md" />
 
-      <footer style={{ margin: '0 -16px', backgroundColor: '#f7f6f0', padding: '48px 16px' }}>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0, textAlign: 'center' }}>
-          © {new Date().getFullYear()} Studio Fyrnys
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

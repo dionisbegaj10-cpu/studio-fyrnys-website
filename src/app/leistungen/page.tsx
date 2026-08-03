@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LeistungenNav from './LeistungenNav';
+import SiteFooter from '@/components/SiteFooter';
 import { projects } from '../projekte/data';
 
 export const metadata: Metadata = { title: 'Leistungen – Studio Fyrnys' };
@@ -258,23 +259,7 @@ export default function LeistungenPage() {
       <div className="spacer-sm bg-egg" />
 
       {/* ══ FOOTER ══ */}
-      <footer style={{ margin: '0 -16px', backgroundColor: '#f7f6f0', padding: '48px 16px' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '32px', maxWidth: '1200px', margin: '0 auto' }}>
-          <div>
-            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', fontWeight: 400, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#1a1a1a', marginBottom: '6px', marginTop: 0 }}>Studio Fyrnys</p>
-            <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#888', margin: 0 }}>Innenarchitektur und Handwerk</p>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {[['Leistungen', '/leistungen'], ['Projekte', '/projekte'], ['Über uns', '/ueber-uns'], ['Blog', '/blog'], ['Kontakt', '/kontakt']].map(([label, href]) => (
-              <a key={href} href={href} style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', textDecoration: 'none' }}>{label}</a>
-            ))}
-            <a href="https://www.instagram.com/studio_fyrnys/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#333', textDecoration: 'none' }}>Instagram</a>
-          </div>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
-            <a href="/impressum" style={{ color: 'inherit', textDecoration: 'none' }}>Impressum</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/datenschutz" style={{ color: 'inherit', textDecoration: 'none' }}>Datenschutz</a>&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
 
     </div>
   );

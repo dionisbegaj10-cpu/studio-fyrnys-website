@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import LeistungenNav from '../leistungen/LeistungenNav';
+import SiteFooter from '@/components/SiteFooter';
 
 const FIELDS: Array<{ name: string; label: string; type: 'text' | 'textarea'; full?: boolean }> = [
   { name: 'firstName', label: 'Vorname', type: 'text' },
@@ -144,25 +145,7 @@ export default function KontaktPage() {
       </main>
 
       {/* Footer */}
-      <footer style={{ padding: '20px 0' }}>
-        <div
-          className="lg-container"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '8px',
-          }}
-        >
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-            Karriere&nbsp;|&nbsp;Nutzungsbedingungen
-          </p>
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: 'rgba(18,18,18,0.75)' }}>
-            © Alle Rechte vorbehalten {new Date().getFullYear()}. Studio Fyrnys Interior Design
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <style>{`
         @media (max-width: 700px) {

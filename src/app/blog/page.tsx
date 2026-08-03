@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import LeistungenNav from '../leistungen/LeistungenNav';
+import SiteFooter from '@/components/SiteFooter';
 import { posts, formatDate } from './data';
 
 export const metadata: Metadata = {
@@ -116,13 +117,7 @@ export default function BlogPage() {
         </div>
       </main>
 
-      <footer style={{ padding: '20px 0', backgroundColor: '#f7f6f0' }}>
-        <div className="lg-container">
-          <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
-            <Link href="/impressum" style={{ color: 'inherit', textDecoration: 'none' }}>Impressum</Link>&nbsp;&nbsp;|&nbsp;&nbsp;<Link href="/datenschutz" style={{ color: 'inherit', textDecoration: 'none' }}>Datenschutz</Link>&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
 
       <style>{`
         @media (max-width: 700px) {

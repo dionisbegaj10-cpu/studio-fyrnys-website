@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import LeistungenNav from '../leistungen/LeistungenNav';
+import SiteFooter from '@/components/SiteFooter';
 import { projects, type Project } from './data';
 
 const GAP = 5;
@@ -230,11 +231,10 @@ export default function ProjektePage() {
         </div>
       </div>
 
-      <footer style={{ padding: '20px 20px', backgroundColor: '#f7f6f0' }}>
-        <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '10px', letterSpacing: '0.12em', color: '#9b9690', margin: 0 }}>
-          <Link href="/impressum" style={{ color: 'inherit', textDecoration: 'none' }}>Impressum</Link>&nbsp;&nbsp;|&nbsp;&nbsp;<Link href="/datenschutz" style={{ color: 'inherit', textDecoration: 'none' }}>Datenschutz</Link>&nbsp;&nbsp;&nbsp;&nbsp;©&nbsp;{new Date().getFullYear()}&nbsp;Studio Fyrnys
-        </p>
-      </footer>
+      {/* Wrapper supplies the page gutter this full-bleed layout lacks. */}
+      <div style={{ padding: '0 16px', backgroundColor: '#f7f6f0' }}>
+        <SiteFooter />
+      </div>
     </div>
   );
 }
