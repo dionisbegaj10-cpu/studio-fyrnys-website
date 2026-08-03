@@ -45,7 +45,9 @@ export default function MenuPage() {
       {/* Paint html/body green before the first frame so Safari's bars load green */}
       <style>{`html, body { background-color: #61695e !important; }`}</style>
       <div style={{ height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 20px', flexShrink: 0 }}>
-        <a href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '13px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#ffffff', textDecoration: 'none' }}>
+        {/* Same treatment as the wordmark in the main nav (LeistungenNav);
+            only the colour differs, for the green background. */}
+        <a href="/" style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '18px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#ffffff', textDecoration: 'none', lineHeight: 1 }}>
           Studio Fyrnys
         </a>
         <BackButton />
