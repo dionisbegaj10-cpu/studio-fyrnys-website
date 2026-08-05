@@ -40,16 +40,18 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             {project.name}
           </h1>
 
-          <p className="pg-description" style={{
-            fontFamily: "'TT Norms Pro', sans-serif",
-            fontSize: 'calc(15px * var(--body-scale))',
-            lineHeight: 1.75,
-            color: '#666',
-            margin: '0 0 24px 0',
-            maxWidth: '560px',
-          }}>
-            {project.description}
-          </p>
+          {project.description && (
+            <p className="pg-description" style={{
+              fontFamily: "'TT Norms Pro', sans-serif",
+              fontSize: 'calc(15px * var(--body-scale))',
+              lineHeight: 1.75,
+              color: '#666',
+              margin: '0 0 24px 0',
+              maxWidth: '560px',
+            }}>
+              {project.description}
+            </p>
+          )}
 
           <div style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: '12px', color: '#999', lineHeight: 2 }}>
             <p style={{ margin: 0 }}>{project.photographer ? `Fotograf: ${project.photographer}` : 'Studio: Fyrnys GmbH'}</p>
