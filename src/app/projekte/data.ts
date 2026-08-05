@@ -15,15 +15,6 @@ function gallery(slug: string, count: number): string[] {
 
 export const projects: Project[] = [
   {
-    id: 17,
-    slug: 'entholzer-holzhausenpark',
-    name: 'Haus Frankfurt',
-    // Text noch offen – wird nachgereicht.
-    description: '',
-    coverImage: '/images/projekte/entholzer-holzhausenpark/cover.webp',
-    images: gallery('entholzer-holzhausenpark', 9),
-  },
-  {
     id: 5,
     slug: 'bimberg',
     name: 'Haus Frankfurt',
@@ -136,6 +127,15 @@ export const projects: Project[] = [
     description: 'Bei der Kernsanierung dieses Reihenhauses aus den 1930er-Jahren wurde die vorhandene Struktur auf das heutige Familienleben abgestimmt. Ein neuer Anbau öffnet das Haus zum Garten und bringt mehr Licht in das Erdgeschoss. Die Küche bildet nun den Mittelpunkt des Hauses. Von hier aus gehen Kochen, Essen und Wohnen fließend ineinander über. Integrierte Stauraumlösungen nutzen den vorhandenen Platz und halten die Räume im Alltag übersichtlich. Der kompakte Bestand wird dadurch deutlich offener und großzügiger wahrgenommen.',
     coverImage: '/images/projekte/entholzer-gruneburgweg/cover.webp',
     images: ['/images/projekte/entholzer-gruneburgweg/cover.webp'],
+  },
+  {
+    id: 17,
+    slug: 'entholzer-holzhausenpark',
+    name: 'Haus Frankfurt',
+    // Text noch offen – wird nachgereicht.
+    description: '',
+    coverImage: '/images/projekte/entholzer-holzhausenpark/cover.webp',
+    images: gallery('entholzer-holzhausenpark', 9),
   },
 ];
 
