@@ -15,6 +15,14 @@ function gallery(slug: string, count: number): string[] {
 
 export const projects: Project[] = [
   {
+    id: 17,
+    slug: 'entholzer-holzhausenpark',
+    name: 'Haus Frankfurt',
+    description: 'Für dieses Haus wurde ein durchgängiges Innenausbaukonzept aus heller Eiche entwickelt, das sich über alle Ebenen zieht. Maßgefertigte Einbauten fassen Flure, Küche und Bäder zu einer ruhigen Gesamtform zusammen und übernehmen zugleich die Aufgabe, Stauraum unsichtbar aufzunehmen. In der offenen Wohnküche steht ein massiver Marmorblock als Kochinsel im Mittelpunkt. Er bildet den Gegenpol zu den zurückhaltenden Holzfronten und verbindet Kochen, Essen und Aufenthalt zu einem Bereich. Bodentiefe Verglasungen öffnen die Wohnräume zum umgebenden Baumbestand, sodass das Grün Teil der Innenwirkung wird. Im Eingangsbereich trifft ein Schachbrettboden aus Marmor auf raumhohe Eichenschränke. In den Bädern führt ein gerundetes Holzvolumen die Formensprache weiter und gliedert den Raum, ohne ihn zu unterteilen.',
+    coverImage: '/images/projekte/entholzer-holzhausenpark/cover.webp',
+    images: gallery('entholzer-holzhausenpark', 9),
+  },
+  {
     id: 5,
     slug: 'bimberg',
     name: 'Haus Frankfurt',

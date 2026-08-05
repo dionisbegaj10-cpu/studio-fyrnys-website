@@ -1,6 +1,24 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
+const DESKTOP_SRC = '/videos/hero.mp4';
+const MOBILE_SRC = '/videos/hero-mobile.mp4';
+
 export default function HeroVideo() {
+  // Pick the source on the client so only one file is ever downloaded. Two
+  // <video> elements toggled with CSS would fetch both; <source media> is not
+  // honoured by browsers for this.
+  const [src, setSrc] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)');
+    const pick = () => setSrc(mq.matches ? MOBILE_SRC : DESKTOP_SRC);
+    pick();
+    mq.addEventListener('change', pick);
+    return () => mq.removeEventListener('change', pick);
+  }, []);
+
   return (
     <div
       style={{
@@ -12,8 +30,9 @@ export default function HeroVideo() {
       }}
     >
       <video
+        key={src}
         className="hero-video"
-        src="/videos/hero.mp4"
+        src={src}
         poster="/images/hero-poster.jpg"
         autoPlay
         muted
