@@ -188,7 +188,8 @@ export default function ProjektePage() {
                     <img
                       className="il-bg"
                       src={project.coverImage}
-                      alt=""
+                      alt={`${project.name} – Projekt von Studio Fyrnys`}
+                      loading="lazy"
                       style={{
                         position: 'absolute', inset: 0, zIndex: 0,
                         width: '100%', height: '100%',

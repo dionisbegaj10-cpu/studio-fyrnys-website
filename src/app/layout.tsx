@@ -11,6 +11,7 @@ import {
 } from 'next/font/google';
 import './globals.css';
 import TypographySettings from '@/components/TypographySettings';
+import { SITE_URL, SITE_NAME, BUSINESS } from '@/lib/site';
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -68,32 +69,71 @@ export const viewport: Viewport = {
   themeColor: '#f7f6f0',
 };
 
+const DEFAULT_TITLE = 'Studio Fyrnys – Innenarchitektur & Interior Design Frankfurt';
+const DEFAULT_DESCRIPTION =
+  'Studio Fyrnys plant private und gewerbliche Räume in Frankfurt – Innenarchitektur, ' +
+  'maßgefertigte Einbauten aus eigener Manufaktur und ausgewählte Möblierung aus einer Hand.';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://studio-fyrnys-website.vercel.app'),
-  title: 'Studio Fyrnys',
-  description: 'Studio Fyrnys – Interior Design',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    // Pages set their own title; this appends the brand consistently.
+    template: '%s – Studio Fyrnys',
+  },
+  description: DEFAULT_DESCRIPTION,
+  alternates: { canonical: '/' },
   icons: {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Studio Fyrnys',
-    description: 'Studio Fyrnys – Interior Design',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: 'de_DE',
     images: ['/images/og-image.jpg'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Studio Fyrnys',
-    description: 'Studio Fyrnys – Interior Design',
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
     images: ['/images/og-image.jpg'],
   },
 };
 
+/** Local business schema – lets Google associate the studio with Frankfurt. */
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'InteriorDesignBusiness',
+  name: SITE_NAME,
+  legalName: BUSINESS.legalName,
+  description: DEFAULT_DESCRIPTION,
+  url: SITE_URL,
+  image: `${SITE_URL}/images/og-image.jpg`,
+  telephone: BUSINESS.phone,
+  email: BUSINESS.email,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: BUSINESS.street,
+    postalCode: BUSINESS.postalCode,
+    addressLocality: BUSINESS.city,
+    addressCountry: BUSINESS.country,
+  },
+  areaServed: [BUSINESS.studioCity, 'Rhein-Main', 'Deutschland'],
+  sameAs: ['https://www.instagram.com/studio_fyrnys/'],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${playfair.variable} ${libreBaskerville.variable} ${bodoniModa.variable} ${cormorant.variable} ${spaceGrotesk.variable} ${caveat.variable} ${dmSerifDisplay.variable}`}>
+    <html lang="de" className={`${fraunces.variable} ${playfair.variable} ${libreBaskerville.variable} ${bodoniModa.variable} ${cormorant.variable} ${spaceGrotesk.variable} ${caveat.variable} ${dmSerifDisplay.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
         <TypographySettings />
         {children}
       </body>

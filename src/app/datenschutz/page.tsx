@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LeistungenNav from '../leistungen/LeistungenNav';
 import SiteFooter from '@/components/SiteFooter';
 
-export const metadata: Metadata = { title: 'Datenschutz – Studio Fyrnys' };
+export const metadata: Metadata = { title: 'Datenschutz', description: 'Datenschutzerklärung der Fyrnys GmbH.', alternates: { canonical: '/datenschutz' }, robots: { index: false, follow: true } };
 
 const font: React.CSSProperties = { fontFamily: "'TT Norms Pro', sans-serif" };
 

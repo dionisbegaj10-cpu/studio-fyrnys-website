@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import LeistungenNav from '../../leistungen/LeistungenNav';
 import SiteFooter from '@/components/SiteFooter';
 import { posts, getPostBySlug, formatDate } from '../data';
+import { SITE_URL, SITE_NAME } from '@/lib/site';
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -14,9 +15,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
   if (!post) return { title: 'Blog – Studio Fyrnys' };
   return {
-    title: `${post.title} – Studio Fyrnys`,
+    title: post.title,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt, images: [post.coverImage] },
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      images: [post.coverImage],
+    },
   };
 }
 
@@ -30,6 +39,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <div style={{ backgroundColor: '#f7f6f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: '0 16px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          dateModified: post.date,
+          image: `${SITE_URL}${post.coverImage}`,
+          articleSection: post.category,
+          inLanguage: 'de-DE',
+          mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/blog/${slug}` },
+          author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+          publisher: {
+            '@type': 'Organization',
+            name: SITE_NAME,
+            url: SITE_URL,
+            logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/fyrnys-logo-new.png` },
+          },
+        }) }}
+      />
       <LeistungenNav />
 
       {/* Title */}

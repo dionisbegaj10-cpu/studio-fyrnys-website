@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import LeistungenNav from '../../leistungen/LeistungenNav';
@@ -7,6 +8,37 @@ import ProjectGallery from './ProjectGallery';
 
 export function generateStaticParams() {
   return projects.map(p => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+  if (!project) return {};
+
+  // Several projects share a name ("Haus Frankfurt"), so the slug is used to
+  // keep each title unique rather than having 15 pages compete on one string.
+  const place = slug
+    .replace(/^(entholzer|fritsch|wild|brinkmann|fischer|entholzer)-/, '')
+    .split('-')
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+  const title = `${project.name} – ${place}`;
+  const description = project.description
+    ? project.description.slice(0, 155).replace(/\s+\S*$/, '') + '…'
+    : `${project.name}: Innenarchitektur-Projekt von Studio Fyrnys – Raumkonzept, maßgefertigte Einbauten und Möblierung.`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: `/projekte/${slug}` },
+    openGraph: {
+      title: `${title} – Studio Fyrnys`,
+      description,
+      url: `/projekte/${slug}`,
+      type: 'article',
+      images: [project.coverImage],
+    },
+  };
 }
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -62,7 +94,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       {/* Gallery */}
       {project.images.length > 0 && (
         <div className="lg-container">
-          <ProjectGallery images={project.images} />
+          <ProjectGallery images={project.images} projectName={project.name} />
         </div>
       )}
 

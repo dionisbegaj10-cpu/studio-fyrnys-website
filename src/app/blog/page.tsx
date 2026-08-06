@@ -5,8 +5,9 @@ import SiteFooter from '@/components/SiteFooter';
 import { posts, formatDate } from './data';
 
 export const metadata: Metadata = {
-  title: 'Blog – Studio Fyrnys',
-  description: 'Gedanken zu Innenarchitektur, Material und Handwerk aus dem Studio Fyrnys.',
+  title: 'Blog',
+  description: 'Gedanken zu Innenarchitektur, Material und Handwerk aus dem Studio Fyrnys – zu Lichtplanung, Holz und Oberflächen sowie Küchenplanung.',
+  alternates: { canonical: '/blog' },
 };
 
 const metaStyle: React.CSSProperties = {

@@ -3,7 +3,12 @@ import LeistungenNav from './LeistungenNav';
 import SiteFooter from '@/components/SiteFooter';
 import { projects } from '../projekte/data';
 
-export const metadata: Metadata = { title: 'Leistungen – Studio Fyrnys' };
+export const metadata: Metadata = {
+  title: 'Leistungen',
+  description:
+    'Innenarchitektur, maßgefertigte Einbauten aus eigener Manufaktur, Möblierung und Projektbetreuung – Studio Fyrnys begleitet private und gewerbliche Projekte von der Idee bis zum fertigen Raum.',
+  alternates: { canonical: '/leistungen' },
+};
 
 const font: React.CSSProperties = { fontFamily: "'TT Norms Pro', sans-serif" };
 

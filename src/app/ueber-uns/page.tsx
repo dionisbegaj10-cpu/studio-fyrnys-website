@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import LeistungenNav from '../leistungen/LeistungenNav';
 import SiteFooter from '@/components/SiteFooter';
+
+export const metadata: Metadata = {
+  title: 'Über uns',
+  description:
+    'Studio Fyrnys plant von Frankfurt aus private Wohnräume und Gewerbeflächen – eng verbunden mit der familiengeführten Manufakturschreinerei in Leingarten, seit 1969.',
+  alternates: { canonical: '/ueber-uns' },
+};
 
 const NB_FOOTER = <SiteFooter />;
 
@@ -27,7 +35,7 @@ export default function UeberUnsPage() {
         <div className="au-content" style={{ backgroundColor: '#f7f6f0', padding: '32px 16px 48px', flex: 1 }}>
         <div className="desktop-readable" style={{ width: '100%', maxWidth: '560px', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
         <div className="desktop-readable">
-          <h2 style={{
+          <h1 style={{
             fontFamily: 'var(--font-halis)',
             fontSize: 'calc(30px * var(--headline-scale))',
             fontWeight: 700,
@@ -37,7 +45,7 @@ export default function UeberUnsPage() {
             textTransform: 'uppercase',
           }}>
             Über uns
-          </h2>
+          </h1>
           <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
             Von unserem Studio in Frankfurt aus planen wir individuelle private Wohnräume und Gewerbeflächen. Dabei begleiten wir jedes Projekt persönlich und mit viel Gespür für Details – von der ersten Idee über die Planung bis hin zur Umsetzung.
           </p>

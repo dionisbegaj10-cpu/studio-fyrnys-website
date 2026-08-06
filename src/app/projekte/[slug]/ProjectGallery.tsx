@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function ProjectGallery({ images }: { images: string[] }) {
+export default function ProjectGallery({ images, projectName = '' }: { images: string[]; projectName?: string }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const galleryKey = images.join('|');
@@ -88,7 +88,8 @@ export default function ProjectGallery({ images }: { images: string[] }) {
           <img
             key={i}
             src={src}
-            alt=""
+            alt={projectName ? `${projectName} – Innenansicht ${i + 1}` : ''}
+            loading={i === 0 ? 'eager' : 'lazy'}
             className="pg-img"
             style={{
               flex: '0 0 100%',
