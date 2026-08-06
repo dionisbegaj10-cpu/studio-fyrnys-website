@@ -15,14 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = getProjectBySlug(slug);
   if (!project) return {};
 
-  // Several projects share a name ("Haus Frankfurt"), so the slug is used to
-  // keep each title unique rather than having 15 pages compete on one string.
+  // Several projects share a name ("Haus Frankfurt"). Only those get the slug
+  // appended for uniqueness; distinct names stay clean.
+  const sharesName = projects.filter(p => p.name === project.name).length > 1;
   const place = slug
-    .replace(/^(entholzer|fritsch|wild|brinkmann|fischer|entholzer)-/, '')
+    .replace(/^(entholzer|fritsch|wild|brinkmann|fischer)-/, '')
     .split('-')
     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ');
-  const title = `${project.name} – ${place}`;
+  const title = sharesName ? `${project.name} – ${place}` : project.name;
   const description = project.description
     ? project.description.slice(0, 155).replace(/\s+\S*$/, '') + '…'
     : `${project.name}: Innenarchitektur-Projekt von Studio Fyrnys – Raumkonzept, maßgefertigte Einbauten und Möblierung.`;

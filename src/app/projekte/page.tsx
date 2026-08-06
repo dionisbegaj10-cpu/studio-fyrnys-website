@@ -161,6 +161,8 @@ export default function ProjektePage() {
     <div style={{ backgroundColor: '#f7f6f0', display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <LeistungenNav />
 
+      <h1 className="sr-only">Projekte von Studio Fyrnys</h1>
+
       <div
         ref={rootRef}
         className="il-projekte-root"
