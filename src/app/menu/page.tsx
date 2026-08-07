@@ -23,20 +23,19 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
 ];
 
 const linkStyle: React.CSSProperties = {
+  // Width is intrinsic now that there is no underline to size.
   display: 'inline-block',
-  width: '180px',
+  alignSelf: 'flex-start',
   // Same face and treatment as the section titles (Leistungen, Interior
   // Design, Blog): the --font-halis stack, bold, capitals.
   fontFamily: 'var(--font-halis)',
-  fontSize: '22px',
+  fontSize: '30px',
   fontWeight: 700,
   letterSpacing: 'normal',
   textTransform: 'uppercase',
   lineHeight: 1.2,
   color: '#ffffff',
   textDecoration: 'none',
-  borderBottom: '1px solid #ffffff',
-  paddingBottom: '6px',
 };
 
 export default function MenuPage() {
@@ -53,7 +52,7 @@ export default function MenuPage() {
         <BackButton />
       </div>
       <div style={{ width: '100%', height: '1px', backgroundColor: '#ffffff', flexShrink: 0 }} />
-      <nav style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '40px 20px 0' }}>
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: '30px', padding: '72px 20px 0' }}>
         {navLinks.map(link =>
           link.external ? (
             <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" style={linkStyle}>
