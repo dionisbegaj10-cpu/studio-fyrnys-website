@@ -17,21 +17,8 @@ export default function UeberUnsPage() {
       <LeistungenNav />
 
       <div className="au-split" style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-        {/* Full-bleed hero image */}
-        <div className="au-media" style={{ width: '100%', flexShrink: 0 }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/leistungen/ueber-uns-neu.webp"
-            alt="Über uns"
-            className="au-media-img"
-            style={{ width: '100%', height: '70vw', maxHeight: '520px', objectFit: 'cover', display: 'block' }}
-          />
-        </div>
-
-        {/* White gap */}
-        <div className="au-gap" style={{ backgroundColor: '#f7f6f0', height: '32px', flexShrink: 0 }} />
-
-        {/* Cream content block */}
+        {/* Copy first, image below it. On desktop this is a side-by-side
+            split and .au-media is ordered back to the left column. */}
         <div className="au-content" style={{ backgroundColor: '#f7f6f0', padding: '32px 16px 48px', flex: 1 }}>
         <div className="desktop-readable" style={{ width: '100%', maxWidth: '560px', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
         <div className="desktop-readable">
@@ -59,6 +46,20 @@ export default function UeberUnsPage() {
             Uns ist wichtig, dass eine Gestaltung zum Gebäude, zur Nutzung und zu den Menschen passt. Eine klare Planung, sorgfältig ausgewählte Materialien und eine präzise Ausführung bilden dafür die Grundlage.
           </p>
         </div>
+        </div>
+
+        {/* White gap */}
+        <div className="au-gap" style={{ backgroundColor: '#f7f6f0', height: '32px', flexShrink: 0 }} />
+
+        {/* Full-bleed image, below the copy */}
+        <div className="au-media" style={{ width: '100%', flexShrink: 0 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/leistungen/ueber-uns-neu.webp"
+            alt="Über uns"
+            className="au-media-img"
+            style={{ width: '100%', height: '70vw', maxHeight: '520px', objectFit: 'cover', display: 'block' }}
+          />
         </div>
       </div>
 

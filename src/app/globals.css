@@ -275,7 +275,10 @@ h1, h2, h3, h4, h5, h6,
     align-content: center !important;
     min-height: calc(100vh - 54px) !important;
   }
+  /* The copy comes first in the DOM so it stacks above the photo on
+     mobile; here the photo is ordered back into the left column. */
   .au-media {
+    order: -1 !important;
     width: auto !important;
     align-self: stretch !important;
     position: relative !important;
