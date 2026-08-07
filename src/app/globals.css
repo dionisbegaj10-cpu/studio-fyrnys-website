@@ -91,7 +91,10 @@
   --linen-beige: #ddcab0;
   --pebble-grey: #8d8479;
   --white: #ffffff;
-  --font-halis: var(--font-fraunces), 'Halis R', Georgia, serif;
+  /* Headline face. 'ivyora-display' comes from the Adobe Fonts web project and
+     only resolves once the kit is loaded in layout.tsx; Fraunces is the
+     fallback until then. */
+  --font-halis: 'ivyora-display', var(--font-fraunces), 'Halis R', Georgia, serif;
   --headline-scale: 1;
   --body-scale: 1;
 }
@@ -157,7 +160,16 @@ body {
 /* richtext styles matching bernd-gruber */
 .richtext-block h1 { font-family: var(--font-halis); font-weight: 700; font-size: calc(clamp(24px, 4vw, 42px) * var(--headline-scale)); line-height: 1.15; margin-bottom: 0; }
 .richtext-block h2 { font-family: var(--font-halis); font-weight: 700; font-size: calc(clamp(18px, 2.5vw, 28px) * var(--headline-scale)); line-height: 1.2; margin-bottom: 0.75rem; }
-.richtext-block h3 { font-weight: 500; font-size: calc(16px * var(--body-scale)); margin-bottom: 0; }
+.richtext-block h3 { font-family: var(--font-halis); font-weight: 700; font-size: calc(16px * var(--body-scale)); margin-bottom: 0; }
+
+/* Client rule: every heading is IvyOra Display Bold, set in capitals. */
+h1, h2, h3, h4, h5, h6,
+.li-section-title,
+.pg-title {
+  font-family: var(--font-halis);
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .richtext-block p { font-size: calc(15px * var(--body-scale)); line-height: 1.7; color: #333; margin: 0; }
 .richtext-block p + p { margin-top: 1em; }
 .richtext-block a { color: #333; text-decoration: underline; }

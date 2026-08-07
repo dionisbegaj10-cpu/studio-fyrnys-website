@@ -63,6 +63,18 @@ const dmSerifDisplay = DM_Serif_Display({
   variable: '--font-dm-serif',
 });
 
+/**
+ * Adobe Fonts (Typekit) web project ID for IvyOra Display.
+ *
+ * IvyOra is licensed, not free — it may only be served from Adobe's CDN, so it
+ * cannot be self-hosted like the Google fonts above. Create a web project at
+ * fonts.adobe.com containing IvyOra Display Bold, then paste its kit ID here
+ * (the "xxxxxxx" in https://use.typekit.net/xxxxxxx.css).
+ *
+ * Until it is set, headings fall back to Fraunces via --font-halis.
+ */
+const ADOBE_FONTS_KIT_ID = 'jrk4jxq';
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -129,6 +141,13 @@ const localBusinessJsonLd = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className={`${fraunces.variable} ${playfair.variable} ${libreBaskerville.variable} ${bodoniModa.variable} ${cormorant.variable} ${spaceGrotesk.variable} ${caveat.variable} ${dmSerifDisplay.variable}`}>
+      {ADOBE_FONTS_KIT_ID && (
+        <head>
+          <link rel="preconnect" href="https://use.typekit.net" crossOrigin="" />
+          <link rel="preconnect" href="https://p.typekit.net" crossOrigin="" />
+          <link rel="stylesheet" href={`https://use.typekit.net/${ADOBE_FONTS_KIT_ID}.css`} />
+        </head>
+      )}
       <body>
         <script
           type="application/ld+json"

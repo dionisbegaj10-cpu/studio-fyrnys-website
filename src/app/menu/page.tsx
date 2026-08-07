@@ -26,12 +26,12 @@ const linkStyle: React.CSSProperties = {
   display: 'inline-block',
   width: '180px',
   // Same face and treatment as the section titles (Leistungen, Interior
-  // Design, Blog): the --font-halis stack, bold, normal case.
+  // Design, Blog): the --font-halis stack, bold, capitals.
   fontFamily: 'var(--font-halis)',
   fontSize: '22px',
   fontWeight: 700,
   letterSpacing: 'normal',
-  textTransform: 'none',
+  textTransform: 'uppercase',
   lineHeight: 1.2,
   color: '#ffffff',
   textDecoration: 'none',

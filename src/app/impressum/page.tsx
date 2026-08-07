@@ -13,7 +13,7 @@ function Section({ title, children }: { title?: string; children: React.ReactNod
         <h2 style={{
           fontFamily: 'var(--font-halis)',
           fontSize: 'calc(20px * var(--headline-scale))',
-          fontWeight: 500,
+          fontWeight: 700,
           color: '#2d2926',
           marginBottom: '12px',
         }}>
