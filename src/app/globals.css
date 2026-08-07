@@ -537,3 +537,11 @@ h1, h2, h3, h4, h5, h6,
   white-space: nowrap;
   border: 0;
 }
+
+/* Über uns, stacked layout only: the photo sits on the same column as the
+   copy and the wordmark (32px) rather than in the page's 16px gutter.
+   Above 1024px the layout is a side-by-side split where the photo is meant
+   to run to the edge, so this is scoped away from it. */
+@media (max-width: 1023px) {
+  .au-media { padding-left: 16px; padding-right: 16px; }
+}
