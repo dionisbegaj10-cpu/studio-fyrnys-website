@@ -6,7 +6,7 @@ import { projects } from '../projekte/data';
 export const metadata: Metadata = {
   title: 'Leistungen',
   description:
-    'Innenarchitektur, maßgefertigte Einbauten aus eigener Manufaktur, Möblierung und Projektbetreuung – Studio Fyrnys begleitet private und gewerbliche Projekte von der Idee bis zum fertigen Raum.',
+    'Innenarchitektur, maßgefertigte Einbauten aus eigener Schreinerei, Möblierung und Projektbetreuung – Studio Fyrnys begleitet private und gewerbliche Projekte von der Idee bis zum fertigen Raum.',
   alternates: { canonical: '/leistungen' },
 };
 
@@ -31,7 +31,7 @@ export default function LeistungenPage() {
               <div style={{ width: '100%', height: '1px', backgroundColor: '#d8d3c9', marginBottom: '24px' }} />
               <h1>Leistungen</h1>
               <p>&nbsp;</p>
-              <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Manufaktur verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
+              <p>Wir gestalten private und gewerbliche Räume mit einem klaren Blick für Atmosphäre, Funktion und Qualität. Als Studio mit eigener Schreinerei verbinden wir Innenarchitektur, maßgefertigte Lösungen, ausgewählte Möblierung und eine unterstützende Projektbetreuung zu einem durchgängigen Gestaltungskonzept. So erhalten Sie nicht nur einzelne Leistungen, sondern eine abgestimmte Begleitung von der ersten Idee bis zum fertigen Raum.</p>
             </div>
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function LeistungenPage() {
           <section style={{ backgroundColor: '#f7f6f0' }}>
             <div className="lg-container">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/leistungen/interior-design-new.jpg" alt="Interior Design" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+              <img src="/images/leistungen/interior-design-penta.jpg" alt="Interior Design" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
             </div>
           </section>
 
@@ -103,27 +103,35 @@ export default function LeistungenPage() {
 
       <div className="spacer-md" style={{ backgroundColor: '#f7f6f0' }} />
 
-      {/* ══ MANUFAKTUR heading ══ */}
+      {/* ══ SCHREINEREI heading ══ */}
       <div className="li-split bg-egg" style={{ display: 'flex', flexDirection: 'column' }}>
         <div className="spacer-sm bg-egg li-split-spacer" />
         <section className="li-split-text bg-egg">
           <div className="lg-container">
             <div className="richtext-block" style={{ maxWidth: '900px' }}>
               <div style={{ width: '100%', height: '1px', backgroundColor: '#c4c0aa', marginBottom: '24px' }} />
-              <h2>Manufaktur</h2>
+              <h2>Schreinerei</h2>
               <p>&nbsp;</p>
-              <p>In unserer Manufaktur entstehen seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Gestaltung und handwerkliche Präzision gehen dabei Hand in Hand. Jede Lösung wird passend zum Raum entwickelt, sorgfältig ausgeführt und mit einem klaren Verständnis für Material und Funktion gefertigt. So entstehen Maßanfertigungen, die dauerhaft Bestand haben.</p>
+              <p>In unserer Schreinerei entstehen seit 1969 individuelle Einbauten, Küchen und Möbel nach Maß. Gestaltung und handwerkliche Präzision gehen dabei Hand in Hand. Jede Lösung wird passend zum Raum entwickelt, sorgfältig ausgeführt und mit einem klaren Verständnis für Material und Funktion gefertigt. So entstehen Maßanfertigungen, die dauerhaft Bestand haben.</p>
             </div>
           </div>
         </section>
 
         <div className="spacer-sm bg-egg li-split-spacer" />
 
-        {/* ══ MANUFAKTUR grid ══ */}
+        {/* ══ SCHREINEREI video ══ */}
         <section className="li-split-media bg-egg">
           <div className="lg-container">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/manufaktur-new.jpg" alt="Manufaktur" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+            <video
+              src="/videos/schreinerei.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="img-portrait li-media-portrait"
+              style={{ maxWidth: '560px', margin: '0 auto' }}
+            />
           </div>
         </section>
 
@@ -188,6 +196,7 @@ export default function LeistungenPage() {
                   ['/images/leistungen/partners/living-carpets.png', 'Living Carpets'],
                   ['/images/leistungen/partners/newworks.png', 'New Works'],
                   ['/images/leistungen/partners/object-carpet.png', 'Object Carpet'],
+                  ['/images/leistungen/partners/penta.png', 'Penta'],
                   ['/images/leistungen/partners/tekna.png', 'Tekna'],
                   ['/images/leistungen/partners/vescom.png', 'Vescom'],
                   ['/images/leistungen/partners/vincent-sheppard.svg', 'Vincent Sheppard'],
@@ -233,7 +242,7 @@ export default function LeistungenPage() {
         <section className="li-split-media" style={{ backgroundColor: '#f7f6f0' }}>
           <div className="lg-container">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/leistungen/projektkoordination-new.jpg" alt="Projektkoordination" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
+            <img src="/images/leistungen/projektkoordination-penta.jpg" alt="Projektkoordination" className="img-portrait li-media-portrait" style={{ maxWidth: '560px', margin: '0 auto' }} />
           </div>
         </section>
       </div>
@@ -245,7 +254,8 @@ export default function LeistungenPage() {
       <section className="bg-egg">
         <div className="lg-container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginBottom: '24px', alignItems: 'end' }}>
-            <h2 className="li-section-title" style={{ fontFamily: 'var(--font-halis)', fontWeight: 700, fontSize: 'calc(clamp(18px, 2.5vw, 28px) * var(--headline-scale))', margin: 0 }}>Projekte</h2>
+            {/* Size comes from .li-section-title so it tracks the other titles. */}
+            <h2 className="li-section-title" style={{ fontFamily: 'var(--font-halis)', fontWeight: 700, margin: 0 }}>Projekte</h2>
             <a href="/projekte" style={{ justifySelf: 'end', color: '#333', textDecoration: 'none', fontSize: '14px' }}>Alle anzeigen ›</a>
           </div>
         </div>

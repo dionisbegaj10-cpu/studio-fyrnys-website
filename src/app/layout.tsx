@@ -84,7 +84,7 @@ export const viewport: Viewport = {
 const DEFAULT_TITLE = 'Studio Fyrnys – Innenarchitektur & Interior Design Frankfurt';
 const DEFAULT_DESCRIPTION =
   'Studio Fyrnys plant private und gewerbliche Räume in Frankfurt – Innenarchitektur, ' +
-  'maßgefertigte Einbauten aus eigener Manufaktur und ausgewählte Möblierung aus einer Hand.';
+  'maßgefertigte Einbauten aus eigener Schreinerei und ausgewählte Möblierung aus einer Hand.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

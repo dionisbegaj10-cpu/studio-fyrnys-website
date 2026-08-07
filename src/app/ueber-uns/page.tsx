@@ -5,7 +5,7 @@ import SiteFooter from '@/components/SiteFooter';
 export const metadata: Metadata = {
   title: 'Über uns',
   description:
-    'Studio Fyrnys plant von Frankfurt aus private Wohnräume und Gewerbeflächen – eng verbunden mit der familiengeführten Manufakturschreinerei in Leingarten, seit 1969.',
+    'Studio Fyrnys plant von Frankfurt aus private Wohnräume und Gewerbeflächen – eng verbunden mit der familiengeführten Schreinerei in Leingarten, seit 1969.',
   alternates: { canonical: '/ueber-uns' },
 };
 
@@ -53,7 +53,7 @@ export default function UeberUnsPage() {
             Je nach Aufgabe entwickeln wir Raum-, Möblierungs- und Leuchtenkonzepte, planen individuelle Einbauten und klären gestalterische Details mit den beteiligten Gewerken. Unsere Arbeit reicht von der Auswahl einzelner Möbel bis zur vollständigen Neugestaltung von Wohnungen, Häusern, Praxen und Büroflächen.
           </p>
           <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926', marginBottom: '16px' }}>
-            Eng verbunden ist das Studio mit unserer familiengeführten Manufakturschreinerei in Leingarten. Dort entstehen seit 1969 individuelle Küchen, Möbel und Innenausbauten nach Maß. Viele unserer Entwürfe können wir dadurch gemeinsam mit den Schreinern bis ins Detail entwickeln und umsetzen.
+            Eng verbunden ist das Studio mit unserer familiengeführten Schreinerei in Leingarten. Dort entstehen seit 1969 individuelle Küchen, Möbel und Innenausbauten nach Maß. Viele unserer Entwürfe können wir dadurch gemeinsam mit den Schreinern bis ins Detail entwickeln und umsetzen.
           </p>
           <p style={{ fontFamily: "'TT Norms Pro', sans-serif", fontSize: 'calc(14px * var(--body-scale))', fontWeight: 400, lineHeight: 1.8, color: '#2d2926' }}>
             Uns ist wichtig, dass eine Gestaltung zum Gebäude, zur Nutzung und zu den Menschen passt. Eine klare Planung, sorgfältig ausgewählte Materialien und eine präzise Ausführung bilden dafür die Grundlage.

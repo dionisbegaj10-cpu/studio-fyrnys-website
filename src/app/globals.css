@@ -162,6 +162,19 @@ body {
 .richtext-block h2 { font-family: var(--font-halis); font-weight: 700; font-size: calc(clamp(18px, 2.5vw, 28px) * var(--headline-scale)); line-height: 1.2; margin-bottom: 0.75rem; }
 .richtext-block h3 { font-family: var(--font-halis); font-weight: 700; font-size: calc(16px * var(--body-scale)); margin-bottom: 0; }
 
+/* Leistungen: every section title is set at the same scale as the page's
+   own "Leistungen" h1. Scoped away from .desktop-readable, which is what
+   the blog and the legal pages use — their h2s stay subordinate. */
+.richtext-block:not(.desktop-readable) h2,
+.li-section-title {
+  font-size: calc(clamp(24px, 4vw, 42px) * var(--headline-scale));
+  line-height: 1.15;
+  /* At this size "Projektkoordination" is wider than its column, so let
+     German hyphenation break it instead of letting it run past the edge. */
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 /* Client rule: every heading is IvyOra Display Bold, set in capitals. */
 h1, h2, h3, h4, h5, h6,
 .li-section-title,
@@ -332,14 +345,6 @@ h1, h2, h3, h4, h5, h6,
     max-width: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-
-  /* Leistungen: every section heading matches the "Leistungen" /
-     "Interior Design" scale. Scoped away from the legal pages, which are
-     the only other users of .richtext-block. */
-  .richtext-block:not(.desktop-readable) h2,
-  .li-section-title {
-    font-size: calc(40px * var(--headline-scale)) !important;
   }
 
   /* Interior Design: larger body copy. */
