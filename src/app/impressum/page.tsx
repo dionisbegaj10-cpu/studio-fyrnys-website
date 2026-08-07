@@ -57,8 +57,8 @@ export default function ImpressumPage() {
               <p style={{ margin: 0 }}>Sitz der Gesellschaft:</p>
               <p style={{ margin: '0 0 16px' }}>74211 Leingarten</p>
 
-              <p style={{ margin: 0 }}>Vertreten durch den Geschäftsführer:</p>
-              <p style={{ margin: 0 }}>Michael Fyrnys</p>
+              <p style={{ margin: 0 }}>Vertreten durch die Geschäftsführer:</p>
+              <p style={{ margin: 0 }}>Michael Fyrnys und Lukas Fyrnys</p>
             </Section>
 
             <Section title="Haftung für Inhalte">

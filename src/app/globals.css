@@ -146,6 +146,17 @@ body {
 
 /* ─── Bernd Gruber 1:1 layout system ────────────────────────────── */
 .bg-egg { background-color: #61695e; }
+/* The green band runs edge to edge instead of sitting inside the page's
+   16px gutter, so its own content still lines up with the wordmark and
+   with every other section's text. The negative margin cancels the page
+   padding; the matching padding puts the content back where it was.
+   Nested .bg-egg elements are excluded — they would shift twice. */
+.bg-egg:not(.li-split-text):not(.li-split-media):not(.li-split-spacer) {
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .bg-egg h1, .bg-egg h2, .bg-egg h3, .bg-egg p, .bg-egg a { color: #ffffff !important; }
 .bg-egg img[src$=".svg"], .bg-egg img[src$=".png"] { filter: brightness(0) invert(1); }
 
